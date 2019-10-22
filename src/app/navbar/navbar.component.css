@@ -1,0 +1,7 @@
+a img:hover {
+    transform: scale(1.16);
+}
+
+a img:active {
+    transform: scale(1.30);
+}
