@@ -11,5 +11,4 @@ export class AvatarComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }
