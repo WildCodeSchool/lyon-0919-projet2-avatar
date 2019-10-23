@@ -1,14 +1,23 @@
 <ul class="nav navbar-light justify-content-around fixed-bottom" style="background-color: #e3f2fd;">
     <li class="nav-item">
-      <a class="nav-link" href="#"><img src="../assets/navicon/home.svg" alt="homepage link"></a>
+      <a class="nav-link" [routerLink]="['/home']">
+        <img src="/assets/Navicon/home.svg" alt="homepage link">
+      </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#"><img src="../assets/navicon/avatar.svg" alt="avatar page link"></a>
+      <a class="nav-link" [routerLink]="['/avatar']">
+        <img src="/assets/Navicon/avatar.svg" alt="avatar page link">
+      </a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#"><img src="../assets/navicon/cards.svg" alt="cards page link"></a>
+      <a class="nav-link" [routerLink]="['/cards']">
+        <img src="/assets/Navicon/cards.svg" alt="cards page link">
+      </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#"><img src="../assets/navicon/contact.svg" alt="contact page link"></a>
+        <a class="nav-link" [routerLink]="['/contact']">
+          <img src="/assets/Navicon/contact.svg" alt="contact page link">
+        </a>
     </li>
   </ul>
+<router-outlet></router-outlet>
