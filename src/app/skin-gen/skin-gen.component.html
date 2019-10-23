@@ -1,0 +1,5 @@
+<div class="tone">
+    <div *ngFor="let tone of tonesList" class="tone-row">
+        <img [src]="tone.picture" (click)="displaySkin(tone)" />
+    </div>    
+</div>
