@@ -1,12 +1,12 @@
 <h3>SEND TO</h3>
 
-<form (submit)="myForm.valid && onSubmit(myForm)" #myForm="ngForm">
+<form (submit)="contactForm.valid && onSubmit(contactForm)" #contactForm="ngForm">
     <div id="sendto">
         <div class="forms">
             <label for="name">Name</label>
             <input id="name" name="name" type="text" [(ngModel)]="model.name" #nameRef="ngModel" required>
         </div>
-        <div *ngIf="myForm.submitted && nameRef.errors">
+        <div *ngIf="contactForm.submitted && nameRef.errors">
             <span class="errorText" *ngIf="nameRef.errors.required">
                 * Name is required</span>
         </div>
@@ -15,7 +15,7 @@
             <label for="adress">Adress</label>
             <input id="adress" name="adress" type="text" [(ngModel)]="model.adress" #adressRef="ngModel" required>
         </div>
-        <div *ngIf="myForm.submitted && adressRef.errors">
+        <div *ngIf="contactForm.submitted && adressRef.errors">
             <span class="errorText" *ngIf="adressRef.errors.required">
                 * Recipient's address is required</span>
         </div>
@@ -24,7 +24,7 @@
             <label for="msg">Message</label>
             <textarea id="msg" name="msg" type="msg" [(ngModel)]="model.msg" #msgRef="ngModel" required></textarea>
         </div>
-        <div *ngIf="myForm.submitted && msgRef.errors">
+        <div *ngIf="contactForm.submitted && msgRef.errors">
             <span class="errorText" *ngIf="msgRef.errors.required">* Write your message</span>
         </div>
 
@@ -33,3 +33,5 @@
         </div>
     </div>
 </form>
+
+<router-outlet></router-outlet>
