@@ -6,10 +6,6 @@ export const TONES : Tone[] = [
         picture: '/assets/Avatar/1-Tones/Body_Eggshell.png'
     },
     {
-        name: "Sand Blend",
-        picture: '/assets/Avatar/1-Tones/Body_Sand.png'
-    },
-    {
         name: "Sand",
         picture: '/assets/Avatar/1-Tones/Body_Sand.png'
     },
@@ -32,6 +28,10 @@ export const TONES : Tone[] = [
     {
         name: "Yellow",
         picture: '/assets/Avatar/1-Tones/Body_Yellow.png'
+    },
+    {
+        name: "Yellow Orange",
+        picture: '/assets/Avatar/1-Tones/Body_YellowOrange.png'
     },
     {
         name: "Caramel",
