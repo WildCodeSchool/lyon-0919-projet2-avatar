@@ -10,10 +10,7 @@ export class ContactComponent implements OnInit {
 
   model: Contact = new Contact();
 
-  submitted = false;
-
   onSubmit() {
-    this.submitted = true;
     console.log(this.model);
   }
 
