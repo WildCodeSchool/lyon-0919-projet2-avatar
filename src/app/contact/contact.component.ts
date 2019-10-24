@@ -10,7 +10,6 @@ import { Router } from '@angular/router';
 export class ContactComponent implements OnInit {
 
   model: Contact = new Contact();
-
   
   constructor(private router: Router) { }
   
@@ -22,3 +21,4 @@ export class ContactComponent implements OnInit {
     console.log(this.model);
   }
 }
+
