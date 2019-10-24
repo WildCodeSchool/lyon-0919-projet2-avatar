@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Contact } from './contact';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contact',
@@ -9,14 +10,15 @@ import { Contact } from './contact';
 export class ContactComponent implements OnInit {
 
   model: Contact = new Contact();
-
-  onSubmit() {
-    console.log(this.model);
-  }
-
-  constructor() { }
-
+  
+  constructor(private router: Router) { }
+  
   ngOnInit() {
   }
-
+  
+  onSubmit() {
+    this.router.navigate(['/payment']);
+    console.log(this.model);
+  }
 }
+

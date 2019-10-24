@@ -10,6 +10,7 @@ import { CardsComponent } from './cards/cards.component';
 import { ContactComponent } from './contact/contact.component';
 import { ROUTES } from './app.navroutes';
 import { RouterModule } from '@angular/router';
+import { PaymentComponent } from './payment/payment.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RouterModule } from '@angular/router';
     HomeComponent,
     AvatarComponent,
     CardsComponent,
-    ContactComponent
+    ContactComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,
