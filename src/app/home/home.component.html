@@ -1,27 +1,31 @@
-<main>
-    <div class="cloud1">
-        <img src="/assets/images/cloud1.png" alt="nuage cloud" />
-    </div>
-
-    <div class="cloud2">
-        <img src="/assets/images/cloud2.png" alt="nuage cloud" />
-    </div>
-
-    <div class="cloud3">
-        <img src="/assets/images/cloud3.png" alt="nuage cloud" />
-    </div>
-
-    <div class="cloud4">
-        <img src="/assets/images/cloud1.png" alt="nuage cloud" />
-    </div>
-
-    <header>
-        <a href="#" class="home_btn">
-            <h1>BiM</h1>
-            <h2 class="display_btn bouing">Create it !</h2>
-        </a>
-
-        <div class="square">
+<a [routerLink]="['/avatar']">
+    <main>
+        <div class="cloud1">
+            <img src="/assets/images/cloud1.png" alt="nuage cloud" />
         </div>
-    </header>
-</main>
+
+        <div class="cloud2">
+            <img src="/assets/images/cloud2.png" alt="nuage cloud" />
+        </div>
+
+        <div class="cloud3">
+            <img src="/assets/images/cloud3.png" alt="nuage cloud" />
+        </div>
+
+        <div class="cloud4">
+            <img src="/assets/images/cloud1.png" alt="nuage cloud" />
+        </div>
+
+        <header>
+            <a class="home_btn">
+                <h1>BiM</h1>
+                <h2 class="display_btn bouing">Create it !</h2>
+            </a>
+
+            <div class="square">
+            </div>
+        </header>
+    </main>
+</a>
+
+<router-outlet></router-outlet>
