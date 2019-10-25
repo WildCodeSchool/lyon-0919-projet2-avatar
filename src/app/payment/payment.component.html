@@ -1,7 +1,8 @@
-<h3>Payment</h3>
-<img id="creditCard" src="/assets/images/creditCard.png" alt="Accepted Card" title="Accepted Card">
 
-<form (submit)="paymentForm.valid && onSubmit(paymentForm)" #paymentForm="ngForm">
+<section>
+    <form *ngIf=(isFormVisible) (submit)="paymentForm.valid && onSubmit(paymentForm)" #paymentForm="ngForm">
+        <h3>Payment</h3>
+        <img id="creditCard" src="/assets/images/creditCard.png" alt="Accepted Card" title="Accepted Card">
         <div id="sendto">
             <div class="forms">
                 <label for="cardNb">Card Number</label>
@@ -27,7 +28,7 @@
                             * Date must be in MM / YY format</span>
                     </div>
                 </div>
-                
+
                 <div id="cvc">
                     <div class="forms">
                         <label for="cvc">CVC</label>
@@ -50,8 +51,20 @@
                 </div>
     
             <div id="send">
-                <p>2.39$</p>
-                <button type="image"><img src="/assets/images/sendicon.svg" alt="avatar page link"></button>
+                <button type="submit" class="button btn btn-primary">BUY 2.39$</button>
             </div>
         </div>
     </form>
+    <div class="modal" *ngIf=(isModalVisible)> 
+        <h4>Your payment has been accepted</h4>
+        <h5>Great !</h5>
+        <p>Your recipient should receive your card in 3 days. <br />
+        Thanks for your confidence !</p>
+        <button type="button" class="hbutton btn btn-warning" (click)="closeModal()">HOME</button>
+    </div>
+</section>
+
+
+    <!-- Modal -->
+    
+ 

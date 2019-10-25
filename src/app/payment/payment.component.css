@@ -32,11 +32,10 @@ form {
     margin-top: 5px;
 }
 
-button {
-
+.button {
+    font-weight: bold;
     float: right;
-    border: white;
-    background-color: white ;
+    margin-top: 10px;
 }
 
 button img:hover {
@@ -78,9 +77,27 @@ input {
     justify-content: space-between;
 }
 
-p {
-    font-size: 18px;
+h4 {
     font-weight: bold;
-    color: rgb(0, 172, 29);
-    margin-top: 15px;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
 }
+
+h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hbutton {
+    font-weight: bold;
+    color: white;   
+}
+
