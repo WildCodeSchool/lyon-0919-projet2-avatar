@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { Tone } from '../shared/tone';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { TONES } from '../shared/tones-mock';
+import { Avatar } from '../shared/avatar';
+import { Tone } from '../shared/tone';
 
 @Component({
   selector: 'app-skin-gen',
@@ -9,16 +10,20 @@ import { TONES } from '../shared/tones-mock';
 })
 export class SkinGenComponent implements OnInit {
   tonesList: Tone[] = TONES;
-  skinDisplayed : Tone[] = [];
+  tone : Tone;
+  avatar : Avatar = new Avatar();
+  @Output() skinEvent = new EventEmitter<Tone>();
+
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  displaySkin(tone: Tone){
-    this.skinDisplayed.push(tone);
-    console.log(this.skinDisplayed);
+  onSkinClicked(tone: Tone) {
+    this.avatar.tone = tone;
+    this.skinEvent.emit(tone);
+    //console.log(tone);
   }
 
 }

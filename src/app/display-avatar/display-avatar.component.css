@@ -1,0 +1,11 @@
+.selectedSkin {
+    width: 310px;
+    height: 329px;
+    background-color:#e3f2fd;
+    border-radius: 15px;
+    margin: 10px auto;
+}
+
+.selectedSkin img{
+    width: 100%;
+}

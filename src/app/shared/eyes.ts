@@ -1,4 +1,4 @@
-export class Tone {
+export class Eyes {
     name: string;
     picture : string;
 }

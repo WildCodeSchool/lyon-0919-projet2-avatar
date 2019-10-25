@@ -12,7 +12,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ROUTES } from './app.navroutes';
 import { RouterModule } from '@angular/router';
 import { SkinGenComponent } from './skin-gen/skin-gen.component';
-import { AvatarDisplayComponent } from './avatar-display/avatar-display.component';
+import { DisplayAvatarComponent } from './display-avatar/display-avatar.component';
 
 
 
@@ -25,7 +25,7 @@ import { AvatarDisplayComponent } from './avatar-display/avatar-display.componen
     CardsComponent,
     ContactComponent,
     SkinGenComponent,
-    AvatarDisplayComponent,
+    DisplayAvatarComponent,
   ],
   imports: [
     BrowserModule,

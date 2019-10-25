@@ -1,5 +1,16 @@
+<!-- <div class="selectedSkin">
+    <img [src]="toneDisplayed.picture" alt="{{ toneDisplayed.name }}"/>
+</div>
+
 <div class="tone">
     <div *ngFor="let tone of tonesList" class="tone-row">
-        <img [src]="tone.picture" (click)="displaySkin(tone)" />
+        <img [src]="tone.picture" alt="{{ tone.name }}" (click)="onSkinClicked(tone)" />
     </div>    
+</div> -->
+
+<div class="tone">
+    <div *ngFor="let tone of tonesList" class="tone-row">
+        <img [src]="tone.picture" alt="{{ tone.name }}" (click)="onSkinClicked(tone)" />
+    </div>  
 </div>
+

@@ -1,4 +1,13 @@
-<app-avatar-display></app-avatar-display>
+<!-- <div class="selectedSkin">
+    <div *ngFor="let item of avatar">
+        <img [src]="item.picture" alt="{{ item.name }}" />
+    </div>
+</div>-->
 
-<app-skin-gen></app-skin-gen>
+<!-- <app-display-avatar [motherfucker]="avatar"></app-display-avatar>
 
+<app-skin-gen (avatarInCreation)="receivedSkin($event)"></app-skin-gen> -->
+
+<app-display-avatar [skinToDisplay]="avatarParent"></app-display-avatar>
+
+<app-skin-gen (skinEvent)="onSkinSelect($event)"></app-skin-gen>

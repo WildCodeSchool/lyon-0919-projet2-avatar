@@ -1,11 +1,25 @@
+/* .selectedSkin {
+    width: 310px;
+    background-color:lightblue;
+    border-radius: 15px;
+    margin: 10px auto;
+}
+
+.selectedSkin img{
+    width: 100%;
+} */
+
 .tone {
     display: flex;
     flex-wrap: wrap;
-    width: 300px;
+    width: 312px;
     margin: 0 auto;
 }
 
 .tone img {
     width: 100px;
+    margin: 2px;
     cursor: pointer;
+    background-color:#e3f2fd;
+    border-radius: 15px;
 }
