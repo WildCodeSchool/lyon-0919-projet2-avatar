@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AvatarComponent } from './avatar/avatar.component';
@@ -13,8 +13,7 @@ import { ROUTES } from './app.navroutes';
 import { RouterModule } from '@angular/router';
 import { SkinGenComponent } from './skin-gen/skin-gen.component';
 import { DisplayAvatarComponent } from './display-avatar/display-avatar.component';
-
-
+import { PaymentComponent } from './payment/payment.component';
 
 @NgModule({
   declarations: [
@@ -26,10 +25,12 @@ import { DisplayAvatarComponent } from './display-avatar/display-avatar.componen
     ContactComponent,
     SkinGenComponent,
     DisplayAvatarComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     RouterModule.forRoot(ROUTES)
   ],
   providers: [],
