@@ -2,7 +2,17 @@
     <div class="selectedSkin">
         <img [src]="displayAvatar.tone.picture" alt="{{displayAvatar.tone.name}}"/>
     </div>
+
     <div class="selectedEyes" *ngIf="displayAvatar.eyes">
         <img [src]="displayAvatar.eyes.picture" alt="{{displayAvatar.eyes.name}}"/>
     </div>
+
+    <div class="selectedMouth" *ngIf="displayAvatar.mouth">
+        <img [src]="displayAvatar.mouth.picture" alt="{{ displayAvatar.mouth.name }}"/>
+    </div>
 </div>
+
+    
+
+    
+    

@@ -4,6 +4,8 @@ import { Avatar } from '../shared/avatar';
 import { Tone } from '../shared/tone';
 import { Eyes } from '../shared/eyes';
 import { EYES } from '../shared/eyes-mock';
+import { Mouth } from '../shared/mouths';
+import { MOUTHS } from '../shared/mouths-mock';
 
 @Component({
   selector: 'app-display-avatar',
@@ -11,12 +13,16 @@ import { EYES } from '../shared/eyes-mock';
   styleUrls: ['./display-avatar.component.css']
 })
 export class DisplayAvatarComponent implements OnInit {
+
   @Input() displayAvatar : Avatar;
   tonesList: Tone[] = TONES;
   tone : Tone;
 
   eyesList: Eyes[] = EYES;
   eyes : Eyes;  
+
+  mouths: Mouth[] = MOUTHS;
+  mouth : Mouth;  
 
   constructor() { }
 
