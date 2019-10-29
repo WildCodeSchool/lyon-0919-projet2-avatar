@@ -1,6 +1,6 @@
 import { Clothes } from './clothes';
 
-export const CLOTHE : Clothes[] = [
+export const CLOTHES : Clothes[] = [
     {
         name: "Hoodie",
         picture: '/assets/Avatar/6-Clothes/Layer 1/Default_Hoodie_NoStrings.png'

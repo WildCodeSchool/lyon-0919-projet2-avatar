@@ -1,6 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Clothes } from '../shared/clothes';
-import { CLOTHE } from '../shared/clothes-mock'
+import { CLOTHES } from '../shared/clothes-mock'
 
 @Component({
   selector: 'app-clothes-gen',
@@ -9,7 +9,7 @@ import { CLOTHE } from '../shared/clothes-mock'
 })
 export class ClothesGenComponent implements OnInit {
 
-  clothesList: Clothes[] = CLOTHE;
+  clothesList: Clothes[] = CLOTHES;
   @Output() clothesEvent = new EventEmitter<Clothes>();
 
 

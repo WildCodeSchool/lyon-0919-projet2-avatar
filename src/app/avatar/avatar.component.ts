@@ -6,6 +6,7 @@ import { Mouth } from '../shared/mouths';
 import { Hairiness } from '../shared/hairiness';
 import { Hair } from '../shared/hair';
 import { Clothes} from '../shared/clothes';
+import { Eyebrows } from '../shared/eyebrows';
 
 @Component({
   selector: 'app-avatar',
@@ -20,6 +21,15 @@ export class AvatarComponent implements OnInit {
   hairiness : Hairiness;
   hair : Hair;
   clothes : Clothes
+  eyebrows : Eyebrows;
+
+  elementsAvatar : string[] =["skin", "eyes", "mouth", "eyebrow", "hair", "beard", "clothes", "glasses", "jewellery", "hat"];
+  selectedIndex = 0;
+  selectedValue = this.elementsAvatar[this.selectedIndex];
+
+
+  ngOnInit() {
+  }
 
   onSkinSelect(tone: Tone) {
     this.avatarParent.tone = tone;
@@ -28,6 +38,10 @@ export class AvatarComponent implements OnInit {
 
   onEyesSelect(eyes: Eyes) {
     this.avatarParent.eyes = eyes;
+  }
+
+  onEyebrowsSelect(eyebrows: Eyebrows) {
+    this.avatarParent.eyebrows = eyebrows;
   }
 
   onHairinessSelect(hairiness: Hairiness) {
@@ -47,7 +61,19 @@ export class AvatarComponent implements OnInit {
   }
 
   constructor() { }
+  clickNext(){
+    if(this.selectedIndex != this.elementsAvatar.length-1 ){
+      this.selectedIndex++;
+      this.selectedValue = this.elementsAvatar[this.selectedIndex];
+    }
+    console.log (this.selectedValue)
+  }
 
-  ngOnInit() {
+  clickPrevious(){
+    if(this.selectedIndex != 0){
+      this.selectedIndex--;
+      this.selectedValue = this.elementsAvatar[this.selectedIndex];
+    }
+    console.log (this.selectedValue)
   }
 }
