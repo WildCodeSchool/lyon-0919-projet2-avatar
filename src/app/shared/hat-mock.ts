@@ -91,10 +91,6 @@ export const HAT : Hat[] = [
         picture: '/assets/Avatar/7-Accessories/Hats and Headgear/Top_WinterHat3.png'
     },
     {
-        name: "Hatwomen",
-        picture: '/assets/Avatar/7-Accessories/Hats and Headgear/Top_WinterHat4.png'
-    },
-    {
         name: "Hat noel with lunette de plongé",
         picture: '/assets/Avatar/7-Accessories/Hats and Headgear/Top_WinterHat5.png'
     },
