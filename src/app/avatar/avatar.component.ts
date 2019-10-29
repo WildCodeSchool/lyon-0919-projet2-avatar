@@ -25,15 +25,6 @@ export class AvatarComponent implements OnInit {
   eyebrows : Eyebrows;
   hat: Hat;
 
-  tone : Tone;
-  eyes : Eyes;
-  mouth: Mouth;
-  hairiness : Hairiness;
-  hair : Hair;
-  clothes : Clothes
-  eyebrows : Eyebrows;
-
-
   elementsAvatar : string[] =["skin", "eyes", "mouth", "eyebrow", "hair", "beard", "clothes", "glasses", "jewellery", "hat"];
   selectedIndex = 0;
   selectedValue = this.elementsAvatar[this.selectedIndex];
