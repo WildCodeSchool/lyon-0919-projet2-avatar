@@ -9,6 +9,15 @@
         <img [src]="displayAvatar.eyes.picture" alt="{{displayAvatar.eyes.name}}"/>
     </div>
 
+    <div class="selectedMouth" *ngIf="displayAvatar.mouth">
+        <img [src]="displayAvatar.mouth.picture" alt="{{ displayAvatar.mouth.name }}"/>
+    </div>
+</div>
+
+    
+
+    
+    
     <div class="selectedHairiness" *ngIf="displayAvatar.hairiness">
         <img [src]="displayAvatar.hairiness.picture" alt="{{displayAvatar.hairiness.name}}"/>
 

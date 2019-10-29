@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Avatar } from '../shared/avatar';
 import { Tone } from '../shared/tone';
 import { Eyes } from '../shared/eyes';
+import { Mouth } from '../shared/mouths';
 import { Hairiness } from '../shared/hairiness';
 import { Hair } from '../shared/hair';
 
@@ -14,6 +15,7 @@ export class AvatarComponent implements OnInit {
   avatarParent : Avatar = new Avatar;
   tone : Tone;
   eyes : Eyes;
+  mouth: Mouth;
   hairiness : Hairiness;
   hair : Hair;
 
@@ -32,6 +34,10 @@ export class AvatarComponent implements OnInit {
 
   onHairSelect(hair: Hair) {
     this.avatarParent.hair = hair;
+  }
+
+  onMouthSelect(mouth: Mouth) {
+    this.avatarParent.mouth = mouth;
   }
 
   constructor() { }

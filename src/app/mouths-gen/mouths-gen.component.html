@@ -1,0 +1,5 @@
+<div class="mouth">
+    <div *ngFor="let m of mouths">
+        <img [src]="m.picture" alt="{{ m.name }}" (click)="onMouthClicked(m)"/>
+    </div>
+</div>
