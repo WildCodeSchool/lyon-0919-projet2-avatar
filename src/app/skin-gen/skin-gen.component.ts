@@ -10,7 +10,6 @@ import { Tone } from '../shared/tone';
 })
 export class SkinGenComponent implements OnInit {
   tonesList: Tone[] = TONES;
-  tone : Tone;
   avatar : Avatar = new Avatar();
   @Output() skinEvent = new EventEmitter<Tone>();
 

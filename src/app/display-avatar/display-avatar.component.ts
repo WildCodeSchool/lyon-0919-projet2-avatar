@@ -4,6 +4,8 @@ import { Avatar } from '../shared/avatar';
 import { Tone } from '../shared/tone';
 import { Eyes } from '../shared/eyes';
 import { EYES } from '../shared/eyes-mock';
+import { Hairiness } from '../shared/hairiness';
+import { HAIRINESS } from '../shared/hairiness-mock';
 import { Hair } from '../shared/hair';
 import { HAIR } from '../shared/hair-mock';
 
@@ -20,8 +22,11 @@ export class DisplayAvatarComponent implements OnInit {
   eyesList: Eyes[] = EYES;
   eyes : Eyes;  
 
+  hairiness: Hairiness[] = HAIRINESS;
+  
   hairList: Hair[] = HAIR;
   hair : Hair; 
+
 
   constructor() { }
 
