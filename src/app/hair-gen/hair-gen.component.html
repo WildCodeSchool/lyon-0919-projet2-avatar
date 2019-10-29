@@ -1,0 +1,5 @@
+<div class="hair">
+    <div *ngFor= "let hair of hairList">
+        <img [src]="hair.picture" alt="{{ hair.name }}" (click)="onHairClicked(hair)"/>
+    </div>
+</div>

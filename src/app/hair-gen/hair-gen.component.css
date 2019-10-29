@@ -1,11 +1,11 @@
-.tone {
+.hair {
     display: flex;
     flex-wrap: wrap;
     width: 312px;
     margin: 0 auto;
 }
 
-.tone img {
+.hair img {
     width: 100px;
     margin: 2px;
     cursor: pointer;

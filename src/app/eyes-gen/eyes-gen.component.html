@@ -1,5 +1,5 @@
 <div class="eyes">
-    <div *ngFor= "let eyes of eyesList" class="eyes-row">
+    <div *ngFor= "let eyes of eyesList">
         <img [src]="eyes.picture" alt="{{ eyes.name }}" (click)="onEyesClicked(eyes)"/>
     </div>
 </div>

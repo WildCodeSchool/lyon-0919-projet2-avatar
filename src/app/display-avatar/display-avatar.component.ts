@@ -6,6 +6,11 @@ import { Eyes } from '../shared/eyes';
 import { EYES } from '../shared/eyes-mock';
 import { Mouth } from '../shared/mouths';
 import { MOUTHS } from '../shared/mouths-mock';
+import { Hairiness } from '../shared/hairiness';
+import { HAIRINESS } from '../shared/hairiness-mock';
+import { Hair } from '../shared/hair';
+import { HAIR } from '../shared/hair-mock';
+
 
 @Component({
   selector: 'app-display-avatar',
@@ -21,8 +26,14 @@ export class DisplayAvatarComponent implements OnInit {
   eyesList: Eyes[] = EYES;
   eyes : Eyes;  
 
+
   mouths: Mouth[] = MOUTHS;
   mouth : Mouth;  
+
+  hairiness: Hairiness[] = HAIRINESS;
+  
+  hairList: Hair[] = HAIR;
+  hair : Hair; 
 
   constructor() { }
 

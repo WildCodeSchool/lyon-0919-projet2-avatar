@@ -17,6 +17,10 @@ import { PaymentComponent } from './payment/payment.component';
 import { EyesGenComponent } from './eyes-gen/eyes-gen.component';
 import { MouthsGenComponent } from './mouths-gen/mouths-gen.component';
 
+import { HairinessGenComponent } from './hairiness-gen/hairiness-gen.component';
+import { HairGenComponent } from './hair-gen/hair-gen.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +34,8 @@ import { MouthsGenComponent } from './mouths-gen/mouths-gen.component';
     PaymentComponent,
     EyesGenComponent,
     MouthsGenComponent,
+    HairinessGenComponent,
+    HairGenComponent,
   ],
   imports: [
     BrowserModule,
