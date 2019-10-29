@@ -1,0 +1,19 @@
+.navigationElements{
+    display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.arrows{
+    width: 100px;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.10);
+}
+
+button{
+    border: none;
+    background-color: inherit;
+}

@@ -21,6 +21,15 @@ export class AvatarComponent implements OnInit {
   hair : Hair;
   eyebrows : Eyebrows;
 
+  elementsAvatar : string[] =["skin", "eyes", "mouth", "eyebrow", "hair", "beard", "clothes", "glasses", "jewellery", "hat"];
+  selectedIndex = 0;
+  selectedValue = this.elementsAvatar[this.selectedIndex];
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
   onSkinSelect(tone: Tone) {
     this.avatarParent.tone = tone;
     //console.log(tone);
@@ -46,8 +55,19 @@ export class AvatarComponent implements OnInit {
     this.avatarParent.mouth = mouth;
   }
 
-  constructor() { }
+  clickNext(){
+    if(this.selectedIndex != this.elementsAvatar.length-1 ){
+      this.selectedIndex++;
+      this.selectedValue = this.elementsAvatar[this.selectedIndex];
+    }
+    console.log (this.selectedValue)
+  }
 
-  ngOnInit() {
+  clickPrevious(){
+    if(this.selectedIndex != 0){
+      this.selectedIndex--;
+      this.selectedValue = this.elementsAvatar[this.selectedIndex];
+    }
+    console.log (this.selectedValue)
   }
 }
