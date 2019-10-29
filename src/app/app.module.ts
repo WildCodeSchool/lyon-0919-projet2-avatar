@@ -17,6 +17,7 @@ import { EyesGenComponent } from './eyes-gen/eyes-gen.component';
 import { MouthsGenComponent } from './mouths-gen/mouths-gen.component';
 import { HairinessGenComponent } from './hairiness-gen/hairiness-gen.component';
 import { HairGenComponent } from './hair-gen/hair-gen.component';
+import { ClothesGenComponent } from './clothes-gen/clothes-gen.component';
 import { EyebrowsGenComponent } from './eyebrows-gen/eyebrows-gen.component';
 import { HatGenComponent } from './hat-gen/hat-gen.component';
 import { GlassesGenComponent } from './glasses-gen/glasses-gen.component';
@@ -38,6 +39,7 @@ import { GlassesGenComponent } from './glasses-gen/glasses-gen.component';
     MouthsGenComponent,
     HairinessGenComponent,
     HairGenComponent,
+    ClothesGenComponent,
     EyebrowsGenComponent,
     HatGenComponent,
     GlassesGenComponent,

@@ -10,6 +10,8 @@ import { Hairiness } from '../shared/hairiness';
 import { HAIRINESS } from '../shared/hairiness-mock';
 import { Hair } from '../shared/hair';
 import { HAIR } from '../shared/hair-mock';
+import { Clothes } from '../shared/clothes';
+import { CLOTHES } from '../shared/clothes-mock';
 import { Eyebrows } from '../shared/eyebrows';
 import { EYEBROWS } from '../shared/eyebrows-mock';
 import { Hat } from '../shared/hat';
@@ -36,6 +38,9 @@ export class DisplayAvatarComponent implements OnInit {
   
   hairList: Hair[] = HAIR;
 
+  clothesList: Clothes[] = CLOTHES;
+  clothe : Clothes; 
+  eyebrows : Eyebrows[] = EYEBROWS;
   eyebrows: Eyebrows[] = EYEBROWS;
 
   glasses: Glasses[] = GLASSES;

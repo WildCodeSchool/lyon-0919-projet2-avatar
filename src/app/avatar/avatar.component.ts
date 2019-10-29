@@ -5,6 +5,7 @@ import { Eyes } from '../shared/eyes';
 import { Mouth } from '../shared/mouths';
 import { Hairiness } from '../shared/hairiness';
 import { Hair } from '../shared/hair';
+import { Clothes} from '../shared/clothes';
 import { Eyebrows } from '../shared/eyebrows';
 import { Hat } from '../shared/hat';
 import { Glasses } from '../shared/glasses';
@@ -24,11 +25,19 @@ export class AvatarComponent implements OnInit {
   eyebrows : Eyebrows;
   hat: Hat;
 
+  tone : Tone;
+  eyes : Eyes;
+  mouth: Mouth;
+  hairiness : Hairiness;
+  hair : Hair;
+  clothes : Clothes
+  eyebrows : Eyebrows;
+
+
   elementsAvatar : string[] =["skin", "eyes", "mouth", "eyebrow", "hair", "beard", "clothes", "glasses", "jewellery", "hat"];
   selectedIndex = 0;
   selectedValue = this.elementsAvatar[this.selectedIndex];
 
-  constructor() { }
 
   ngOnInit() {
   }
@@ -61,6 +70,11 @@ export class AvatarComponent implements OnInit {
     this.avatarParent.hat = hat;
   }
 
+  onClotheSelect(clothes: Clothes) {
+    this.avatarParent.clothes = clothes;
+  }
+
+  constructor() { }
   onGlassesSelect(glasses: Glasses) {
     this.avatarParent.glasses = glasses;
   }
