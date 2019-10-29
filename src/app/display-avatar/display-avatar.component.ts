@@ -40,7 +40,7 @@ export class DisplayAvatarComponent implements OnInit {
 
   clothesList: Clothes[] = CLOTHES;
   clothe : Clothes; 
-  eyebrows : Eyebrows[] = EYEBROWS;
+  
   eyebrows: Eyebrows[] = EYEBROWS;
 
   glasses: Glasses[] = GLASSES;
