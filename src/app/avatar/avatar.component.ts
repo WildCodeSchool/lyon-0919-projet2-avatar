@@ -70,4 +70,6 @@ export class AvatarComponent implements OnInit {
     }
     console.log (this.selectedValue)
   }
+
+
 }
