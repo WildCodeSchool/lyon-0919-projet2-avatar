@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AvatarComponent } from './avatar/avatar.component';
-
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { CardsComponent } from './cards/cards.component';
@@ -16,10 +15,13 @@ import { DisplayAvatarComponent } from './display-avatar/display-avatar.componen
 import { PaymentComponent } from './payment/payment.component';
 import { EyesGenComponent } from './eyes-gen/eyes-gen.component';
 import { MouthsGenComponent } from './mouths-gen/mouths-gen.component';
-
 import { HairinessGenComponent } from './hairiness-gen/hairiness-gen.component';
 import { HairGenComponent } from './hair-gen/hair-gen.component';
+import { ClothesGenComponent } from './clothes-gen/clothes-gen.component';
 import { EyebrowsGenComponent } from './eyebrows-gen/eyebrows-gen.component';
+import { NecklaceGenComponent } from './necklace-gen/necklace-gen.component';
+import { HatGenComponent } from './hat-gen/hat-gen.component';
+import { GlassesGenComponent } from './glasses-gen/glasses-gen.component';
 
 
 @NgModule({
@@ -37,7 +39,11 @@ import { EyebrowsGenComponent } from './eyebrows-gen/eyebrows-gen.component';
     MouthsGenComponent,
     HairinessGenComponent,
     HairGenComponent,
+    ClothesGenComponent,
     EyebrowsGenComponent,
+    NecklaceGenComponent,
+    HatGenComponent,
+    GlassesGenComponent,
   ],
   imports: [
     BrowserModule,
