@@ -25,6 +25,8 @@
         <img [src]="displayAvatar.eyebrows.picture" alt="{{displayAvatar.eyebrows.name}}"/>
     </div>
 
+    <div *ngIf="displayAvatar.necklace">
+        <img [src]="displayAvatar.necklace.picture" alt="{{displayAvatar.necklace.name}}"/>
     <div class="selectedHat" *ngIf="displayAvatar.hat">
         <img [src]="displayAvatar.hat.picture" alt="{{displayAvatar.hat.name}}"/>
 
