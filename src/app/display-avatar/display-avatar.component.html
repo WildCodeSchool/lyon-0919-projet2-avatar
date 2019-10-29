@@ -5,7 +5,11 @@
     <div class="selectedEyes" *ngIf="displayAvatar.eyes">
         <img [src]="displayAvatar.eyes.picture" alt="{{displayAvatar.eyes.name}}"/>
     </div>
+
     <div class="selectedHairiness" *ngIf="displayAvatar.hairiness">
         <img [src]="displayAvatar.hairiness.picture" alt="{{displayAvatar.hairiness.name}}"/>
+
+    <div class="selectedHair" *ngIf="displayAvatar.hair">
+        <img [src]="displayAvatar.hair.picture" alt="{{displayAvatar.hair.name}}"/>
     </div>
 </div>

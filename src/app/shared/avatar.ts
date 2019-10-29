@@ -1,5 +1,7 @@
 import { Tone } from './tone';
 import { Eyes } from './eyes';
+import { Hair } from './hair';
+import { Hairiness } from './hairiness';
 
 export class Avatar {
     tone: Tone = {
@@ -7,5 +9,8 @@ export class Avatar {
         picture: '/assets/Avatar/1-Tones/Body_Eggshell.png'
     };
     eyes: Eyes;
-  hairiness: import("/home/hugo/Desktop/Projects/bim-project/lyon-0919-projet2-avatar/src/app/shared/hairiness").Hairiness;
+
+    hairiness: Hairiness;
+
+    hair: Hair;
 }
