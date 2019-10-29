@@ -14,6 +14,7 @@ import { RouterModule } from '@angular/router';
 import { SkinGenComponent } from './skin-gen/skin-gen.component';
 import { DisplayAvatarComponent } from './display-avatar/display-avatar.component';
 import { PaymentComponent } from './payment/payment.component';
+import { EyesGenComponent } from './eyes-gen/eyes-gen.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { PaymentComponent } from './payment/payment.component';
     ContactComponent,
     SkinGenComponent,
     DisplayAvatarComponent,
-    PaymentComponent
+    PaymentComponent,
+    EyesGenComponent,
   ],
   imports: [
     BrowserModule,

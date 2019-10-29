@@ -8,6 +8,7 @@
 
 <app-skin-gen (avatarInCreation)="receivedSkin($event)"></app-skin-gen> -->
 
-<app-display-avatar [skinToDisplay]="avatarParent"></app-display-avatar>
+<app-display-avatar [displayAvatar]="avatarParent"></app-display-avatar>
 
 <app-skin-gen (skinEvent)="onSkinSelect($event)"></app-skin-gen>
+<app-eyes-gen (eyesEvent)="onEyesSelect($event)"></app-eyes-gen>

@@ -1,4 +1,4 @@
-.selectedSkin {
+.allSelected {
     width: 310px;
     height: 329px;
     background-color:#e3f2fd;
@@ -6,6 +6,7 @@
     margin: 10px auto;
 }
 
-.selectedSkin img{
-    width: 100%;
+.allSelected img{
+    position: absolute;
+    width: 310px;
 }

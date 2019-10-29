@@ -6,6 +6,5 @@ export class Avatar {
         name: "Eggshell",
         picture: '/assets/Avatar/1-Tones/Body_Eggshell.png'
     };
-    eyes: Eyes
-    
+    eyes: Eyes;
 }
