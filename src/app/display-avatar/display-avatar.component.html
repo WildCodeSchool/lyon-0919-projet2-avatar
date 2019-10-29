@@ -1,3 +1,8 @@
-<div class="selectedSkin">
-    <img [src]="skinToDisplay.tone.picture" alt="{{skinToDisplay.tone.name}}"/>
+ <div class= "allSelected">
+    <div class="selectedSkin">
+        <img [src]="displayAvatar.tone.picture" alt="{{displayAvatar.tone.name}}"/>
+    </div>
+    <div class="selectedEyes" *ngIf="displayAvatar.eyes">
+        <img [src]="displayAvatar.eyes.picture" alt="{{displayAvatar.eyes.name}}"/>
+    </div>
 </div>
