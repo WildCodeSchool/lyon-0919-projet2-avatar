@@ -27,6 +27,14 @@
 
     <div *ngIf="displayAvatar.necklace">
         <img [src]="displayAvatar.necklace.picture" alt="{{displayAvatar.necklace.name}}"/>
+    <div class="selectedHat" *ngIf="displayAvatar.hat">
+        <img [src]="displayAvatar.hat.picture" alt="{{displayAvatar.hat.name}}"/>
+
+    <div class="selectedClothe" *ngIf="displayAvatar.clothes">
+        <img [src]="displayAvatar.clothes.picture" alt="{{displayAvatar.clothes.name}}"/>
+      
+    <div *ngIf="displayAvatar.glasses">
+        <img [src]="displayAvatar.glasses.picture" alt="{{displayAvatar.glasses.name}}"/>
     </div>
 
 </div>

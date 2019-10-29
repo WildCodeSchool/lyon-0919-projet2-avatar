@@ -1,0 +1,5 @@
+<div class="clothes">
+    <div *ngFor= "let clothes of clothesList">
+        <img [src]="clothes.picture" alt="{{ clothes.name }}" (click)="onClothesClicked(clothes)"/>
+    </div>
+</div>

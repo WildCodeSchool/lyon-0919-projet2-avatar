@@ -10,10 +10,11 @@
         <app-eyebrows-gen *ngSwitchCase="'eyebrow'" (eyebrowsEvent)="onEyebrowsSelect($event)"></app-eyebrows-gen>
         <app-hair-gen *ngSwitchCase="'hair'" (hairEvent)="onHairSelect($event)"></app-hair-gen>
         <app-hairiness-gen *ngSwitchCase="'beard'" (hairinessEvent)="onHairinessSelect($event)"></app-hairiness-gen>
+        <app-clothes-gen *ngSwitchCase="'clothes'" (clothesEvent)="onClotheSelect($event)"></app-clothes-gen>
+        <app-glasses-gen *ngSwitchCase="'glasses'"  (glassesEvent)="onGlassesSelect($event)"></app-glasses-gen>
+        <app-hat-gen *ngSwitchCase="'hat'" (hatEvent)="onHatSelect($event)"></app-hat-gen>
         <app-necklace-gen *ngSwitchCase="'necklace'" (necklaceEvent)="onNecklaceSelect($event)"></app-necklace-gen>
-        
     </div>
     <button><img src='assets/images/keyboard_arrow_right-24px.svg' (click)="clickNext()" class="arrows"></button>
 </div>
-
 
