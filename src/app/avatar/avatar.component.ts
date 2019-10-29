@@ -38,6 +38,7 @@ export class AvatarComponent implements OnInit {
   selectedIndex = 0;
   selectedValue = this.elementsAvatar[this.selectedIndex];
 
+  constructor() { }
 
   ngOnInit() {
   }
@@ -74,12 +75,9 @@ export class AvatarComponent implements OnInit {
     this.avatarParent.clothes = clothes;
   }
 
-  constructor() { }
   onGlassesSelect(glasses: Glasses) {
     this.avatarParent.glasses = glasses;
   }
-
-  constructor() { }
   
   clickNext(){
     if(this.selectedIndex != this.elementsAvatar.length-1 ){
