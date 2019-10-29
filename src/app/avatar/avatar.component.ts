@@ -16,6 +16,15 @@ import { Glasses } from '../shared/glasses';
 export class AvatarComponent implements OnInit {
   avatarParent : Avatar = new Avatar;
 
+  elementsAvatar : string[] =["skin", "eyes", "mouth", "eyebrow", "hair", "beard", "clothes", "glasses", "jewellery", "hat"];
+  selectedIndex = 0;
+  selectedValue = this.elementsAvatar[this.selectedIndex];
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
   onSkinSelect(tone: Tone) {
     this.avatarParent.tone = tone;
   }
@@ -46,6 +55,20 @@ export class AvatarComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
+  clickNext(){
+    if(this.selectedIndex != this.elementsAvatar.length-1 ){
+      this.selectedIndex++;
+      this.selectedValue = this.elementsAvatar[this.selectedIndex];
+    }
+    console.log (this.selectedValue)
+  }
+
+
+  clickPrevious(){
+    if(this.selectedIndex != 0){
+      this.selectedIndex--;
+      this.selectedValue = this.elementsAvatar[this.selectedIndex];
+    }
+    console.log (this.selectedValue)
   }
 }
