@@ -5,6 +5,7 @@ import { Eyes } from '../shared/eyes';
 import { Mouth } from '../shared/mouths';
 import { Hairiness } from '../shared/hairiness';
 import { Hair } from '../shared/hair';
+import { Eyebrows } from '../shared/eyebrows';
 
 @Component({
   selector: 'app-avatar',
@@ -18,6 +19,7 @@ export class AvatarComponent implements OnInit {
   mouth: Mouth;
   hairiness : Hairiness;
   hair : Hair;
+  eyebrows : Eyebrows;
 
   onSkinSelect(tone: Tone) {
     this.avatarParent.tone = tone;
@@ -26,6 +28,10 @@ export class AvatarComponent implements OnInit {
 
   onEyesSelect(eyes: Eyes) {
     this.avatarParent.eyes = eyes;
+  }
+
+  onEyebrowsSelect(eyebrows: Eyebrows) {
+    this.avatarParent.eyebrows = eyebrows;
   }
 
   onHairinessSelect(hairiness: Hairiness) {
