@@ -5,7 +5,6 @@ import { Hair } from './hair';
 import { Hairiness } from './hairiness';
 
 export class Avatar {
-  [x: string]: import("/mnt/c/Users/tpont/Documents/WildcodeSchool/Bim-Project/bim/lyon-0919-projet2-avatar/src/app/shared/mouths").Mouth;
     tone: Tone = {
         name: "Eggshell",
         picture: '/assets/Avatar/1-Tones/Body_Eggshell.png'
@@ -15,4 +14,6 @@ export class Avatar {
     hairiness: Hairiness;
 
     hair: Hair;
+
+    mouth: Mouth;
 }
