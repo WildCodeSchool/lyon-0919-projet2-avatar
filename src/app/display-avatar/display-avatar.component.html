@@ -21,6 +21,10 @@
         <img [src]="displayAvatar.hair.picture" alt="{{displayAvatar.hair.name}}"/>
     </div>
 
+    <div class="selectedClothe" *ngIf="displayAvatar.clothes">
+        <img [src]="displayAvatar.clothes.picture" alt="{{displayAvatar.clothes.name}}"/>
+    </div>
+
 </div>
 
     

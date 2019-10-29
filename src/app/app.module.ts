@@ -19,6 +19,7 @@ import { MouthsGenComponent } from './mouths-gen/mouths-gen.component';
 
 import { HairinessGenComponent } from './hairiness-gen/hairiness-gen.component';
 import { HairGenComponent } from './hair-gen/hair-gen.component';
+import { ClothesGenComponent } from './clothes-gen/clothes-gen.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { HairGenComponent } from './hair-gen/hair-gen.component';
     MouthsGenComponent,
     HairinessGenComponent,
     HairGenComponent,
+    ClothesGenComponent,
   ],
   imports: [
     BrowserModule,
