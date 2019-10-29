@@ -3,39 +3,39 @@ import { Mouth } from './mouths';
 
 export const MOUTHS : Mouth[] = [
     {
-        name: "Cheese",
+        name: "Mouth Cheese",
         picture: '/assets/Avatar/4-Mouths/Mouth_Cheese_Outline.png'
     },
     {
-        name: "Concerned",
+        name: "Mouth Concerned",
         picture: '/assets/Avatar/4-Mouths/Mouth_Concerned.png'
     },
     {
-        name: "Default",
+        name: "Mouth Default",
         picture: '/assets/Avatar/4-Mouths/Mouth_Default.png'
     },
     {
-        name: "Disbelief",
+        name: "Mouth Disbelief",
         picture: '/assets/Avatar/4-Mouths/Mouth_Disbelief.png'
     },
     {
-        name: "Eating",
+        name: "Mouth Eating",
         picture: '/assets/Avatar/4-Mouths/Mouth_Eating.png'
     },
     {
-        name: "Frown",
+        name: "Mouth Frown",
         picture: '/assets/Avatar/4-Mouths/Mouth_Frown.png'
     },
     {
-        name: "Grimace",
+        name: "Mouth Grimace",
         picture: '/assets/Avatar/4-Mouths/Mouth_Grimace.png'
     },
     {
-        name: "Sad",
+        name: "Mouth Sad",
         picture: '/assets/Avatar/4-Mouths/Mouth_Sad.png'
     },
     {
-        name: "Scream",
+        name: "Mouth Scream",
         picture: 'assets/Avatar/4-Mouths/Mouth_Scream_Open.png'
     }
 ];
