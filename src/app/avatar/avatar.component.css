@@ -16,4 +16,5 @@ button:hover{
 button{
     border: none;
     background-color: inherit;
+    outline: 0;
 }

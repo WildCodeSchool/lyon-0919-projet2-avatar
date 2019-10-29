@@ -12,6 +12,8 @@ import { Hair } from '../shared/hair';
 import { HAIR } from '../shared/hair-mock';
 import { Eyebrows } from '../shared/eyebrows';
 import { EYEBROWS } from '../shared/eyebrows-mock';
+import { Necklace } from '../shared/necklace';
+import { NECKLACES } from '../shared/necklace-mock';
 
 
 @Component({
@@ -38,6 +40,8 @@ export class DisplayAvatarComponent implements OnInit {
   hair : Hair; 
 
   eyebrows : Eyebrows[] = EYEBROWS;
+
+  necklace: Necklace[] = NECKLACES;
 
   constructor() { }
 
