@@ -6,6 +6,7 @@ import { Mouth } from '../shared/mouths';
 import { Hairiness } from '../shared/hairiness';
 import { Hair } from '../shared/hair';
 import { Eyebrows } from '../shared/eyebrows';
+import { Hat } from '../shared/hat';
 
 @Component({
   selector: 'app-avatar',
@@ -20,6 +21,7 @@ export class AvatarComponent implements OnInit {
   hairiness : Hairiness;
   hair : Hair;
   eyebrows : Eyebrows;
+  hat: Hat;
 
   elementsAvatar : string[] =["skin", "eyes", "mouth", "eyebrow", "hair", "beard", "clothes", "glasses", "jewellery", "hat"];
   selectedIndex = 0;
@@ -53,6 +55,10 @@ export class AvatarComponent implements OnInit {
 
   onMouthSelect(mouth: Mouth) {
     this.avatarParent.mouth = mouth;
+  }
+
+  onHatSelect(hat: Hat) {
+    this.avatarParent.hat = hat;
   }
 
   clickNext(){
