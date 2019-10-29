@@ -4,6 +4,8 @@ import { Avatar } from '../shared/avatar';
 import { Tone } from '../shared/tone';
 import { Eyes } from '../shared/eyes';
 import { EYES } from '../shared/eyes-mock';
+import { Hair } from '../shared/hair';
+import { HAIR } from '../shared/hair-mock';
 
 @Component({
   selector: 'app-display-avatar',
@@ -17,6 +19,9 @@ export class DisplayAvatarComponent implements OnInit {
 
   eyesList: Eyes[] = EYES;
   eyes : Eyes;  
+
+  hairList: Hair[] = HAIR;
+  hair : Hair; 
 
   constructor() { }
 

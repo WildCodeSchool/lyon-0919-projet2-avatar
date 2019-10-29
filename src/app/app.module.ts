@@ -15,6 +15,7 @@ import { SkinGenComponent } from './skin-gen/skin-gen.component';
 import { DisplayAvatarComponent } from './display-avatar/display-avatar.component';
 import { PaymentComponent } from './payment/payment.component';
 import { EyesGenComponent } from './eyes-gen/eyes-gen.component';
+import { HairGenComponent } from './hair-gen/hair-gen.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { EyesGenComponent } from './eyes-gen/eyes-gen.component';
     DisplayAvatarComponent,
     PaymentComponent,
     EyesGenComponent,
+    HairGenComponent,
   ],
   imports: [
     BrowserModule,
