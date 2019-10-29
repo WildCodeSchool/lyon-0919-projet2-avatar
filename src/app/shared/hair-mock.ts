@@ -2,15 +2,15 @@ import { Hair } from './hair';
 
 export const HAIR : Hair[] = [
     {
-        name: "Dreads",
+        name: "Hair Dreads",
         picture: '/assets/Avatar/8-Hair/Hair Set B/Top_ShortHairDreads2.png'
     },
     {
-        name: "Short Round",
+        name: "Hair Short Round",
         picture: '/assets/Avatar/8-Hair/Hair Set B/Top_ShortHairShortRound.png'
     },
     {
-        name: "Short Waved",
+        name: "Hair Short Waved",
         picture: '/assets/Avatar/8-Hair/Hair Set B/Top_ShortHairShortWaved.png'
     },
     {
@@ -18,19 +18,19 @@ export const HAIR : Hair[] = [
         picture: '/assets/Avatar/8-Hair/Hair Set B/Top_ShortHairSides.png'
     },
     {
-        name: "Casear Short Dreads",
+        name: "Hair Casear Short Dreads",
         picture: '/assets/Avatar/8-Hair/Hair Set B/Top_ShortHairTheCaesarSidePart_ShortDreads.png'
     },
     {
-        name: "Casear Side",
+        name: "Hair Casear Side",
         picture: '/assets/Avatar/8-Hair/Hair Set B/Top_ShortHairTheCaesarSidePart.png'
     },
     {
-        name: "Turban Colorize",
+        name: "Hair Turban Colorize",
         picture: '/assets/Avatar/8-Hair/Hair Set B/Top_Turban_Colorize.png'
     },
     {
-        name: "Turban",
+        name: "Hair Turban",
         picture: '/assets/Avatar/8-Hair/Hair Set B/Top_Turban.png'
     },
 ];

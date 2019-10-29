@@ -1,0 +1,14 @@
+.glasses {
+    display: flex;
+    flex-wrap: wrap;
+    width: 312px;
+    margin: 0 auto;
+}
+
+.glasses img {
+    width: 100px;
+    margin: 2px;
+    cursor: pointer;
+    background-color:#e3f2fd;
+    border-radius: 15px;
+}
