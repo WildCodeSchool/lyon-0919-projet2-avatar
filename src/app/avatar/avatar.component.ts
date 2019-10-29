@@ -32,7 +32,6 @@ export class AvatarComponent implements OnInit {
 
   onHairSelect(hair: Hair) {
     this.avatarParent.hair = hair;
-
   }
 
   constructor() { }

@@ -27,7 +27,6 @@ export class DisplayAvatarComponent implements OnInit {
   hairList: Hair[] = HAIR;
   hair : Hair; 
 
-
   constructor() { }
 
   ngOnInit() {
