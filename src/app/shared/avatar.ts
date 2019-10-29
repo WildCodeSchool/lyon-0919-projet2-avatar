@@ -5,6 +5,7 @@ import { Hair } from './hair';
 import { Hairiness } from './hairiness';
 import { Clothes } from './clothes';
 import { Eyebrows } from './eyebrows';
+import { Hat } from './hat';
 import { Glasses } from './glasses';
 
 export class Avatar {
@@ -22,6 +23,7 @@ export class Avatar {
 
     mouth: Mouth;
 
+    hat: Hat;
 
     clothes: Clothes;
 

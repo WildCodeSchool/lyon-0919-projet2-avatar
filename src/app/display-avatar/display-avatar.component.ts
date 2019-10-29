@@ -14,6 +14,8 @@ import { Clothes } from '../shared/clothes';
 import { CLOTHES } from '../shared/clothes-mock';
 import { Eyebrows } from '../shared/eyebrows';
 import { EYEBROWS } from '../shared/eyebrows-mock';
+import { Hat } from '../shared/hat';
+import { HAT } from '../shared/hat-mock';
 import { Glasses } from '../shared/glasses';
 import { GLASSES } from '../shared/glasses-mock';
 
@@ -42,6 +44,9 @@ export class DisplayAvatarComponent implements OnInit {
   eyebrows: Eyebrows[] = EYEBROWS;
 
   glasses: Glasses[] = GLASSES;
+
+  hats: Hat[] = HAT
+  hat: Hat;
 
   constructor() { }
 

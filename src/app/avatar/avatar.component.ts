@@ -7,6 +7,7 @@ import { Hairiness } from '../shared/hairiness';
 import { Hair } from '../shared/hair';
 import { Clothes} from '../shared/clothes';
 import { Eyebrows } from '../shared/eyebrows';
+import { Hat } from '../shared/hat';
 import { Glasses } from '../shared/glasses';
 
 @Component({
@@ -16,6 +17,13 @@ import { Glasses } from '../shared/glasses';
 })
 export class AvatarComponent implements OnInit {
   avatarParent : Avatar = new Avatar;
+  tone : Tone;
+  eyes : Eyes;
+  mouth: Mouth;
+  hairiness : Hairiness;
+  hair : Hair;
+  eyebrows : Eyebrows;
+  hat: Hat;
 
   tone : Tone;
   eyes : Eyes;
@@ -58,6 +66,10 @@ export class AvatarComponent implements OnInit {
     this.avatarParent.mouth = mouth;
   }
 
+  onHatSelect(hat: Hat) {
+    this.avatarParent.hat = hat;
+  }
+
   onClotheSelect(clothes: Clothes) {
     this.avatarParent.clothes = clothes;
   }
@@ -68,7 +80,7 @@ export class AvatarComponent implements OnInit {
   }
 
   constructor() { }
-
+  
   clickNext(){
     if(this.selectedIndex != this.elementsAvatar.length-1 ){
       this.selectedIndex++;
