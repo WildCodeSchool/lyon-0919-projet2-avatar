@@ -1,5 +1,9 @@
 import { Tone } from './tone';
 import { Eyes } from './eyes';
+import { Mouth } from './mouths';
+import { Hair } from './hair';
+import { Hairiness } from './hairiness';
+import { Eyebrows } from './eyebrows';
 
 export class Avatar {
     tone: Tone = {
@@ -7,4 +11,12 @@ export class Avatar {
         picture: '/assets/Avatar/1-Tones/Body_Eggshell.png'
     };
     eyes: Eyes;
+
+    eyebrows : Eyebrows;
+    
+    hairiness: Hairiness;
+
+    hair: Hair;
+
+    mouth: Mouth;
 }

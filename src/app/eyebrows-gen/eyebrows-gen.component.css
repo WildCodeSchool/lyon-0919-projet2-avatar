@@ -1,11 +1,11 @@
-.tone {
+.eyebrows {
     display: flex;
     flex-wrap: wrap;
     width: 312px;
     margin: 0 auto;
 }
 
-.tone img {
+.eyebrows img {
     width: 100px;
     margin: 2px;
     cursor: pointer;

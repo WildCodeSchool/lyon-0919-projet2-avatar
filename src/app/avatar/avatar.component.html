@@ -1,5 +1,6 @@
 <app-display-avatar [displayAvatar]="avatarParent"></app-display-avatar>
 
+
 <div class = "navigationElements">
     <button><img src='assets/images/keyboard_arrow_left-24px.svg' (click)="clickPrevious()" class="arrows"></button>
     <div [ngSwitch]="selectedValue">
@@ -8,3 +9,10 @@
     </div>
     <button><img src='assets/images/keyboard_arrow_right-24px.svg' (click)="clickNext()" class="arrows"></button>
 </div>
+<app-skin-gen (skinEvent)="onSkinSelect($event)"></app-skin-gen>
+<app-eyes-gen (eyesEvent)="onEyesSelect($event)"></app-eyes-gen>
+<app-eyebrows-gen (eyebrowsEvent)="onEyebrowsSelect($event)"></app-eyebrows-gen>
+<app-mouths-gen (mouthEvent)="onMouthSelect($event)"></app-mouths-gen>
+<app-hairiness-gen (hairinessEvent)="onHairinessSelect($event)"></app-hairiness-gen>
+<app-hair-gen (hairEvent)="onHairSelect($event)"></app-hair-gen>
+

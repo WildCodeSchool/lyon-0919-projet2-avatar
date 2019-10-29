@@ -9,7 +9,7 @@
 </div> -->
 
 <div class="tone">
-    <div *ngFor="let tone of tonesList" class="tone-row">
+    <div *ngFor="let tone of tonesList">
         <img [src]="tone.picture" alt="{{ tone.name }}" (click)="onSkinClicked(tone)" />
     </div>  
 </div>
