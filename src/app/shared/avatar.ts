@@ -1,5 +1,6 @@
 import { Tone } from './tone';
 import { Eyes } from './eyes';
+import { Hair } from './hair'
 
 export class Avatar {
     tone: Tone = {
@@ -7,4 +8,5 @@ export class Avatar {
         picture: '/assets/Avatar/1-Tones/Body_Eggshell.png'
     };
     eyes: Eyes;
+    hair: Hair;
 }
