@@ -12,8 +12,9 @@
       <app-hairiness-gen *ngSwitchCase="'beard'" (hairinessEvent)="onHairinessSelect($event)"></app-hairiness-gen>
       <app-clothes-gen *ngSwitchCase="'clothes'" (clothesEvent)="onClotheSelect($event)"></app-clothes-gen>
       <app-glasses-gen *ngSwitchCase="'glasses'"  (glassesEvent)="onGlassesSelect($event)"></app-glasses-gen>
-      <app-hat-gen *ngSwitchCase="'hat'" (hatEvent)="onHatSelect($event)"></app-hat-gen>
       <app-necklace-gen *ngSwitchCase="'necklace'" (necklaceEvent)="onNecklaceSelect($event)"></app-necklace-gen>
+      <app-hat-gen *ngSwitchCase="'hat'" (hatEvent)="onHatSelect($event)"></app-hat-gen>
+      
     </div>
   </div>
   <button [ngStyle]="{'visibility':(selectedValue == 'hat') ? 'hidden' : 'visible'}"><img src='assets/images/keyboard_arrow_right-24px.svg' (click)="clickNext()" class="arrows"></button>
