@@ -7,6 +7,7 @@ import { Hairiness } from '../shared/hairiness';
 import { Hair } from '../shared/hair';
 import { Clothes} from '../shared/clothes';
 import { Eyebrows } from '../shared/eyebrows';
+import { Glasses } from '../shared/glasses';
 
 @Component({
   selector: 'app-avatar',
@@ -15,6 +16,7 @@ import { Eyebrows } from '../shared/eyebrows';
 })
 export class AvatarComponent implements OnInit {
   avatarParent : Avatar = new Avatar;
+
   tone : Tone;
   eyes : Eyes;
   mouth: Mouth;
@@ -22,6 +24,7 @@ export class AvatarComponent implements OnInit {
   hair : Hair;
   clothes : Clothes
   eyebrows : Eyebrows;
+
 
   elementsAvatar : string[] =["skin", "eyes", "mouth", "eyebrow", "hair", "beard", "clothes", "glasses", "jewellery", "hat"];
   selectedIndex = 0;
@@ -33,7 +36,6 @@ export class AvatarComponent implements OnInit {
 
   onSkinSelect(tone: Tone) {
     this.avatarParent.tone = tone;
-    //console.log(tone);
   }
 
   onEyesSelect(eyes: Eyes) {
@@ -61,6 +63,12 @@ export class AvatarComponent implements OnInit {
   }
 
   constructor() { }
+  onGlassesSelect(glasses: Glasses) {
+    this.avatarParent.glasses = glasses;
+  }
+
+  constructor() { }
+
   clickNext(){
     if(this.selectedIndex != this.elementsAvatar.length-1 ){
       this.selectedIndex++;
@@ -68,6 +76,7 @@ export class AvatarComponent implements OnInit {
     }
     console.log (this.selectedValue)
   }
+
 
   clickPrevious(){
     if(this.selectedIndex != 0){

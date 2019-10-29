@@ -21,6 +21,7 @@ import { HairinessGenComponent } from './hairiness-gen/hairiness-gen.component';
 import { HairGenComponent } from './hair-gen/hair-gen.component';
 import { ClothesGenComponent } from './clothes-gen/clothes-gen.component';
 import { EyebrowsGenComponent } from './eyebrows-gen/eyebrows-gen.component';
+import { GlassesGenComponent } from './glasses-gen/glasses-gen.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { EyebrowsGenComponent } from './eyebrows-gen/eyebrows-gen.component';
     HairGenComponent,
     ClothesGenComponent,
     EyebrowsGenComponent,
+    GlassesGenComponent,
   ],
   imports: [
     BrowserModule,

@@ -14,6 +14,8 @@ import { Clothes } from '../shared/clothes';
 import { CLOTHES } from '../shared/clothes-mock';
 import { Eyebrows } from '../shared/eyebrows';
 import { EYEBROWS } from '../shared/eyebrows-mock';
+import { Glasses } from '../shared/glasses';
+import { GLASSES } from '../shared/glasses-mock';
 
 
 @Component({
@@ -25,23 +27,21 @@ export class DisplayAvatarComponent implements OnInit {
 
   @Input() displayAvatar : Avatar;
   tonesList: Tone[] = TONES;
-  tone : Tone;
 
   eyesList: Eyes[] = EYES;
-  eyes : Eyes;  
-
 
   mouths: Mouth[] = MOUTHS;
-  mouth : Mouth;  
 
   hairiness: Hairiness[] = HAIRINESS;
   
   hairList: Hair[] = HAIR;
-  hair : Hair; 
 
   clothesList: Clothes[] = CLOTHES;
   clothe : Clothes; 
   eyebrows : Eyebrows[] = EYEBROWS;
+  eyebrows: Eyebrows[] = EYEBROWS;
+
+  glasses: Glasses[] = GLASSES;
 
   constructor() { }
 
