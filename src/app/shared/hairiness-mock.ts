@@ -2,6 +2,10 @@ import { Hairiness } from './hairiness';
 
 export const HAIRINESS : Hairiness[] = [
     {
+        name: "Delete",
+        picture:'/assets/images/nothing.png'
+    },
+    {
         name: "Moustache Falls",
         picture: '/assets/Avatar/8-Hair/Facial Hair Layer 2/Facial_MoustacheFalls.png'
     },

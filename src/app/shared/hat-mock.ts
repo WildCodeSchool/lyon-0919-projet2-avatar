@@ -3,6 +3,10 @@ import { Hat } from './hat';
 
 export const HAT : Hat[] = [
     {
+        name: "Delete",
+        picture:'/assets/images/nothing.png'
+    },
+    {
         name: "Hat Bearnhat",
         picture: '/assets/Avatar/7-Accessories/Hats and Headgear/Top_BeanHat.png'
     },

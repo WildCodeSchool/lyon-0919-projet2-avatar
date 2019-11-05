@@ -2,6 +2,10 @@ import { Eyes } from './eyes';
 
 export const EYES : Eyes[] = [
     {
+        name: "Delete",
+        picture:'/assets/images/nothing.png'
+    },
+    {
         name: "Eyes Closed",
         picture: '/assets/Avatar/3-Eyes/Eyes_Closed.png'
     },

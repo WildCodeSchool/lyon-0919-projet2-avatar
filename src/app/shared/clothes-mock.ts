@@ -2,6 +2,10 @@ import { Clothes } from './clothes';
 
 export const CLOTHES : Clothes[] = [
     {
+        name: "Delete",
+        picture:'/assets/images/nothing.png'
+    },
+    {
         name: "Hoodie",
         picture: '/assets/Avatar/6-Clothes/Layer 1/Default_Hoodie_NoStrings.png'
     },
