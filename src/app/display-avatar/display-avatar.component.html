@@ -1,32 +1,48 @@
  <div class= "allSelected">
     <img src="/assets/Avatar/5-Noses/Face_Nose.png" alt="nose" class="nose" />
 
-    <div class="selectedSkin">
+    <div *ngIf="displayAvatar.tone">
         <img [src]="displayAvatar.tone.picture" alt="{{displayAvatar.tone.name}}"/>
     </div>
 
-    <div class="selectedEyes" *ngIf="displayAvatar.eyes">
+    <div *ngIf="displayAvatar.eyes">
         <img [src]="displayAvatar.eyes.picture" alt="{{displayAvatar.eyes.name}}"/>
     </div>
 
-    <div class="selectedMouth" *ngIf="displayAvatar.mouth">
+    <div *ngIf="displayAvatar.mouth">
         <img [src]="displayAvatar.mouth.picture" alt="{{ displayAvatar.mouth.name }}"/>
     </div>
 
-    <div class="selectedHairiness" *ngIf="displayAvatar.hairiness">
+    <div *ngIf="displayAvatar.hairiness">
         <img [src]="displayAvatar.hairiness.picture" alt="{{displayAvatar.hairiness.name}}"/>
     </div>
     
-    <div class="selectedHair" *ngIf="displayAvatar.hair">
+    <div *ngIf="displayAvatar.hair">
         <img [src]="displayAvatar.hair.picture" alt="{{displayAvatar.hair.name}}"/>
     </div>
         
-    <div class="selectedEyebrows" *ngIf="displayAvatar.eyebrows">
+    <div *ngIf="displayAvatar.eyebrows">
         <img [src]="displayAvatar.eyebrows.picture" alt="{{displayAvatar.eyebrows.name}}"/>
     </div>
 
+
     <div class="selectedEarrings" *ngIf="displayAvatar.earrings">
         <img [src]="displayAvatar.earrings.picture" alt="{{displayAvatar.earrings.name}}"/>
+      
+    <div *ngIf="displayAvatar.necklace">
+        <img [src]="displayAvatar.necklace.picture" alt="{{displayAvatar.necklace.name}}"/>
+    </div>
+
+    <div class="selectedHat" *ngIf="displayAvatar.hat">
+        <img [src]="displayAvatar.hat.picture" alt="{{displayAvatar.hat.name}}"/>
+    </div>
+
+    <div class="selectedClothe" *ngIf="displayAvatar.clothes">
+        <img [src]="displayAvatar.clothes.picture" alt="{{displayAvatar.clothes.name}}"/>
+    </div>
+      
+    <div *ngIf="displayAvatar.glasses">
+        <img [src]="displayAvatar.glasses.picture" alt="{{displayAvatar.glasses.name}}"/>
     </div>
 
 </div>

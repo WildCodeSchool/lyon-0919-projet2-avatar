@@ -3,8 +3,13 @@ import { Eyes } from './eyes';
 import { Mouth } from './mouths';
 import { Hair } from './hair';
 import { Hairiness } from './hairiness';
+import { Clothes } from './clothes';
 import { Eyebrows } from './eyebrows';
 import { Earrings } from './earrings';
+import { Necklace } from './necklace';
+import { Hat } from './hat';
+import { Glasses } from './glasses';
+
 
 export class Avatar {
     tone: Tone = {
@@ -22,4 +27,12 @@ export class Avatar {
     mouth: Mouth;
 
     earrings: Earrings;
+
+    necklace: Necklace;
+
+    hat: Hat;
+
+    clothes: Clothes;
+
+    glasses: Glasses;
 }
