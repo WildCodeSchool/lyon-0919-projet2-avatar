@@ -18,13 +18,13 @@ export class Avatar {
     };
     eyes: Eyes;
 
+    mouth: Mouth;
+
     eyebrows : Eyebrows;
     
     hairiness: Hairiness;
 
     hair: Hair;
-
-    mouth: Mouth;
 
     earrings: Earrings;
 
