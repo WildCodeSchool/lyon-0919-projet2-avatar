@@ -7,9 +7,11 @@ import { Hairiness } from '../shared/hairiness';
 import { Hair } from '../shared/hair';
 import { Clothes} from '../shared/clothes';
 import { Eyebrows } from '../shared/eyebrows';
+import { Earrings } from '../shared/earrings';
 import { Necklace } from '../shared/necklace';
 import { Hat } from '../shared/hat';
 import { Glasses } from '../shared/glasses';
+
 
 @Component({
   selector: 'app-avatar',
@@ -24,7 +26,9 @@ export class AvatarComponent implements OnInit {
   hairiness : Hairiness;
   hair : Hair;
   eyebrows : Eyebrows;
+  earrings: Earrings;
   hat: Hat;
+
 
   elementsAvatar : string[] =["skin", "eyes", "mouth", "eyebrow", "hair", "beard", "clothes", "glasses", "jewellery", "hat", "necklace"];
   selectedIndex = 0;
@@ -59,6 +63,12 @@ export class AvatarComponent implements OnInit {
     this.avatarParent.mouth = mouth;
   }
 
+
+  onEarringsSelect(earrings: Earrings) {
+    this.avatarParent.earrings = earrings;
+    console.log(this.avatarParent.earrings)
+  }
+
   onNecklaceSelect(necklace: Necklace) {
     this.avatarParent.necklace = necklace;
   }
@@ -73,6 +83,7 @@ export class AvatarComponent implements OnInit {
 
   onGlassesSelect(glasses: Glasses) {
     this.avatarParent.glasses = glasses;
+
   }
 
   clickNext(){
