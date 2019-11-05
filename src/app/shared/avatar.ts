@@ -5,9 +5,11 @@ import { Hair } from './hair';
 import { Hairiness } from './hairiness';
 import { Clothes } from './clothes';
 import { Eyebrows } from './eyebrows';
+import { Earrings } from './earrings';
 import { Necklace } from './necklace';
 import { Hat } from './hat';
 import { Glasses } from './glasses';
+
 
 export class Avatar {
     tone: Tone = {
@@ -23,6 +25,8 @@ export class Avatar {
     hair: Hair;
 
     mouth: Mouth;
+
+    earrings: Earrings;
 
     necklace: Necklace;
 

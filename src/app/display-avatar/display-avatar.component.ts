@@ -14,6 +14,8 @@ import { Clothes } from '../shared/clothes';
 import { CLOTHES } from '../shared/clothes-mock';
 import { Eyebrows } from '../shared/eyebrows';
 import { EYEBROWS } from '../shared/eyebrows-mock';
+import { Earrings } from '../shared/earrings';
+import { EARRINGS } from '../shared/earrings-mock';
 import { Necklace } from '../shared/necklace';
 import { NECKLACES } from '../shared/necklace-mock';
 import { Hat } from '../shared/hat';
@@ -51,6 +53,9 @@ export class DisplayAvatarComponent implements OnInit {
   hat: Hat;
 
   necklace: Necklace[] = NECKLACES;
+
+  earringsList : Earrings[] = EARRINGS;
+  earrings : Earrings;
 
   constructor() { }
 

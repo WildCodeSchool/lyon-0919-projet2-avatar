@@ -19,9 +19,11 @@ import { HairinessGenComponent } from './hairiness-gen/hairiness-gen.component';
 import { HairGenComponent } from './hair-gen/hair-gen.component';
 import { ClothesGenComponent } from './clothes-gen/clothes-gen.component';
 import { EyebrowsGenComponent } from './eyebrows-gen/eyebrows-gen.component';
+import { EarringsGenComponent } from './earrings-gen/earrings-gen.component';
 import { NecklaceGenComponent } from './necklace-gen/necklace-gen.component';
 import { HatGenComponent } from './hat-gen/hat-gen.component';
 import { GlassesGenComponent } from './glasses-gen/glasses-gen.component';
+
 
 
 @NgModule({
@@ -41,6 +43,7 @@ import { GlassesGenComponent } from './glasses-gen/glasses-gen.component';
     HairGenComponent,
     ClothesGenComponent,
     EyebrowsGenComponent,
+    EarringsGenComponent,
     NecklaceGenComponent,
     HatGenComponent,
     GlassesGenComponent,
