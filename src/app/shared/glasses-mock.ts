@@ -3,6 +3,10 @@ import { Glasses } from "./glasses";
 
 export const GLASSES : Glasses[] = [
     {
+        name: "Delete",
+        picture:'/assets/images/nothing.png'
+    },
+    {
         name: "Glasses 3D Sahdes",
         picture: "/assets/Avatar/7-Accessories/Glasses/Accessories_Glasses_3DShades.png"
     },

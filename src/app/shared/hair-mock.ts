@@ -2,6 +2,10 @@ import { Hair } from './hair';
 
 export const HAIR : Hair[] = [
     {
+        name: "Delete",
+        picture:'/assets/images/nothing.png'
+    },
+    {
         name: "Hair Dreads",
         picture: '/assets/Avatar/8-Hair/Hair Set B/Top_ShortHairDreads2.png'
     },
