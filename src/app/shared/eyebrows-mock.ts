@@ -2,6 +2,10 @@ import { Eyebrows } from './eyebrows';
 
 export const EYEBROWS : Eyebrows[] = [
     {
+        name: "Delete",
+        picture:'/assets/images/nothing.png'
+    },
+    {
         name: "Eyebrows Angry Natural",
         picture: '/assets/Avatar/2-Eyebrows/Eyebrows_Angry_Natural.png'
     },

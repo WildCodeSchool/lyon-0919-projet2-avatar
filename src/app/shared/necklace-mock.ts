@@ -3,6 +3,10 @@ import { Necklace } from './necklace';
 
 export const NECKLACES: Necklace[] = [
     {
+        name: "Delete",
+        picture:'/assets/images/nothing.png'
+    },
+    {
         name: "Necklace A Color",
         picture: '/assets/Avatar/7-Accessories/Neckwear/Accessories_Necklace_A_Colorize.png'
     },

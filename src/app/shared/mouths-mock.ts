@@ -3,6 +3,10 @@ import { Mouth } from './mouths';
 
 export const MOUTHS : Mouth[] = [
     {
+        name: "Delete",
+        picture:'/assets/images/nothing.png'
+    },
+    {
         name: "Mouth Cheese",
         picture: '/assets/Avatar/4-Mouths/Mouth_Cheese_Outline.png'
     },
