@@ -67,6 +67,7 @@ export class AvatarComponent implements OnInit {
   onEarringsSelect(earrings: Earrings) {
     this.avatarParent.earrings = earrings;
     console.log(this.avatarParent.earrings)
+  }
 
   onNecklaceSelect(necklace: Necklace) {
     this.avatarParent.necklace = necklace;
