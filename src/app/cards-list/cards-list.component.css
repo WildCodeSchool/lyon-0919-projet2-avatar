@@ -1,0 +1,24 @@
+section{
+
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 100px;
+    margin: 2px;
+    cursor: pointer;
+    background-color:#e3f2fd;
+    border-radius: 10% / 50%;
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 312px;
+    margin: 0 auto;
+}
+
+img:hover {
+    transform: scale(1.03)
+}
