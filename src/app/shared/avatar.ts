@@ -20,19 +20,19 @@ export class Avatar {
 
     mouth: Mouth;
 
+    hair: Hair;
+
     eyebrows : Eyebrows;
     
     hairiness: Hairiness;
 
-    hair: Hair;
+    clothes: Clothes;
 
     earrings: Earrings;
 
     necklace: Necklace;
 
-    hat: Hat;
-
-    clothes: Clothes;
-
     glasses: Glasses;
+
+    hat: Hat;
 }
