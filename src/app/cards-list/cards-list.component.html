@@ -1,0 +1,6 @@
+<section>
+    <div id='card'>
+        <img *ngFor="let c of cards" (click)="onCardClick(c)" class="photo" 
+        src="{{ c.url }}" alt="{{ c.name }}"/>
+    </div>
+</section>

@@ -1,0 +1,15 @@
+.display {
+    height: 329px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+img {
+    position: absolute;
+    width: 500px;
+    border: rgb(224, 224, 224) solid 5px;
+}

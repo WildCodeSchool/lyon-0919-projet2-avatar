@@ -23,6 +23,8 @@ import { EarringsGenComponent } from './earrings-gen/earrings-gen.component';
 import { NecklaceGenComponent } from './necklace-gen/necklace-gen.component';
 import { HatGenComponent } from './hat-gen/hat-gen.component';
 import { GlassesGenComponent } from './glasses-gen/glasses-gen.component';
+import { CardsListComponent } from './cards-list/cards-list.component';
+import { DisplayCardsComponent } from './display-cards/display-cards.component';
 
 
 
@@ -47,6 +49,8 @@ import { GlassesGenComponent } from './glasses-gen/glasses-gen.component';
     NecklaceGenComponent,
     HatGenComponent,
     GlassesGenComponent,
+    CardsListComponent,
+    DisplayCardsComponent,
   ],
   imports: [
     BrowserModule,
