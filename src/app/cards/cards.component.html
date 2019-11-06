@@ -1,1 +1,2 @@
-<p>cards works!</p>
+<app-display-cards [cardsToDisplay]="displayCards"></app-display-cards>
+<app-cards-list (cardsEvent)="onCardSelected($event)"></app-cards-list>
