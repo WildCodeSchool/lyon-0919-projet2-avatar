@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 <div class="clothes elements">
-    <div *ngFor= "let clothes of clothesList">
-=======
-<div class="clothes">
     <div *ngFor= "let clothes of clothesList" class="mini">
->>>>>>> dev
         <img [src]="clothes.picture" alt="{{ clothes.name }}" (click)="onClothesClicked(clothes)"/>
     </div>
 </div>
