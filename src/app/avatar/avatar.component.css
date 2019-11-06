@@ -1,11 +1,17 @@
 .navigationElements{
     display: flex;
-	justify-content: center;
+    justify-content: space-between;
+    height: 50px;
     align-items: center;
 }
 
+.navigationElements h2{
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
 .arrows{
-    width: 100px;
+    width: 50px;
 }
 
 button:hover{
