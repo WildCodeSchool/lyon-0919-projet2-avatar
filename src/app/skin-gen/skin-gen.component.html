@@ -1,5 +1,5 @@
 <div class="tone">
-    <div *ngFor="let tone of tonesList">
+    <div *ngFor="let tone of tonesList" class="mini">
         <img [src]="tone.picture" alt="{{ tone.name }}" (click)="onSkinClicked(tone)" />
     </div>  
 </div>

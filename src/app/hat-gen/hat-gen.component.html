@@ -1,5 +1,5 @@
 <div class="hat">
-    <div *ngFor="let h of hats">
+    <div *ngFor="let h of hats" class="mini">
         <img [src]="h.picture" alt="{{ h.name }}" (click)="onMouthClicked(h)"/>
     </div>
 </div>
