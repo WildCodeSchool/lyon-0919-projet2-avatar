@@ -1,16 +1,21 @@
 .allSelected {
-    width: 310px;
-    height: 329px;
+    width: 302px;
+    height: 320px;
     background-color:#e3f2fd;
     border-radius: 15px;
-    margin: 10px auto;
     display: block;
     position: relative;
+    margin: 10px auto 5px;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
 }
 
 .allSelected img{
     position: absolute;
-    width: 310px;
+    width: 302px;
 }
 
 .nose{
