@@ -1,4 +1,4 @@
-<div class="necklaces">
+<div class="necklaces elements">
     <div *ngFor="let necklace of necklacesList">
         <img [src]="necklace.picture" alt="{{ necklace.name }}" (click)="onNecklaceClicked(necklace)" />
     </div>

@@ -1,4 +1,5 @@
-<div class="earrings">
+
+<div class="earrings elements" >
     <div *ngFor="let earrings of earringsList">
         <img [src]="earrings.picture" alt="{{ earrings.name }}" (click)="onEarringsClicked(earrings)"/>
     </div>

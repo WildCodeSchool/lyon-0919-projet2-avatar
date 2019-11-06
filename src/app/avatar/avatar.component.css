@@ -1,12 +1,17 @@
 .navigationElements{
     display: flex;
-	justify-content: center;
-    align-items: center;
+	justify-content: space-between;
 }
 
-.arrows{
+.arrowsleft{
+    width: 100px;
+
+}
+
+.arrowsright{
     width: 100px;
 }
+
 
 button:hover{
     cursor: pointer;
@@ -17,4 +22,8 @@ button{
     border: none;
     background-color: inherit;
     outline: 0;
+}
+.elements{
+    height: 100%;
+    overflow-y: scroll;
 }
