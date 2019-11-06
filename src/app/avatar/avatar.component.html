@@ -14,6 +14,12 @@
 
 <div class = "navigationElements">
   <button [ngStyle]="{'visibility':(selectedValue == 'tone') ? 'hidden' : 'visible'}"><img src='assets/images/keyboard_arrow_left-24px.svg' (click)="clickPrevious()" class="arrows"></button>
+  <div [ngSwitch]="selectedValue">
+    <h2 *ngSwitchCase="'tone'" (skinEvent)="onSkinSelect($event)">sjdhgdjg</h2>
+    <h2 *ngSwitchCase="'eyes'" (eyesEvent)="onEyesSelect($event)">jh dfkj hdsjfhj</h2>
+  </div>
+  <button [ngStyle]="{'visibility':(selectedValue == 'hat') ? 'hidden' : 'visible'}"><img src='assets/images/keyboard_arrow_right-24px.svg' (click)="clickNext()" class="arrows"></button>
+</div>
   <div class = elements>
     <div [ngSwitch]="selectedValue">
       <app-skin-gen *ngSwitchCase="'tone'" (skinEvent)="onSkinSelect($event)"></app-skin-gen>
@@ -26,12 +32,9 @@
       <app-earrings-gen *ngSwitchCase="'earrings'" (earringsEvent)="onEarringsSelect($event)"></app-earrings-gen>
       <app-necklace-gen *ngSwitchCase="'necklace'" (necklaceEvent)="onNecklaceSelect($event)"></app-necklace-gen>
       <app-glasses-gen *ngSwitchCase="'glasses'"  (glassesEvent)="onGlassesSelect($event)"></app-glasses-gen>
-      <app-hat-gen *ngSwitchCase="'hat'" (hatEvent)="onHatSelect($event)"></app-hat-gen>
-      
-      
+      <app-hat-gen *ngSwitchCase="'hat'" (hatEvent)="onHatSelect($event)"></app-hat-gen> 
     </div>
   </div>
-  <button [ngStyle]="{'visibility':(selectedValue == 'hat') ? 'hidden' : 'visible'}"><img src='assets/images/keyboard_arrow_right-24px.svg' (click)="clickNext()" class="arrows"></button>
-</div>
+
 
 

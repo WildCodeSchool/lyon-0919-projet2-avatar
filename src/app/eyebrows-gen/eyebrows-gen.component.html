@@ -1,5 +1,9 @@
-<div class="eyebrows">
-    <div *ngFor="let eyebrows of eyebrowsList" class="mini">
-        <img [src]="eyebrows.picture" alt="{{ eyebrows.name }}" (click)="onEyebrowsClicked(eyebrows)"/>
+<div class="elementsToSelect">
+    <h2>EYEBROWS</h2>
+    <div class="color"></div>
+    <div class="eyebrows">
+        <div *ngFor="let eyebrows of eyebrowsList" class="mini">
+            <img [src]="eyebrows.picture" alt="{{ eyebrows.name }}" (click)="onEyebrowsClicked(eyebrows)"/>
+        </div>
     </div>
 </div>

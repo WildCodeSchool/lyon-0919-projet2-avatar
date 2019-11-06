@@ -1,5 +1,9 @@
-<div class="eyes">
-    <div *ngFor= "let eyes of eyesList" class="mini">
-        <img [src]="eyes.picture" alt="{{ eyes.name }}" (click)="onEyesClicked(eyes)"/>
+<div class="elementsToSelect">
+    <h2>EYES</h2>
+    <div class="color"></div>
+    <div class="eyes">
+        <div *ngFor= "let eyes of eyesList" class="mini">
+            <img [src]="eyes.picture" alt="{{ eyes.name }}" (click)="onEyesClicked(eyes)"/>
+        </div>
     </div>
 </div>

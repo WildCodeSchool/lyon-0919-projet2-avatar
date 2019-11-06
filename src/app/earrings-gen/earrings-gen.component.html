@@ -1,6 +1,9 @@
-<div class="earrings">
-    <div *ngFor="let earrings of earringsList" class="mini">
-        <img [src]="earrings.picture" alt="{{ earrings.name }}" (click)="onEarringsClicked(earrings)"/>
+<div class="elementsToSelect">
+    <h2>EARRINGS</h2>
+    <div class="color"></div>
+    <div class="earrings">
+        <div *ngFor="let earrings of earringsList" class="mini">
+            <img [src]="earrings.picture" alt="{{ earrings.name }}" (click)="onEarringsClicked(earrings)"/>
+        </div>
     </div>
 </div>
-
