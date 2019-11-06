@@ -3,6 +3,10 @@ import { Earrings } from './earrings';
 
 export const EARRINGS : Earrings[] = [
     {
+        name: "Delete",
+        picture:'/assets/images/nothing.png'
+    },
+    {
         name: "Ornemental Earring",
         picture: '/assets/Avatar/7-Accessories/Earrings/Accessories_Ornamental_Earring_2.png'
     },
