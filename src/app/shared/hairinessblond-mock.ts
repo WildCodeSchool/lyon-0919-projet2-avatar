@@ -1,6 +1,6 @@
 import { Hairiness } from './hairiness';
 
-export const HAIRINESS : Hairiness[] = [
+export const HAIRINESSBLOND : Hairiness[] = [
     {
         name: "Delete",
         picture:'/assets/images/nothing.png'
