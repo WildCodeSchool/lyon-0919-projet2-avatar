@@ -2,43 +2,52 @@ import { Card } from './card';
 
 export const CARDS: Card[] = [
     {
-        name: "mountain2",
-        url: "/assets/cards/mountain2.jpg"
-    },
-    {
-        name: "ranch",
-        url: "/assets/cards/ranch.jpg"
-    },
-    {
-        name: "road",
-        url: "/assets/cards/road.jpg"
-    },
-    {
-        name: "jungle",
-        url: "/assets/cards/jungle.jpg"
-    },
-    {
-        name: "mountain",
+        name: "Mountain",
         url: "/assets/cards/mountain.jpg"
     },
     {
-        name: "cafeteria",
-        url: "/assets/cards/cafeteria.jpg"
+        name: "Mountain morning",
+        url: "/assets/cards/morning.png"
     },
     {
-        name: "commercial center",
+        name: "Mountain Night",
+        url: "/assets/cards/mountainnight.jpg"
+    },
+    {
+        name: "Canyon Night",
+        url: "/assets/cards/canyonnight.jpg"
+    },
+    {
+        name: "Desert",
+        url: "/assets/cards/desert.jpg"
+    },
+    {
+        name: "River Night",
+        url: "/assets/cards/rivernight.jpg"
+    },
+    {
+        name: "Cerf",
+        url: "/assets/cards/cerf.jpg"
+    },
+    {
+        name: "Commercial Center",
         url: "/assets/cards/cc.jpg"
     },
     {
-        name: "bluejungle",
-        url: "/assets/cards/bluejungle.jpg"
+        name: "Camp",
+        url: "/assets/cards/camp.jpg"
     },
     {
-        name: "bluejungle",
-        url: "/assets/cards/forest.jpg"
+        name: "Ville Industrielle",
+        url: "/assets/cards/indus.jpg"
     },
     {
-        name: "prairie",
-        url: "/assets/cards/prairie.jpg"
+        name: "redlandscape",
+        url: "/assets/cards/redlandscape.jpeg"
+    },
+    {
+        name: "morning",
+        url: "/assets/cards/morning.jpg"
     }
+
 ]
