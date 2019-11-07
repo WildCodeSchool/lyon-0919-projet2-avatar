@@ -1,37 +1,40 @@
-<h3>SEND TO</h3>
+<section>
 
-<form (submit)="contactForm.valid && onSubmit(contactForm)" #contactForm="ngForm">
-    <div id="sendto">
-        <div class="forms">
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" [(ngModel)]="model.name" #nameRef="ngModel" required>
-        </div>
-        <div *ngIf="contactForm.submitted && nameRef.errors">
-            <span class="errorText" *ngIf="nameRef.errors.required">
-                * Name is required</span>
-        </div>
+    <h3>SEND TO</h3>
 
-        <div class="forms">
-            <label for="adress">Adress</label>
-            <input id="adress" name="adress" type="text" [(ngModel)]="model.adress" #adressRef="ngModel" required>
-        </div>
-        <div *ngIf="contactForm.submitted && adressRef.errors">
-            <span class="errorText" *ngIf="adressRef.errors.required">
-                * Recipient's address is required</span>
-        </div>
-    
-        <div class="forms">
-            <label for="msg">Message</label>
-            <textarea id="msg" name="msg" type="msg" [(ngModel)]="model.msg" #msgRef="ngModel" required></textarea>
-        </div>
-        <div *ngIf="contactForm.submitted && msgRef.errors">
-            <span class="errorText" *ngIf="msgRef.errors.required">* Write your message</span>
-        </div>
+    <form (submit)="contactForm.valid && onSubmit(contactForm)" #contactForm="ngForm">
+        <div id="sendto">
+            <div class="forms">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" [(ngModel)]="model.name" #nameRef="ngModel" required>
+            </div>
+            <div *ngIf="contactForm.submitted && nameRef.errors">
+                <span class="errorText" *ngIf="nameRef.errors.required">
+                    * Name is required</span>
+            </div>
 
-        <div id="send">
-            <button type="image"><img src="/assets/images/sendicon.svg" alt="avatar page link"></button>
+            <div class="forms">
+                <label for="adress">Adress</label>
+                <input id="adress" name="adress" type="text" [(ngModel)]="model.adress" #adressRef="ngModel" required>
+            </div>
+            <div *ngIf="contactForm.submitted && adressRef.errors">
+                <span class="errorText" *ngIf="adressRef.errors.required">
+                    * Recipient's address is required</span>
+            </div>
+        
+            <div class="forms">
+                <label for="msg">Message</label>
+                <textarea id="msg" name="msg" type="msg" [(ngModel)]="model.msg" #msgRef="ngModel" required></textarea>
+            </div>
+            <div *ngIf="contactForm.submitted && msgRef.errors">
+                <span class="errorText" *ngIf="msgRef.errors.required">* Write your message</span>
+            </div>
+
+            <div id="send">
+                <button type="image"><img src="/assets/images/sendicon.svg" alt="avatar page link"></button>
+            </div>
         </div>
-    </div>
-</form>
+    </form>
+</section>
 
 <router-outlet></router-outlet>
