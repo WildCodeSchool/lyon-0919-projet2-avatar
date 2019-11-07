@@ -1,6 +1,6 @@
 .display {
-    height: 329px;
-    border-radius: 15px;
+    height: 200px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,6 +10,15 @@
 
 img {
     position: absolute;
-    width: 500px;
+    width: 450px;
     border: rgb(224, 224, 224) solid 5px;
 }
+
+@media only screen and (max-width: 460px) {
+    img {
+        width: 350px;
+    }
+    .display {
+        width: 100%;
+    }
+  }
