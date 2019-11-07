@@ -1,4 +1,4 @@
-<div class="eyes">
+<div class="eyes elements">
     <div *ngFor= "let eyes of eyesList" class="mini">
         <img [src]="eyes.picture" alt="{{ eyes.name }}" (click)="onEyesClicked(eyes)"/>
     </div>
