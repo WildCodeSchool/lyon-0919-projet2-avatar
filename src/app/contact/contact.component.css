@@ -17,9 +17,10 @@ form {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 5px;
-    
 }
-
+section {
+    overflow: hidden;
+}
 .errorText {
     color: red;
     font-size: 12px;

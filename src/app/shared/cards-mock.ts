@@ -34,8 +34,8 @@ export const CARDS: Card[] = [
         url: "/assets/cards/cc.jpg"
     },
     {
-        name: "Camp",
-        url: "/assets/cards/camp.jpg"
+        name: "sea",
+        url: "/assets/cards/ocean.jpg"
     },
     {
         name: "Ville Industrielle",
