@@ -1,4 +1,4 @@
-<div class="eyebrows">
+<div class="eyebrows elements">
     <div *ngFor="let eyebrows of eyebrowsList" class="mini">
         <img [src]="eyebrows.picture" alt="{{ eyebrows.name }}" (click)="onEyebrowsClicked(eyebrows)"/>
     </div>
