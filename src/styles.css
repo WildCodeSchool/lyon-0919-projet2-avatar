@@ -14,7 +14,7 @@ body, html {
 }
 
 .elements{
-    height: 330px;
+    height: 315px;
     overflow-y: scroll;
     overflow-x: hidden;
     width: 324px;
@@ -37,6 +37,11 @@ body, html {
     cursor: pointer;
 }
 
+@media only screen and (max-height: 812px) {
+    .elements{
+        height: 330px;
+    }
+}
 
 @media only screen and (max-height: 736px) {
     .elements{
@@ -53,7 +58,7 @@ body, html {
 
 @media only screen and (max-height: 667px) {
     .elements{
-        height: 30vh;
+        height: 193px;
     }
 
     .mini{
