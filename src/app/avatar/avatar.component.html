@@ -29,21 +29,21 @@
   </div>
   <button [ngStyle]="{'visibility':(selectedValue == 'hat') ? 'hidden' : 'visible'}"><img src='assets/images/keyboard_arrow_right-24px.svg' (click)="clickNext()" class="arrows"></button>
 </div>
-  <div class = elements>
-    <div [ngSwitch]="selectedValue">
-      <app-skin-gen *ngSwitchCase="'tone'" (skinEvent)="onSkinSelect($event)"></app-skin-gen>
-      <app-eyes-gen *ngSwitchCase="'eyes'" (eyesEvent)="onEyesSelect($event)"></app-eyes-gen>
-      <app-mouths-gen *ngSwitchCase="'mouth'" (mouthEvent)="onMouthSelect($event)"></app-mouths-gen>
-      <app-hair-gen *ngSwitchCase="'hair'" (hairEvent)="onHairSelect($event)"></app-hair-gen>
-      <app-eyebrows-gen *ngSwitchCase="'eyebrows'" (eyebrowsEvent)="onEyebrowsSelect($event)"></app-eyebrows-gen>
-      <app-hairiness-gen *ngSwitchCase="'hairiness'" (hairinessEvent)="onHairinessSelect($event)"></app-hairiness-gen>
-      <app-clothes-gen *ngSwitchCase="'clothes'" (clothesEvent)="onClotheSelect($event)"></app-clothes-gen>
-      <app-earrings-gen *ngSwitchCase="'earrings'" (earringsEvent)="onEarringsSelect($event)"></app-earrings-gen>
-      <app-necklace-gen *ngSwitchCase="'necklace'" (necklaceEvent)="onNecklaceSelect($event)"></app-necklace-gen>
-      <app-glasses-gen *ngSwitchCase="'glasses'"  (glassesEvent)="onGlassesSelect($event)"></app-glasses-gen>
-      <app-hat-gen *ngSwitchCase="'hat'" (hatEvent)="onHatSelect($event)"></app-hat-gen> 
-    </div>
+
+  <div [ngSwitch]="selectedValue">
+    <app-skin-gen *ngSwitchCase="'tone'" (skinEvent)="onSkinSelect($event)"></app-skin-gen>
+    <app-eyes-gen *ngSwitchCase="'eyes'" (eyesEvent)="onEyesSelect($event)"></app-eyes-gen>
+    <app-mouths-gen *ngSwitchCase="'mouth'" (mouthEvent)="onMouthSelect($event)"></app-mouths-gen>
+    <app-hair-gen *ngSwitchCase="'hair'" (hairEvent)="onHairSelect($event)"></app-hair-gen>
+    <app-eyebrows-gen *ngSwitchCase="'eyebrows'" (eyebrowsEvent)="onEyebrowsSelect($event)"></app-eyebrows-gen>
+    <app-hairiness-gen *ngSwitchCase="'hairiness'" (hairinessEvent)="onHairinessSelect($event)"></app-hairiness-gen>
+    <app-clothes-gen *ngSwitchCase="'clothes'" (clothesEvent)="onClotheSelect($event)"></app-clothes-gen>
+    <app-earrings-gen *ngSwitchCase="'earrings'" (earringsEvent)="onEarringsSelect($event)"></app-earrings-gen>
+    <app-necklace-gen *ngSwitchCase="'necklace'" (necklaceEvent)="onNecklaceSelect($event)"></app-necklace-gen>
+    <app-glasses-gen *ngSwitchCase="'glasses'"  (glassesEvent)="onGlassesSelect($event)"></app-glasses-gen>
+    <app-hat-gen *ngSwitchCase="'hat'" (hatEvent)="onHatSelect($event)"></app-hat-gen> 
   </div>
+
 
 
 
