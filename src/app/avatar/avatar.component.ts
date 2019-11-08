@@ -143,6 +143,7 @@ export class AvatarComponent implements OnInit {
   onCancelClicked() {
     this.avatarParent = new Avatar();
     this.selectedValue = this.elementsAvatar[0];
+    this.selectedIndex = 0;
   }
 
 }
