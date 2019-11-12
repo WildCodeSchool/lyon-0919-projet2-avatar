@@ -6,11 +6,18 @@ import { Avatar } from './shared/avatar';
 })
 export class AvatarService {
 
-  avatars: Avatar[];
+  avatar: Avatar
+  avatarCreated: Avatar[] = [];
 
-  public getAvatars(): Avatar[] {
-    return this.avatars;
+  public getAvatars(avatar: Avatar) {
+    this.avatarCreated.push(avatar);
+    // console.log(this.avatarCreated);
   }
+
+  // public getAvatar(avatar: Avatar) {
+  //   return this.avatarCreated;
+  // }
+
 
   constructor() { }
 }
