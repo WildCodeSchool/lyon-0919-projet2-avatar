@@ -10,4 +10,20 @@
     <div *ngFor= "let clothes of clothesList" class="mini">
         <img [src]="clothes.picture" alt="{{ clothes.name }}" (click)="onClothesClicked(clothes)"/>
     </div>
+
+    <div *ngFor= "let clothes of clothesGreen" class="mini">
+        <img [src]="clothes.picture" alt="{{ clothes.name }}" (click)="onClothesClicked(clothes)"/>
+    </div>
+
+    <div *ngFor= "let clothes of clothesYellow" class="mini">
+        <img [src]="clothes.picture" alt="{{ clothes.name }}" (click)="onClothesClicked(clothes)"/>
+    </div>
+
+    <div *ngFor= "let clothes of clothesPink" class="mini">
+        <img [src]="clothes.picture" alt="{{ clothes.name }}" (click)="onClothesClicked(clothes)"/>
+    </div>
+
+    <div *ngFor= "let clothes of clothesRed" class="mini">
+        <img [src]="clothes.picture" alt="{{ clothes.name }}" (click)="onClothesClicked(clothes)"/>
+    </div>
 </div>

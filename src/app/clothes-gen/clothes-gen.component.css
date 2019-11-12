@@ -1,13 +1,13 @@
 .buttonColorBlue{
-    background-color: blue;
+    background-color: rgb(45, 45, 121);
 }
 
 .buttonColorGreen{
-    background-color: green;
+    background-color: rgb(20, 231, 20);
 }
 
 .buttonColorYellow{
-    background-color: yellow;
+    background-color: rgb(219, 219, 0);
 }
 
 .buttonColorPink{
@@ -15,5 +15,5 @@
 }
 
 .buttonColorRed{
-    background-color: red;
+    background-color: rgb(190, 20, 20);
 }

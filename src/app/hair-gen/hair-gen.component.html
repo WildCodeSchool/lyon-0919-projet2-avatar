@@ -10,4 +10,20 @@
     <div *ngFor= "let hair of hairList" class="mini">
         <img [src]="hair.picture" alt="{{ hair.name }}" (click)="onHairClicked(hair)"/>
     </div>
+
+    <div *ngFor= "let hair of hairBlond" class="mini">
+        <img [src]="hair.picture" alt="{{ hair.name }}" (click)="onHairClicked(hair)"/>
+    </div>
+
+    <div *ngFor= "let hair of hairChestnut" class="mini">
+        <img [src]="hair.picture" alt="{{ hair.name }}" (click)="onHairClicked(hair)"/>
+    </div>
+
+    <div *ngFor= "let hair of hairGinger" class="mini">
+        <img [src]="hair.picture" alt="{{ hair.name }}" (click)="onHairClicked(hair)"/>
+    </div>
+
+    <div *ngFor= "let hair of hairGrey" class="mini">
+        <img [src]="hair.picture" alt="{{ hair.name }}" (click)="onHairClicked(hair)"/>
+    </div>
 </div>

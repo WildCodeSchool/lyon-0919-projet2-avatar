@@ -1,6 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Hair } from '../shared/hair';
-import { HAIR } from '../shared/hair-mock';
+import { HAIR, HAIRBLOND, HAIRCHESTNUT, HAIRGINGER, HAIRGREY } from '../shared/hair-mock';
 
 @Component({
   selector: 'app-hair-gen',
@@ -15,6 +15,26 @@ export class HairGenComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onColorClickedBlack(){
+    this.hairList = HAIR;
+  }
+
+  onColorClickedBlond(){
+    this.hairList = HAIRBLOND;
+  }
+
+  onColorClickedChestnut(){
+    this.hairList = HAIRCHESTNUT;
+  }
+
+  onColorClickedGinger(){
+    this.hairList = HAIRGINGER;
+  }
+
+  onColorClickedGrey(){
+    this.hairList = HAIRGREY;
   }
 
   onHairClicked(hair: Hair){
