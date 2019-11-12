@@ -20,9 +20,17 @@ export class CardsComponent implements OnInit {
 
   ngOnInit() {
     this.avatarToDisplay = this.avatarService.avatarCreated;
+    //console.log(this.avatarToDisplay)
   }
   
   onCardSelected(c: Card) {
     this.displayCards.card = c;
   }
+
+  // onAvatarSelected(avatarToDisplay: Avatar[]) {
+  //   this.avatarOnCard = avatarToDisplay;
+  //   console.log(this.avatarOnCard);
+  // }
+
+  
 }

@@ -62,6 +62,8 @@ export class AvatarComponent implements OnInit {
   selectedIndex = 0;
   selectedValue = this.elementsAvatar[this.selectedIndex];
 
+  avatarCreated: Avatar[];
+
   constructor(private avatarService : AvatarService, private router: Router) { }
 
   ngOnInit() {
@@ -117,7 +119,7 @@ export class AvatarComponent implements OnInit {
       this.selectedIndex++;
       this.selectedValue = this.elementsAvatar[this.selectedIndex];
     }
-    console.log (this.selectedValue)
+    // console.log (this.selectedValue)
   }
 
   clickPrevious(){
@@ -125,7 +127,7 @@ export class AvatarComponent implements OnInit {
       this.selectedIndex--;
       this.selectedValue = this.elementsAvatar[this.selectedIndex];
     }
-    console.log (this.selectedValue)
+    // console.log (this.selectedValue)
   }
 
   onRandomClicked() {
@@ -153,5 +155,4 @@ export class AvatarComponent implements OnInit {
     //console.log(this.avatarParent);
     this.router.navigate(['/cards']);
   }
-
 }

@@ -6,7 +6,7 @@ import { Avatar } from './shared/avatar';
 })
 export class AvatarService {
 
-  avatars: Avatar[];
+  avatar: Avatar
   avatarCreated: Avatar[] = [];
 
   public getAvatars(avatar: Avatar) {
