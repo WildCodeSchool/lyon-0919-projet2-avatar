@@ -1,7 +1,6 @@
 .allSelected {
     width: 302px;
     height: 320px;
-    background-color:#e3f2fd;
     border-radius: 15px;
     margin: 5px auto;
     -webkit-transition: all 500ms ease;
