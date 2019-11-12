@@ -22,6 +22,9 @@ import { GLASSES } from '../shared/glasses-mock';
 import { EARRINGS } from '../shared/earrings-mock';
 import { NECKLACES } from '../shared/necklace-mock';
 import { HAT } from '../shared/hat-mock';
+import { AvatarService } from '../avatar.service';
+import { Router } from '@angular/router';
+
 
 
 @Component({
@@ -60,7 +63,9 @@ export class AvatarComponent implements OnInit {
   selectedIndex = 0;
   selectedValue = this.elementsAvatar[this.selectedIndex];
 
-  constructor() { }
+  avatarCreated: Avatar[];
+
+  constructor(private avatarService : AvatarService, private router: Router) { }
 
   ngOnInit() {
   }
@@ -115,7 +120,7 @@ export class AvatarComponent implements OnInit {
       this.selectedIndex++;
       this.selectedValue = this.elementsAvatar[this.selectedIndex];
     }
-    console.log (this.selectedValue)
+    // console.log (this.selectedValue)
   }
 
   clickPrevious(){
@@ -123,7 +128,7 @@ export class AvatarComponent implements OnInit {
       this.selectedIndex--;
       this.selectedValue = this.elementsAvatar[this.selectedIndex];
     }
-    console.log (this.selectedValue)
+    // console.log (this.selectedValue)
   }
 
   onRandomClicked() {
@@ -144,6 +149,12 @@ export class AvatarComponent implements OnInit {
     this.avatarParent = new Avatar();
     this.selectedValue = this.elementsAvatar[0];
     this.selectedIndex = 0;
+  }
+
+  onValidClicked(avatarParent: Avatar[]) {
+    this.avatarService.getAvatars(this.avatarParent);
+    //console.log(this.avatarParent);
+    this.router.navigate(['/cards']);
   }
 
 }

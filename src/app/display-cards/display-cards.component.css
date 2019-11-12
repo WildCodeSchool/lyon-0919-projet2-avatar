@@ -1,46 +1,70 @@
 .display {
-    height: 300px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 450px;
     margin-bottom: 30px;
     margin-top: 15px;
     overflow: hidden;
+    position: relative;
+    height: 258px;
 }
 
-img {
-    position: absolute;
-    width: 450px;
+.card {
+    width: 100%;
     border: rgb(224, 224, 224) solid 5px;
 }
 
+.avatar {
+    width: 25%;
+    position: absolute;
+    bottom: 124px;
+    left: 50px;
+}
+
+.avatar img{
+    width: 100%;
+    position: absolute;
+}
+
+
 @media only screen and (max-width: 460px) {
-    img {
+    .card {
         width: 400px;
     }
     .display {
         width: 100%;
-        height: 240px;
+        height: 229px;
     }
+
+    .avatar {
+        bottom: 111px;
+    }
+
   }
 
   @media only screen and (max-width: 390px) {
-    img {
+    .card {
         width: 350px;
     }
     .display {
         width: 100%;
-        height: 240px;
+        height: 202px;
+    }
+
+    .avatar {
+        bottom: 99px;
     }
   }
 
   @media only screen and (max-width: 350px) {
-    img {
-        width: 300px;
-    }
     .display {
         width: 100%;
-        height: 240px;
+        height: 202px;
     }
+
+    .avatar {
+        bottom: 99px;
+    }
+
   }
+
+
+
