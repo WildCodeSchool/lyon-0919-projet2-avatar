@@ -10,6 +10,26 @@
     border: rgb(224, 224, 224) solid 5px;
 }
 
+.card {
+    width: 100%;
+    border: rgb(224, 224, 224) solid 5px;
+}
+
+.avatar {
+    width: 25%;
+    position: absolute;
+    bottom: 85px;
+    left: 15px;
+}
+
+.avatar img{
+    width: 100%;
+    position: absolute;
+    border: none;
+}
+
+
+
 /* @media only screen and (max-width: 460px) {
     .display img {
         width: 400px;

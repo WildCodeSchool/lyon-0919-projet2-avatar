@@ -60,7 +60,7 @@ export class DisplayAvatarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.displayAvatar);
+    //console.log(this.displayAvatar);
   }
 
 }
