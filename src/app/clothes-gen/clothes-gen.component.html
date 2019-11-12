@@ -1,5 +1,29 @@
+<div class = "buttonColor">
+    <button (click)="onColorClickedBlue()" class="buttonColorBlue"></button>
+    <button (click)="onColorClickedGreen()" class="buttonColorGreen"></button>
+    <button (click)="onColorClickedYellow()" class="buttonColorYellow"></button>
+    <button (click)="onColorClickedPink()" class="buttonColorPink"></button>
+    <button (click)="onColorClickedRed()" class="buttonColorRed"></button>
+</div>
+
 <div class="elements">
     <div *ngFor= "let clothes of clothesList" class="mini">
+        <img [src]="clothes.picture" alt="{{ clothes.name }}" (click)="onClothesClicked(clothes)"/>
+    </div>
+
+    <div *ngFor= "let clothes of clothesGreen" class="mini">
+        <img [src]="clothes.picture" alt="{{ clothes.name }}" (click)="onClothesClicked(clothes)"/>
+    </div>
+
+    <div *ngFor= "let clothes of clothesYellow" class="mini">
+        <img [src]="clothes.picture" alt="{{ clothes.name }}" (click)="onClothesClicked(clothes)"/>
+    </div>
+
+    <div *ngFor= "let clothes of clothesPink" class="mini">
+        <img [src]="clothes.picture" alt="{{ clothes.name }}" (click)="onClothesClicked(clothes)"/>
+    </div>
+
+    <div *ngFor= "let clothes of clothesRed" class="mini">
         <img [src]="clothes.picture" alt="{{ clothes.name }}" (click)="onClothesClicked(clothes)"/>
     </div>
 </div>

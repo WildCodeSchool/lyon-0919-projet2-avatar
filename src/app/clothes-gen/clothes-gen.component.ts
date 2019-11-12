@@ -1,6 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Clothes } from '../shared/clothes';
-import { CLOTHES } from '../shared/clothes-mock'
+import { CLOTHES, CLOTHESGREEN, CLOTHESYELLOW, CLOTHESPINK, CLOTHESRED } from '../shared/clothes-mock'
 
 @Component({
   selector: 'app-clothes-gen',
@@ -16,6 +16,26 @@ export class ClothesGenComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onColorClickedBlue(){
+    this.clothesList = CLOTHES;
+  }
+
+  onColorClickedGreen(){
+    this.clothesList = CLOTHESGREEN;
+  }
+
+  onColorClickedYellow(){
+    this.clothesList = CLOTHESYELLOW;
+  }
+
+  onColorClickedPink(){
+    this.clothesList = CLOTHESPINK;
+  }
+
+  onColorClickedRed(){
+    this.clothesList = CLOTHESRED;
   }
 
   onClothesClicked(clothes: Clothes){

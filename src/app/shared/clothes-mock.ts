@@ -132,7 +132,7 @@ export const CLOTHESRED : Clothes[] = [
     },
     {
         name: "Shirt Crew Neck",
-        picture: '/assets/Avatar/6-Clothes/Pink/pinkDefault_ShirtCrewNeck.png'
+        picture: '/assets/Avatar/6-Clothes/Red/REDDefault_ShirtCrewNeck.png'
     },
     {
         name: "Shirt Scoop Neck",
@@ -144,7 +144,7 @@ export const CLOTHESRED : Clothes[] = [
     },
     {
         name: "Overalls",
-        picture: 'src/assets/Avatar/6-Clothes/Red/redDefault_Overalls.png'
+        picture: '/assets/Avatar/6-Clothes/Red/redDefault_Overalls.png'
     },
     {
         name: "Scarf set cover",

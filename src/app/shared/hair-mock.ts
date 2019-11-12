@@ -216,99 +216,99 @@ export const HAIRCHESTNUT : Hair[] = [
     },
     {
         name: "Hair Dreads",
-        picture: '/assets/Avatar/hairs/chestnut/Top_ShortHairDreads2.png'
+        picture: '/assets/Avatar/hairs/brown/Top_ShortHairDreads2.png'
     },
     {
         name: "Hair Short Round",
-        picture: '/assets/Avatar/hairs/chestnut/Top_ShortHairShortRound.png'
+        picture: '/assets/Avatar/hairs/brown/Top_ShortHairShortRound.png'
     },
     {
         name: "Hair Short Waved",
-        picture: '/assets/Avatar/hairs/chestnut/Top_ShortHairShortWaved.png'
+        picture: '/assets/Avatar/hairs/brown/Top_ShortHairShortWaved.png'
     },
     {
         name: "Hair Side",
-        picture: '/assets/Avatar/hairs/chestnut/Top_ShortHairSides.png'
+        picture: '/assets/Avatar/hairs/brown/Top_ShortHairSides.png'
     },
     {
         name: "Hair Casear Short Dreads",
-        picture: '/assets/Avatar/hairs/chestnut/Top_ShortHairTheCaesarSidePart_ShortDreads.png'
+        picture: '/assets/Avatar/hairs/brown/Top_ShortHairTheCaesarSidePart_ShortDreads.png'
     },
     {
         name: "Hair Casear Side",
-        picture: '/assets/Avatar/hairs/chestnut/Top_ShortHairTheCaesarSidePart.png'
+        picture: '/assets/Avatar/hairs/brown/Top_ShortHairTheCaesarSidePart.png'
     },
     {
         name: "Hair Curly",
-        picture: '/assets/Avatar/hairs/chestnut/Top_LongHairCurly.png'
+        picture: '/assets/Avatar/hairs/brown/Top_LongHairCurly.png'
     },
     {
         name: "Hair Dreads",
-        picture: '/assets/Avatar/hairs/chestnut/Top_LongHairDreads.png'
+        picture: '/assets/Avatar/hairs/brown/Top_LongHairDreads.png'
     },
     {
         name: "Hair Fro",
-        picture: '/assets/Avatar/hairs/chestnut/Top_LongHairFro.png'
+        picture: '/assets/Avatar/hairs/brown/Top_LongHairFro.png'
     },
     {
         name: "Hair Bread Rows",
-        picture: '/assets/Avatar/hairs/chestnut/Top_ShortHairBraidRows.png'
+        picture: '/assets/Avatar/hairs/brown/Top_ShortHairBraidRows.png'
     },
     {
         name: "Hair Bun",
-        picture: '/assets/Avatar/hairs/chestnut/Top_ShortHairBun.png'
+        picture: '/assets/Avatar/hairs/brown/Top_ShortHairBun.png'
     },
     {
         name: "Hair Dollip",
-        picture: '/assets/Avatar/hairs/chestnut/Top_ShortHairDollip.png'
+        picture: '/assets/Avatar/hairs/brown/Top_ShortHairDollip.png'
     },
     {
         name: "Hair FridaNoAddons",
-        picture: '/assets/Avatar/hairs/chestnut/Top_ShortHairFridaNoAddons.png'
+        picture: '/assets/Avatar/hairs/brown/Top_ShortHairFridaNoAddons.png'
     },
     {
         name: "Hair Shaggy Reversed",
-        picture: '/assets/Avatar/hairs/chestnut/Top_ShortHairShaggyReversed.png'
+        picture: '/assets/Avatar/hairs/brown/Top_ShortHairShaggyReversed.png'
     },
     {
         name: "Hair Short Curly",
-        picture: '/assets/Avatar/hairs/chestnut/Top_ShortHairShortCurly.png'
+        picture: '/assets/Avatar/hairs/brown/Top_ShortHairShortCurly.png'
     },
     {
         name: "Hair Short Flat",
-        picture: '/assets/Avatar/hairs/chestnut/Top_ShortHairShortFlat.png'
+        picture: '/assets/Avatar/hairs/brown/Top_ShortHairShortFlat.png'
     },
     {
         name: "Long Big Hair",
-        picture: '/assets/Avatar/hairs/chestnut/Top_LongBigHair.png'
+        picture: '/assets/Avatar/hairs/brown/Top_LongBigHair.png'
     },
     {
         name: "Long Hair HarleyQ",
-        picture: '/assets/Avatar/hairs/chestnut/Top_LongHair_HarleyQ.png'
+        picture: '/assets/Avatar/hairs/brown/Top_LongHair_HarleyQ.png'
     },
     {
         name: "Long Hair Ponytail",
-        picture: '/assets/Avatar/hairs/chestnut/Top_LongHair_Ponytail.png'
+        picture: '/assets/Avatar/hairs/brown/Top_LongHair_Ponytail.png'
     },
     {
         name: "Long Hair Braids Double",
-        picture: '/assets/Avatar/hairs/chestnut/Top_LongHairBraids_Double.png'
+        picture: '/assets/Avatar/hairs/brown/Top_LongHairBraids_Double.png'
     },
     {
         name: "Long Hair Curvy",
-        picture: '/assets/Avatar/hairs/chestnut/Top_LongHairCurvy.png'
+        picture: '/assets/Avatar/hairs/brown/Top_LongHairCurvy.png'
     },
     {
         name: "Long Hair MiaWallace",
-        picture: '/assets/Avatar/hairs/chestnut/Top_LongHairMiaWallace.png'
+        picture: '/assets/Avatar/hairs/brown/Top_LongHairMiaWallace.png'
     },
     {
         name: "Long Hair Straight Double",
-        picture: '/assets/Avatar/hairs/chestnut/Top_LongHairStraight_Double.png'
+        picture: '/assets/Avatar/hairs/brown/Top_LongHairStraight_Double.png'
     },
     {
         name: "Long Hair Straight",
-        picture: '/assets/Avatar/hairs/chestnut/Top_LongHairStraight2.png'
+        picture: '/assets/Avatar/hairs/brown/Top_LongHairStraight2.png'
     }  
 ];
     

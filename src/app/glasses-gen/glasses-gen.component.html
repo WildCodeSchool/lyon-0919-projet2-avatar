@@ -1,3 +1,5 @@
+<div class = "buttonColor"></div>
+
 <div class="elements">
     <div *ngFor="let glasses of glassesList" class="mini">
         <img [src]="glasses.picture" alt="{{ glasses.name }}" (click)="onGlassesClicked(glasses)" />

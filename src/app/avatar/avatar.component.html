@@ -30,6 +30,7 @@
   <button [ngStyle]="{'visibility':(selectedValue == 'hat') ? 'hidden' : 'visible'}"><img src='assets/images/keyboard_arrow_right-24px.svg' (click)="clickNext()" class="arrows-right"></button>
 </div>
 
+
   <div [ngSwitch]="selectedValue">
     <app-skin-gen *ngSwitchCase="'tone'" (skinEvent)="onSkinSelect($event)"></app-skin-gen>
     <app-eyes-gen *ngSwitchCase="'eyes'" (eyesEvent)="onEyesSelect($event)"></app-eyes-gen>
