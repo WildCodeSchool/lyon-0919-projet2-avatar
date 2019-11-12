@@ -43,6 +43,23 @@ body {
     cursor: pointer;
 }
 
+.buttonColor {
+    height: 18px;
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+
+}
+
+.buttonColor button {
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    border: none;
+}
+
+
 @media only screen and (max-height: 812px) {
     .elements{
         height: 330px;

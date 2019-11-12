@@ -1,5 +1,30 @@
+<div class = "buttonColor">
+    <button (click)="onColorClickedBlack()" class="buttonColorBlack"></button>
+    <button (click)="onColorClickedBlond()" class="buttonColorBlond"></button>
+    <button (click)="onColorClickedChestnut()" class="buttonColorChestnut"></button>
+    <button (click)="onColorClickedGinger()" class="buttonColorGinger"></button>
+    <button (click)="onColorClickedGrey()" class="buttonColorGrey"></button>
+</div>
+
 <div class="elements">
     <div *ngFor="let hairiness of hairinessList" class="mini">
         <img [src]="hairiness.picture" alt="{{ hairiness.name }}" (click)="onHairinessClicked(hairiness)">
     </div>
+
+    <div *ngFor="let hairiness of hairinessBlond" class="mini">
+        <img [src]="hairiness.picture" alt="{{ hairiness.name }}" (click)="onHairinessClicked(hairiness)">
+    </div>
+
+    <div *ngFor="let hairiness of hairinessChestnut" class="mini">
+        <img [src]="hairiness.picture" alt="{{ hairiness.name }}" (click)="onHairinessClicked(hairiness)">
+    </div>
+
+    <div *ngFor="let hairiness of hairinessGinger" class="mini">
+        <img [src]="hairiness.picture" alt="{{ hairiness.name }}" (click)="onHairinessClicked(hairiness)">
+    </div>
+    
+    <div *ngFor="let hairiness of hairinessGrey" class="mini">
+        <img [src]="hairiness.picture" alt="{{ hairiness.name }}" (click)="onHairinessClicked(hairiness)">
+    </div>
 </div>
+
