@@ -1,3 +1,8 @@
+.fixed-bottom{
+    width: 400px;
+    margin:auto;
+}
+
 a img:hover {
     transform: scale(1.16);
     -webkit-transition: all 500ms ease;
@@ -14,4 +19,19 @@ a img:active {
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
+}
+
+@media only screen and (max-height: 812px) {
+    .fixed-bottom{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-height: 736px) {
+
+}
+
+@media only screen and (max-height: 667px) {
+
 }

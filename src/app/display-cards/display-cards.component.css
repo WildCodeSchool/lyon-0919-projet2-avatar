@@ -1,22 +1,17 @@
 .display {
-    height: 300px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-    margin-top: 15px;
-    overflow: hidden;
+    width: 302px;
+    margin-bottom: 15px;
+    position: relative;
+    margin-top: 5px;
 }
 
-img {
-    position: absolute;
-    width: 450px;
+.display img {
+    width: 100%;
     border: rgb(224, 224, 224) solid 5px;
 }
 
-@media only screen and (max-width: 460px) {
-    img {
+/* @media only screen and (max-width: 460px) {
+    .display img {
         width: 400px;
     }
     .display {
@@ -26,21 +21,21 @@ img {
   }
 
   @media only screen and (max-width: 390px) {
-    img {
+    .display img {
         width: 350px;
     }
     .display {
-        width: 100%;
+        width: 360px;
         height: 240px;
     }
   }
 
   @media only screen and (max-width: 350px) {
-    img {
+    .display img {
         width: 300px;
     }
     .display {
         width: 100%;
         height: 240px;
     }
-  }
+  } */

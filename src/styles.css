@@ -1,7 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-body, html {
-    width: 100%;
+html {
+    background-color: grey;
     height: 100%;
+}
+
+body {
+    width: 400px;
+    height: 100%;
+    margin: 0 auto;
 }
 
 .mini:hover {
@@ -41,9 +47,13 @@ body, html {
     .elements{
         height: 330px;
     }
+
+    body {
+        width: 100%;
+    }
 }
 
-@media only screen and (max-height: 736px) {
+@media only screen and (max-height: 740px) {
     .elements{
         height: 245px;
     }
@@ -53,7 +63,6 @@ body, html {
         overflow: hidden;
         height: 73px;
     }
-
 }
 
 @media only screen and (max-height: 667px) {

@@ -16,6 +16,8 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 302px;
+    margin: 0 auto;
 }
 
 .forms {
@@ -23,7 +25,10 @@ form {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 5px;
-    
+}
+
+#sendto {
+    width: 100%;
 }
 
 .errorText {
@@ -43,13 +48,13 @@ button img:hover {
 }
 
 textarea {
-    width: 40vw;
+    width: 100%;
     height: 25vh;
     border: 1px solid rgb(167, 167, 167);
 }
 
 input {
-    width: 40vw;
+    width: 100%;
     border: 1px solid rgb(168, 168, 168);
 }
 
@@ -59,7 +64,7 @@ input {
 }
 
 .cvc-exp input {
-    width: 15vw;
+    width: 100px;
 }
 
 #exp {
@@ -70,11 +75,6 @@ input {
 #cvc {
     display: flex;
     flex-direction: column;
-}
-
-#send {
-    display: flex;
-    justify-content: space-between;
 }
 
 h4 {

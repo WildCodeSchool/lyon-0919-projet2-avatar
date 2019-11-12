@@ -44,10 +44,11 @@ button{
 .top-nav-btn{
     width: 40px;
     height: 40px;
-    line-height: 40px;
     text-align: center;
     background-color:#e3f2fd;
     border-radius: 15px;
+    display: inline-flex;
+    justify-content: center;
 }
 
 .btn-right{
