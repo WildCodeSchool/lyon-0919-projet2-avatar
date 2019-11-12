@@ -16,23 +16,53 @@ export class Avatar {
         name: "Eggshell",
         picture: '/assets/Avatar/1-Tones/Body_Eggshell.png'
     };
-    eyes: Eyes;
+    eyes: Eyes = {
+        name: "Delete",
+        picture:'/assets/images/nothing.png'
+    }
 
-    mouth: Mouth;
+    mouth: Mouth = {
+        name: "Delete",
+        picture:'/assets/images/nothing.png'
+    }
 
-    hair: Hair;
+    hair: Hair = {
+        name: "Delete",
+        picture:'/assets/images/nothing.png'
+    }
 
-    eyebrows : Eyebrows;
+    eyebrows : Eyebrows = {
+        name: "Delete",
+        picture:'/assets/images/nothing.png'
+    }
     
-    hairiness: Hairiness;
+    hairiness: Hairiness = {
+        name: "Delete",
+        picture:'/assets/images/nothing.png'
+    }
 
-    clothes: Clothes;
+    clothes: Clothes = {
+        name: "Delete",
+        picture:'/assets/images/nothing.png'
+    }
 
-    earrings: Earrings;
+    earrings: Earrings = {
+        name: "Delete",
+        picture:'/assets/images/nothing.png'
+    }
 
-    necklace: Necklace;
+    necklace: Necklace = {
+        name: "Delete",
+        picture:'/assets/images/nothing.png'
+    }
 
-    glasses: Glasses;
+    glasses: Glasses = {
+        name: "Delete",
+        picture:'/assets/images/nothing.png'
+    }
 
-    hat: Hat;
+    hat: Hat = {
+        name: "Delete",
+        picture:'/assets/images/nothing.png'
+    }
 }
