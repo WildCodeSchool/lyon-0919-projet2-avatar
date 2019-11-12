@@ -1,24 +1,28 @@
-section{
-
-    display: flex;
-    justify-content: center;
-}
-
 img {
+    height: 60px;
     width: 100px;
     margin: 2px;
     cursor: pointer;
     background-color:#e3f2fd;
-    border-radius: 10% / 50%;
+    border-radius: 10px / 50px;
 }
 
 div {
     display: flex;
     flex-wrap: wrap;
     width: 312px;
+    height: 100px;
     margin: 0 auto;
+    justify-content: center;
+    align-items: center;
 }
 
 img:hover {
-    transform: scale(1.03)
+    transform: scale(1.04)
 }
+
+@media only screen and (max-width: 460px) {
+    img {
+        width: 32%;
+    }
+  }

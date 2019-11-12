@@ -1,4 +1,4 @@
-<div class="hairiness elements">
+<div class="elements">
     <div *ngFor="let hairiness of hairinessList" class="mini">
         <img [src]="hairiness.picture" alt="{{ hairiness.name }}" (click)="onHairinessClicked(hairiness)">
     </div>
