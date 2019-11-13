@@ -35,7 +35,6 @@ import { saveAs } from 'file-saver';
   styleUrls: ['./avatar.component.css']
 })
 export class AvatarComponent implements OnInit {
-  // avatarParent : Avatar = new Avatar;
   avatarParent : Avatar = this.avatarService.avatarCreated;
   avatar: Avatar;
   tone : Tone;
@@ -177,7 +176,7 @@ export class AvatarComponent implements OnInit {
     this.avatarService.showAvatar = 'none';
   }  
   
-  onValidClicked(avatarParent: Avatar[]) {
+  onValidClicked(avatarParent: Avatar) {
     this.avatarService.avatarCreated = this.avatarParent;
     this.avatarService.showAvatar = 'block';
     this.router.navigate(['/cards']);

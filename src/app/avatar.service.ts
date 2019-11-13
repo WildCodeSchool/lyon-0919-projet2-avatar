@@ -8,7 +8,6 @@ export class AvatarService {
 
   avatar: Avatar;
   avatarCreated : Avatar = new Avatar;
-  avatarReset: Avatar[];
   showAvatar = 'none';
 
   constructor() { }
