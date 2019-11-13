@@ -8,6 +8,10 @@ body {
     width: 400px;
     height: 100%;
     margin: 0 auto;
+    background: url("/assets/images/bg_home.png");
+    background-size: cover;
+    color: white;
+
 }
 
 .mini:hover {
@@ -34,7 +38,7 @@ body {
 .mini{
     width: calc(33% - 11px);
     margin: 5px;
-    background-color:#e3f2fd;
+    background-color: rgb(236, 236, 236);
     border-radius: 15px;
 }
 
@@ -42,6 +46,23 @@ body {
     width: 100%;
     cursor: pointer;
 }
+
+.buttonColor {
+    height: 18px;
+    width: 260px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+
+}
+
+.buttonColor button {
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    border: none;
+}
+
 
 @media only screen and (max-height: 812px) {
     .elements{
