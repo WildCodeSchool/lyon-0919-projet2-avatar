@@ -11,7 +11,7 @@ export class AvatarService {
 
   public getAvatars(avatar: Avatar) {
     this.avatarCreated.push(avatar);
-    console.log(this.avatarCreated);
+    //console.log(this.avatarCreated);
   }
 
   public resetAvatar(avatar: Avatar) {

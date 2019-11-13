@@ -33,6 +33,7 @@ import { Router } from '@angular/router';
 })
 export class AvatarComponent implements OnInit {
   avatarParent : Avatar = new Avatar;
+  //avatarParent : Avatar = this.avatarService.avatarSaved;
   avatar: Avatar;
   tone : Tone;
   eyes : Eyes;
@@ -177,6 +178,6 @@ export class AvatarComponent implements OnInit {
   onValidClicked(avatarParent: Avatar[]) {
     this.avatarService.getAvatars(this.avatarParent);
     this.router.navigate(['/cards']);
-    // this.avatarParent = this.avatarService.avatarSaved;
+    //avatarParent = this.avatarService.avatarSaved;
   }
 }
