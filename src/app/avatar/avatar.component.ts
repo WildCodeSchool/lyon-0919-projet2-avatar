@@ -89,6 +89,7 @@ export class AvatarComponent implements OnInit {
   constructor(private avatarService : AvatarService, private router: Router) { }
 
   ngOnInit() {
+    //console.log(this.avatarParent);
   }
 
   onSkinSelect(tone: Tone) {
