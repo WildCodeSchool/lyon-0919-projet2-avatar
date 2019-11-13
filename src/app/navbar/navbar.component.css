@@ -1,4 +1,19 @@
-a img:hover {
+.fixed-bottom{
+    width: 400px;
+    margin:auto;
+}
+
+.nav-item{
+    outline: 0;
+    width: 25%;
+    text-align: center;
+}
+
+.nav-item a{
+    outline: 0;
+}
+
+.nav-item a:hover img{
     transform: scale(1.16);
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
@@ -7,11 +22,26 @@ a img:hover {
     transition: all 500ms ease;
 }
 
-a img:active {
+.nav-item a:active img{
     transform: scale(1.30);
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
+}
+
+@media only screen and (max-height: 812px) {
+    .fixed-bottom{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-height: 736px) {
+
+}
+
+@media only screen and (max-height: 667px) {
+
 }

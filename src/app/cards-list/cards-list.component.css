@@ -1,4 +1,4 @@
-img {
+#card img {
     height: 60px;
     width: 100px;
     margin: 2px;
@@ -7,7 +7,7 @@ img {
     border-radius: 10px / 50px;
 }
 
-div {
+#card {
     display: flex;
     flex-wrap: wrap;
     width: 312px;
@@ -17,12 +17,12 @@ div {
     align-items: center;
 }
 
-img:hover {
+#card img:hover {
     transform: scale(1.04)
 }
 
 @media only screen and (max-width: 460px) {
-    img {
+    #card img {
         width: 32%;
     }
   }
