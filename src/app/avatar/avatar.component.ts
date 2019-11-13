@@ -184,7 +184,8 @@ export class AvatarComponent implements OnInit {
 
   onSaveClicked(){ 
     html2canvas(document.querySelector("#capture"),{
-      width: 300
+      width: 300,
+      backgroundColor: null
     }).then(canvas => {
       // Convert the canvas to blob
       canvas.toBlob(function(blob){
