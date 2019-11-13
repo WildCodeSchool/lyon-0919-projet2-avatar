@@ -36,7 +36,6 @@ import { saveAs } from 'file-saver';
 })
 export class AvatarComponent implements OnInit {
   avatarParent : Avatar = new Avatar;
-  //avatarParent : Avatar = this.avatarService.avatarSaved;
   avatar: Avatar;
   tone : Tone;
   eyes : Eyes;
@@ -173,18 +172,15 @@ export class AvatarComponent implements OnInit {
   }
 
   onCancelClicked() {
-
-    // this.avatarParent = new Avatar();
-    // this.selectedValue = this.elementsAvatar[0];
-    // this.selectedIndex = 0;
-    this.avatarService.resetAvatar(this.avatarParent);
+    this.avatarParent = new Avatar();
+    this.selectedValue = this.elementsAvatar[0];
+    this.selectedIndex = 0;
   }  
   
 
   onValidClicked(avatarParent: Avatar[]) {
     this.avatarService.getAvatars(this.avatarParent);
     this.router.navigate(['/cards']);
-    //avatarParent = this.avatarService.avatarSaved;
   }
 
 
