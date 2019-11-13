@@ -90,7 +90,7 @@ export class AvatarComponent implements OnInit {
   constructor(private avatarService : AvatarService, private router: Router) { }
 
   ngOnInit() {
-
+    console.log(this.avatarParent);
   }
 
   onSkinSelect(tone: Tone) {
@@ -177,12 +177,10 @@ export class AvatarComponent implements OnInit {
     this.selectedIndex = 0;
   }  
   
-
   onValidClicked(avatarParent: Avatar[]) {
     this.avatarService.getAvatars(this.avatarParent);
     this.router.navigate(['/cards']);
   }
-
 
   onSaveClicked(){ 
     html2canvas(document.querySelector("#capture"),{

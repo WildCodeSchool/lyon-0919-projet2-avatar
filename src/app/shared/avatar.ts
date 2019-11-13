@@ -15,7 +15,7 @@ export class Avatar {
     tone: Tone = {
         name: "Eggshell",
         picture: '/assets/Avatar/1-Tones/Body_Eggshell.png'
-    };
+    }
     eyes: Eyes = {
         name: "Delete",
         picture:'/assets/images/nothing.png'
@@ -60,7 +60,6 @@ export class Avatar {
         name: "Delete",
         picture:'/assets/images/nothing.png'
     }
-
     hat: Hat = {
         name: "Delete",
         picture:'/assets/images/nothing.png'

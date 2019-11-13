@@ -10,8 +10,10 @@ export class AvatarService {
   avatarCreated: Avatar[] = [];
 
   public getAvatars(avatar: Avatar) {
-    this.avatarCreated.push(avatar);
-    //console.log(this.avatarCreated);
+    if (this.avatarCreated = []) {
+      this.avatarCreated.push(avatar);
+    }
+    console.log(this.avatarCreated);
   }
 
   constructor() { }

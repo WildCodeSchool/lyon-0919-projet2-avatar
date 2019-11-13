@@ -3,6 +3,7 @@ import { Cards } from '../shared/cards';
 import { Card } from '../shared/card';
 import { AvatarService } from '../avatar.service';
 import { Avatar } from '../shared/avatar';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cards',
@@ -16,11 +17,11 @@ export class CardsComponent implements OnInit {
   avatarToDisplay: Avatar[];
   avatarOnCard: Avatar[];
 
-  constructor(private avatarService : AvatarService) { }
+  constructor(private avatarService : AvatarService, private router: Router) { }
 
   ngOnInit() {
     this.avatarToDisplay = this.avatarService.avatarCreated;
-    //console.log(this.avatarToDisplay)
+    // console.log(this.avatarToDisplay);
   }
   
   onCardSelected(c: Card) {
@@ -31,6 +32,11 @@ export class CardsComponent implements OnInit {
   //   this.avatarOnCard = avatarToDisplay;
   //   console.log(this.avatarOnCard);
   // }
+
+  onReturnClicked() {
+    //this.avatarService.avatarCreated =  this.avatarToDisplay;
+    this.router.navigate(['/avatar']);
+  }
 
   
 }
