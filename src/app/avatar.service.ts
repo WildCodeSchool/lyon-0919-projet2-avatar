@@ -7,12 +7,8 @@ import { Avatar } from './shared/avatar';
 export class AvatarService {
 
   avatar: Avatar;
-  avatarCreated: Avatar[] = [];
-
-  public getAvatars(avatar: Avatar) {
-    this.avatarCreated.push(avatar);
-    //console.log(this.avatarCreated);
-  }
+  avatarCreated : Avatar = new Avatar;
+  showAvatar = 'none';
 
   constructor() { }
 }

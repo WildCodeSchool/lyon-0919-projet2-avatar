@@ -4,6 +4,7 @@ import { CARDS } from '../shared/cards-mock';
 import { Card } from '../shared/card';
 import { Avatar } from '../shared/avatar';
 import { Tone } from '../shared/tone';
+import { AvatarService } from '../avatar.service';
 
 @Component({
   selector: 'app-display-cards',
@@ -11,16 +12,17 @@ import { Tone } from '../shared/tone';
   styleUrls: ['./display-cards.component.css']
 })
 export class DisplayCardsComponent implements OnInit {
-  @Input() avatarToCard: Avatar[];
+  @Input() avatarToCard: Avatar;
   
-  @Input() cardsToDisplay: Cards
+  @Input() cardsToDisplay: Cards;
   card: Card[] = CARDS;
 
-  
-  constructor() { }
+  avatarOnCard = this.avatarService.avatarCreated;
+  show = this.avatarService.showAvatar;
+
+  constructor(private avatarService : AvatarService) { }
 
   ngOnInit() {
-    //console.log(this.avatarToCard);
   }
 
 }

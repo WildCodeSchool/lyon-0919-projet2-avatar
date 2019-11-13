@@ -35,7 +35,7 @@ import { saveAs } from 'file-saver';
   styleUrls: ['./avatar.component.css']
 })
 export class AvatarComponent implements OnInit {
-  avatarParent : Avatar = new Avatar;
+  avatarParent : Avatar = this.avatarService.avatarCreated;
   avatar: Avatar;
   tone : Tone;
   eyes : Eyes;
@@ -84,13 +84,11 @@ export class AvatarComponent implements OnInit {
   selectedIndex = 0;
   selectedValue = this.elementsAvatar[this.selectedIndex];
 
-  avatarCreated: Avatar[];
-
+  capturedImage;
 
   constructor(private avatarService : AvatarService, private router: Router) { }
 
   ngOnInit() {
-
   }
 
   onSkinSelect(tone: Tone) {
@@ -175,14 +173,14 @@ export class AvatarComponent implements OnInit {
     this.avatarParent = new Avatar();
     this.selectedValue = this.elementsAvatar[0];
     this.selectedIndex = 0;
+    this.avatarService.showAvatar = 'none';
   }  
   
-
-  onValidClicked(avatarParent: Avatar[]) {
-    this.avatarService.getAvatars(this.avatarParent);
+  onValidClicked(avatarParent: Avatar) {
+    this.avatarService.avatarCreated = this.avatarParent;
+    this.avatarService.showAvatar = 'block';
     this.router.navigate(['/cards']);
   }
-
 
   onSaveClicked(){ 
     html2canvas(document.querySelector("#capture"),{
