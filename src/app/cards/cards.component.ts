@@ -14,27 +14,20 @@ export class CardsComponent implements OnInit {
   
   displayCards: Cards = new Cards;
   card: Card;
-  avatarToDisplay: Avatar[];
-  avatarOnCard: Avatar[];
+  avatarToDisplay: Avatar;
 
   constructor(private avatarService : AvatarService, private router: Router) { }
 
   ngOnInit() {
     this.avatarToDisplay = this.avatarService.avatarCreated;
-    // console.log(this.avatarToDisplay);
+    console.log(this.avatarToDisplay);
   }
   
   onCardSelected(c: Card) {
     this.displayCards.card = c;
   }
 
-  // onAvatarSelected(avatarToDisplay: Avatar[]) {
-  //   this.avatarOnCard = avatarToDisplay;
-  //   console.log(this.avatarOnCard);
-  // }
-
   onReturnClicked() {
-    //this.avatarService.avatarCreated =  this.avatarToDisplay;
     this.router.navigate(['/avatar']);
   }
 
