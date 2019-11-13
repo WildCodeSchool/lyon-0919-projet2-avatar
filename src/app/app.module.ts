@@ -56,7 +56,8 @@ import { DisplayCardsComponent } from './display-cards/display-cards.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
