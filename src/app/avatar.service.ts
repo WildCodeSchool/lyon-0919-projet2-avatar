@@ -14,10 +14,5 @@ export class AvatarService {
     //console.log(this.avatarCreated);
   }
 
-  public resetAvatar(avatar: Avatar) {
-    this.avatarCreated = [];
-  }
-
-
   constructor() { }
 }
