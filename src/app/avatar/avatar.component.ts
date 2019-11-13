@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { Avatar } from '../shared/avatar';
 import { Tone } from '../shared/tone';
 import { Eyes } from '../shared/eyes';
@@ -24,6 +24,8 @@ import { NECKLACES } from '../shared/necklace-mock';
 import { HAT } from '../shared/hat-mock';
 import { AvatarService } from '../avatar.service';
 import { Router } from '@angular/router';
+import html2canvas from 'html2canvas';
+import { saveAs } from 'file-saver';
 
 
 
@@ -84,6 +86,7 @@ export class AvatarComponent implements OnInit {
   selectedValue = this.elementsAvatar[this.selectedIndex];
 
   avatarCreated: Avatar[];
+  capturedImage;
 
   constructor(private avatarService : AvatarService, private router: Router) { }
 
@@ -184,4 +187,26 @@ export class AvatarComponent implements OnInit {
     //avatarParent = this.avatarService.avatarSaved;
   }
 
+
+  onSaveClicked(){ 
+      html2canvas(document.querySelector("#capture"),{
+        width: 300,
+        x: 30,
+
+      }).then(canvas => {
+ // Convert the canvas to blob
+ canvas.toBlob(function(blob){
+  // To download directly on browser default 'downloads' location
+  let link = document.createElement("a");
+  link.download = "image.png";
+  link.href = URL.createObjectURL(blob);
+  link.click();
+
+  // To save manually somewhere in file explorer
+
+
+},'image/png');
+});
+}
+   
 }
