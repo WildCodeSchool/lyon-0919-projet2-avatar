@@ -189,24 +189,19 @@ export class AvatarComponent implements OnInit {
 
 
   onSaveClicked(){ 
-      html2canvas(document.querySelector("#capture"),{
-        width: 300,
-        x: 30,
-
-      }).then(canvas => {
- // Convert the canvas to blob
- canvas.toBlob(function(blob){
-  // To download directly on browser default 'downloads' location
-  let link = document.createElement("a");
-  link.download = "image.png";
-  link.href = URL.createObjectURL(blob);
-  link.click();
-
-  // To save manually somewhere in file explorer
-
-
-},'image/png');
-});
-}
+    html2canvas(document.querySelector("#capture"),{
+      width: 300
+    }).then(canvas => {
+      // Convert the canvas to blob
+      canvas.toBlob(function(blob){
+        // To download directly on browser default 'downloads' location
+        let link = document.createElement("a");
+        link.download = "image.png";
+        link.href = URL.createObjectURL(blob);
+        link.click();
+        // To save manually somewhere in file explorer
+      },'image/png');
+    });
+  }
    
 }
