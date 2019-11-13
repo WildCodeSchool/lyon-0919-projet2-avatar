@@ -1,3 +1,5 @@
+@import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+
 h3 {
     text-align: center;
     font-size: 24px;
@@ -55,3 +57,103 @@ input {
     width: 100%;
     border: 1px solid rgb(168, 168, 168);
 }
+
+
+
+
+
+#social {
+    margin: 20px 10px;
+    text-align: center;
+}
+
+  
+  .smGlobalBtn {
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      border:2px solid #ddd;
+      box-shadow: 0 3px 3px #999;
+      padding: 0px;
+      text-decoration: none;
+      text-align: center;
+      color: #fff;
+      font-size: 25px;
+      font-weight: normal;
+      line-height: 2em;
+      border-radius: 27px;
+      -moz-border-radius:27px;
+      -webkit-border-radius:27px;
+      margin-left: 20px;
+      margin-right: 10px;
+      margin-top: 10px;
+  }
+  
+
+  .facebookBtn{
+      background: #4060A5;
+  }
+  
+  .facebookBtn:before{
+      font-family: "FontAwesome";
+      content: "\f09a";
+  }
+  
+  .facebookBtn:hover{
+      color: #4060A5;
+      background: #fff;
+      border-color: #4060A5;
+  }
+  
+
+  .twitterBtn{
+      background: #00ABE3;
+  }
+  
+  .twitterBtn:before{
+        font-family: "FontAwesome";
+        content: "\f099";
+        
+  }
+  
+  .twitterBtn:hover{
+        color: #00ABE3;
+        background: #fff;
+        border-color: #00ABE3;
+  }
+  
+ 
+  .googleplusBtn{
+      background: #e64522;
+  }
+  
+  .googleplusBtn:before{
+        font-family: "FontAwesome";
+        content: "\f0d5";
+  }
+  
+  .googleplusBtn:hover{
+        color: #e64522;
+        background: #fff;
+        border-color: #e64522;
+  }
+  
+
+  .linkedinBtn{
+      background: #0094BC;
+  }
+  
+  .linkedinBtn:before{
+        font-family: "FontAwesome";
+        content: "\f0e1";
+  }
+  
+  .linkedinBtn:hover{
+        color: #0094BC;
+        background: #fff;
+        border-color: #0094BC;
+  }
+  
+
