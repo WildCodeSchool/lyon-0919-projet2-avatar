@@ -62,6 +62,12 @@ body {
     border: none;
 }
 
+@media only screen and (max-height: 1280px) {
+    .elements{
+        height: 330px;
+    }
+}
+
 
 @media only screen and (max-height: 812px) {
     .elements{
@@ -81,7 +87,7 @@ body {
     .mini{
         width: 21.5%;
         overflow: hidden;
-        height: 73px;
+        height: 72px;
     }
 }
 
@@ -93,7 +99,7 @@ body {
     .mini{
         width: 16.5%;
         overflow: hidden;
-        height: 56px;
+        height: 55px;
     }
 
 }

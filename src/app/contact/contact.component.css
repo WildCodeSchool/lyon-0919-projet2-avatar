@@ -36,9 +36,9 @@ section {
 
 button {
     float: right;
-    background-color: white;
+    background: none;
     box-shadow: white;
-    border: white;
+    border: none;
 }
 
 button img:hover {

@@ -11,6 +11,6 @@
 </div>
 
 <div class="poster">
-    <app-display-cards [cardsToDisplay]="displayCards"></app-display-cards>
+    <app-display-cards [cardsToDisplay]="displayCards" [avatarToCard]="avatarToDisplay"></app-display-cards>
     <app-cards-list (cardsEvent)="onCardSelected($event)"></app-cards-list>
 </div>
