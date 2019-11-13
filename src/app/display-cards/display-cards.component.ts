@@ -23,6 +23,7 @@ export class DisplayCardsComponent implements OnInit {
   constructor(private avatarService : AvatarService) { }
 
   ngOnInit() {
+    console.log(this.avatarOnCard)
   }
 
 }

@@ -16,6 +16,10 @@ export class Avatar {
         name: "Eggshell",
         picture: '/assets/Avatar/1-Tones/Body_Eggshell.png'
     };
+    nose = {
+        name: "Nose",
+        picture: '/assets/Avatar/5-Noses/Face_Nose.png'
+    };
     eyes: Eyes = {
         name: "Delete",
         picture:'/assets/images/nothing.png'
