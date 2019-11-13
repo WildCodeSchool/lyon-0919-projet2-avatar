@@ -22,6 +22,26 @@
     display: inline-flex;
     justify-content: center;
     border: none;
+    outline: 0;
+}
+
+.top-nav-btn:hover{
+    cursor: pointer;
+    transform: scale(1.10);
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease
+}
+
+.top-nav-btn:active {
+    transform: scale(1.30);
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
 }
 
 .btn-right{

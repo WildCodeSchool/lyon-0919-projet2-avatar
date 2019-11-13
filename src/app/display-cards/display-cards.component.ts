@@ -18,7 +18,7 @@ export class DisplayCardsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.avatarToCard);
+    //console.log(this.avatarToCard);
   }
 
 }
