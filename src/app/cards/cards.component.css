@@ -1,4 +1,4 @@
-.allElementsCard {
+.poster {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -38,4 +38,51 @@ button{
     border: none;
     background-color: inherit;
     outline: 0;
+}
+
+.top-nav {
+    width: 302px;
+    margin: 0 auto;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-nav-btn{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color:#e3f2fd;
+    border-radius: 15px;
+    display: inline-flex;
+    justify-content: center;
+    border: none;
+    outline: 0;
+}
+
+.top-nav-btn:hover{
+    cursor: pointer;
+    transform: scale(1.10);
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease
+}
+
+.top-nav-btn:active {
+    transform: scale(1.30);
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.btn-right{
+    margin-left: 5px;
+}
+
+.btn-return {
+    margin-left: 10px;
 }

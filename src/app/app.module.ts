@@ -58,7 +58,8 @@ import { BublesComponent } from './bubles/bubles.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

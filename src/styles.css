@@ -1,8 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
-body, html {
-    width: 100%;
+html {
+    background-color: grey;
     height: 100%;
+}
+
+body {
+    width: 400px;
+    height: 100%;
+    margin: 0 auto;
     background: url("/assets/images/bg_home.png");
+    background-size: cover;
     color: white;
 }
 
@@ -44,7 +51,7 @@ body, html {
     width: 260px;
     display: flex;
     justify-content: space-between;
-    margin: 0px auto;
+    margin: 5px auto;
 
 }
 
@@ -55,14 +62,24 @@ body, html {
     border: none;
 }
 
-
-@media only screen and (max-height: 812px) {
+@media only screen and (max-height: 1280px) {
     .elements{
         height: 330px;
     }
 }
 
-@media only screen and (max-height: 736px) {
+
+@media only screen and (max-height: 812px) {
+    .elements{
+        height: 330px;
+    }
+
+    body {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-height: 740px) {
     .elements{
         height: 245px;
     }
@@ -70,9 +87,8 @@ body, html {
     .mini{
         width: 21.5%;
         overflow: hidden;
-        height: 73px;
+        height: 72px;
     }
-
 }
 
 @media only screen and (max-height: 667px) {
@@ -83,7 +99,7 @@ body, html {
     .mini{
         width: 16.5%;
         overflow: hidden;
-        height: 56px;
+        height: 55px;
     }
 
 }

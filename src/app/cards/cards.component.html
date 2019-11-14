@@ -1,5 +1,21 @@
+<div class="top-nav">
+    <div>
+        <button class="top-nav-btn" (click)="onReturnClicked()"><img class="btn-return" src="/assets/images/arrow_back_ios-24px.svg" alt="avatar random"></button>
+    </div>
+
+    <div>
+        <button class="top-nav-btn" (click)="onSaveClicked()"><img src="/assets/Navicon/save.svg" alt="avatar save"></button>
+        <button class="top-nav-btn btn-right" (click)="onCancelClicked()"><img src="/assets/Navicon/close.svg" alt="avatar cancel"></button>
+        <button class="top-nav-btn btn-right" (click)="onRandomClicked()"><img src="/assets/Navicon/check.svg" alt="avatar valid"></button>
+    </div>
+</div>
+
 <div class="allElementsCard">
-    <app-display-cards [cardsToDisplay]="displayCards" [avatarToCard]="avatarToDisplay" [messageBuble]="displayMessageBuble"></app-display-cards>
+    <div class="poster" >
+        <div id= "capture">
+        <app-display-cards [cardsToDisplay]="displayCards" [avatarToCard]="avatarToDisplay" [messageBuble]="displayMessageBuble" ></app-display-cards>
+        </div>
+    </div>
 
 
 

@@ -1,18 +1,19 @@
 <div class="display" *ngIf="cardsToDisplay.card">
     <img class="card" [src]="cardsToDisplay.card.url" alt="{{ cardsToDisplay.card.name }}"/>
 
-    <div class="avatar" *ngFor="let elts of avatarToCard">
-        <img [src]="elts.tone.picture" />
-        <img [src]="elts.eyes.picture" />
-        <img [src]="elts.mouth.picture" />
-        <img [src]="elts.hair.picture" />
-        <img [src]="elts.eyebrows.picture" />
-        <img [src]="elts.hairiness.picture" />
-        <img [src]="elts.clothes.picture" />
-        <img [src]="elts.earrings.picture" />
-        <img [src]="elts.necklace.picture" />
-        <img [src]="elts.glasses.picture" />
-        <img [src]="elts.hat.picture" />
+    <div class="avatar" [style.display]="show">
+        <img [src]="avatarOnCard.tone.picture" />
+        <img [src]="avatarOnCard.nose.picture" />
+        <img [src]="avatarOnCard.eyes.picture" />
+        <img [src]="avatarOnCard.mouth.picture" />
+        <img [src]="avatarOnCard.hair.picture" />
+        <img [src]="avatarOnCard.eyebrows.picture" />
+        <img [src]="avatarOnCard.hairiness.picture" />
+        <img [src]="avatarOnCard.clothes.picture" />
+        <img [src]="avatarOnCard.earrings.picture" />
+        <img [src]="avatarOnCard.necklace.picture" />
+        <img [src]="avatarOnCard.glasses.picture" />
+        <img [src]="avatarOnCard.hat.picture" />
     </div>
 
     <div [style.backgroundImage]="'url('+ cardsToDisplay.buble.picture +')'" class="buble">

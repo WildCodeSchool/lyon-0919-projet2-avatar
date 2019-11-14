@@ -4,13 +4,17 @@
   </div>
 
   <div>
-    <button class="top-nav-btn" (click)="onRandomClicked()"><img src="/assets/Navicon/save.svg" alt="avatar save"></button>
+    <button class="top-nav-btn captureAvatar" (click)="onSaveClicked()"><img src="/assets/Navicon/save.svg" alt="avatar save"></button>
     <button class="top-nav-btn btn-right" (click)="onCancelClicked()"><img src="/assets/Navicon/close.svg" alt="avatar cancel"></button>
     <button class="top-nav-btn btn-right" (click)="onValidClicked()"><img src="/assets/Navicon/check.svg" alt="avatar valid"></button>
   </div>
 </div>
 
-<app-display-avatar [displayAvatar]="avatarParent"></app-display-avatar>
+
+
+<div id="capture">
+  <app-display-avatar [displayAvatar]="avatarParent"  ></app-display-avatar>
+</div>
 
 <div class = "navigationElements">
   <button [ngStyle]="{'visibility':(selectedValue == 'tone') ? 'hidden' : 'visible'}"><img src='assets/images/keyboard_arrow_left-24px.svg' (click)="clickPrevious()" class="arrows-left"></button>
@@ -23,6 +27,7 @@
       <h2 *ngSwitchCase="'hairiness'" (hairinessEvent)="onHairinessSelect($event)">HAIRINESS</h2>
       <h2 *ngSwitchCase="'clothes'" (clothesEvent)="onClotheSelect($event)">CLOTHES</h2>
       <h2 *ngSwitchCase="'earrings'" (earringsEvent)="onEarringsSelect($event)">EARRINGS</h2>
+
       <h2 *ngSwitchCase="'necklace'" (necklaceEvent)="onNecklaceSelect($event)">NECKLACES</h2>
       <h2 *ngSwitchCase="'glasses'"  (glassesEvent)="onGlassesSelect($event)">GLASSES</h2>
       <h2 *ngSwitchCase="'hat'" (hatEvent)="onHatSelect($event)">HATS</h2> 
@@ -44,6 +49,7 @@
     <app-glasses-gen *ngSwitchCase="'glasses'"  (glassesEvent)="onGlassesSelect($event)"></app-glasses-gen>
     <app-hat-gen *ngSwitchCase="'hat'" (hatEvent)="onHatSelect($event)"></app-hat-gen> 
   </div>
+
 
 
 

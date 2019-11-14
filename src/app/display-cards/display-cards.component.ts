@@ -6,6 +6,7 @@ import { Avatar } from '../shared/avatar';
 import { Tone } from '../shared/tone';
 import { Buble } from '../shared/buble';
 import { BUBLES } from '../shared/bubles-mock';
+import { AvatarService } from '../avatar.service';
 
 @Component({
   selector: 'app-display-cards',
@@ -13,18 +14,21 @@ import { BUBLES } from '../shared/bubles-mock';
   styleUrls: ['./display-cards.component.css']
 })
 export class DisplayCardsComponent implements OnInit {
-  @Input() avatarToCard: Avatar[];
+  @Input() avatarToCard: Avatar;
   
   @Input() cardsToDisplay: Cards;
   card: Card[] = CARDS;
   buble: Buble[] = BUBLES;
 
   @Input() messageBuble: string;
-  
-  constructor() { }
+    
+  avatarOnCard = this.avatarService.avatarCreated;
+  show = this.avatarService.showAvatar;
+
+  constructor(private avatarService : AvatarService) { }
 
   ngOnInit() {
-    
+    console.log(this.avatarOnCard)
   }
  
  
