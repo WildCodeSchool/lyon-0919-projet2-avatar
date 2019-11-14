@@ -2,8 +2,11 @@
     <div *ngFor="let buble of bubles" class="mini">
         <img [src]="buble.picture" alt="{{ buble.name }}" (click)="onBubleClick(buble)"/>
     </div>
+</div>
+
+<div class="formElts">
     <form (submit)="sendMessage()">
         <input [(ngModel)]="messageBuble" [ngModelOptions]="{standalone: true}" placeholder="Enter your message" maxlength="25">
-        <button type="submit">OK!</button>
+        <button type="submit"><img src="../../assets/Navicon/edit.svg" alt="edit" /></button>
     </form>
 </div>
