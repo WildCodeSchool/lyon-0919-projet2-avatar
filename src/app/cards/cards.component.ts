@@ -67,8 +67,6 @@ export class CardsComponent implements OnInit {
 
   onSaveClicked(){ 
     html2canvas(document.querySelector("#capture"),{
-      width: 300,
-      height: 180,
       backgroundColor: null
     }).then(canvas => {
       // Convert the canvas to blob
