@@ -25,6 +25,7 @@ import { HatGenComponent } from './hat-gen/hat-gen.component';
 import { GlassesGenComponent } from './glasses-gen/glasses-gen.component';
 import { CardsListComponent } from './cards-list/cards-list.component';
 import { DisplayCardsComponent } from './display-cards/display-cards.component';
+import { BublesComponent } from './bubles/bubles.component';
 
 
 
@@ -51,6 +52,7 @@ import { DisplayCardsComponent } from './display-cards/display-cards.component';
     GlassesGenComponent,
     CardsListComponent,
     DisplayCardsComponent,
+    BublesComponent,
   ],
   imports: [
     BrowserModule,

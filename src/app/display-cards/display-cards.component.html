@@ -14,7 +14,14 @@
         <img [src]="elts.glasses.picture" />
         <img [src]="elts.hat.picture" />
     </div>
+
+    <div [style.backgroundImage]="'url('+ cardsToDisplay.buble.picture +')'" class="buble">
+        <div [ngStyle]="{'visibility':(cardsToDisplay.buble.name ==='Delete') ? 'hidden':'visible' }"><p>{{messageBuble}}</p></div>
+    </div>
+    
+
 </div>
+
 
 
 
