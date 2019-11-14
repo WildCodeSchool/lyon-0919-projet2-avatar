@@ -5,6 +5,41 @@
     align-items: center;
 }
 
+.navigationElements{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    width: 302px;
+    margin: 0 auto;
+}
+
+.navigationElements h2{
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.arrows-left{
+    width: 50px;
+    margin-left: -25px;
+}
+
+.arrows-right{
+    width: 50px;
+    margin-right: -25px;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.10);
+}
+
+button{
+    border: none;
+    background-color: inherit;
+    outline: 0;
+}
+
 .top-nav {
     width: 302px;
     margin: 0 auto;

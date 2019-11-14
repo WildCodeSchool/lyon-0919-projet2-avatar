@@ -4,6 +4,8 @@ import { CARDS } from '../shared/cards-mock';
 import { Card } from '../shared/card';
 import { Avatar } from '../shared/avatar';
 import { Tone } from '../shared/tone';
+import { Buble } from '../shared/buble';
+import { BUBLES } from '../shared/bubles-mock';
 import { AvatarService } from '../avatar.service';
 
 @Component({
@@ -16,7 +18,10 @@ export class DisplayCardsComponent implements OnInit {
   
   @Input() cardsToDisplay: Cards;
   card: Card[] = CARDS;
+  buble: Buble[] = BUBLES;
 
+  @Input() messageBuble: string;
+    
   avatarOnCard = this.avatarService.avatarCreated;
   show = this.avatarService.showAvatar;
 
@@ -25,5 +30,7 @@ export class DisplayCardsComponent implements OnInit {
   ngOnInit() {
     console.log(this.avatarOnCard)
   }
+ 
+ 
 
 }
