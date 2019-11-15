@@ -167,7 +167,7 @@ section {
 }
  #content {
     position:relative;
-    margin:50px auto;
+    margin:0px auto;
     width:370px;
     min-height:200px;
     z-index:100;
@@ -249,7 +249,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     font-style:italic;
 }
 textarea {
-    min-height:150px;
+    min-height:100px;
     resize:vertical
 }
 /** labels**/
