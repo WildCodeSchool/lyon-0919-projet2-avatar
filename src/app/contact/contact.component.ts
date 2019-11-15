@@ -20,6 +20,8 @@ export class ContactComponent implements OnInit {
     this.router.navigate(['/payment']);
     console.log(this.model);
   }
-  
+  onReturnClicked() {
+    this.router.navigate(['/cards']);
+  }
 }
 
