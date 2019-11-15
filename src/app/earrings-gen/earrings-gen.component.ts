@@ -1,6 +1,6 @@
 import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 import { Earrings } from '../shared/earrings';
-import { EARRINGS } from '../shared/earrings-mock';
+import { EARRINGS, EARRINGSRED, EARRINGSGREEN } from '../shared/earrings-mock';
 
 @Component({
   selector: 'app-earrings-gen',
@@ -16,6 +16,15 @@ export class EarringsGenComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+  onColorClickedGreen(){
+    this.earringsList = EARRINGSGREEN;
+  }
+  onColorClickedPurple(){
+    this.earringsList = EARRINGS;
+  }
+  onColorClickedRed(){
+    this.earringsList = EARRINGSRED;
   }
 
   onEarringsClicked(earrings: Earrings) {

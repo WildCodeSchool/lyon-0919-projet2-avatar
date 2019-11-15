@@ -1,6 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Necklace } from '../shared/necklace';
-import { NECKLACES } from '../shared/necklace-mock';
+import { NECKLACES, NECKLACESBLUE, NECKLACESPURPLE } from '../shared/necklace-mock';
 
 @Component({
   selector: 'app-necklace-gen',
@@ -19,5 +19,13 @@ export class NecklaceGenComponent implements OnInit {
   onNecklaceClicked(necklace: Necklace) {
     this.necklaceEvent.emit(necklace);
   }
-
+  OnColorClickedRed(){
+    this.necklacesList = NECKLACES;
+  }
+  onColorClickedBlue(){
+    this.necklacesList = NECKLACESBLUE;
+  }
+  onColorClickedPurple(){
+    this.necklacesList = NECKLACESPURPLE;
+  }
 }
