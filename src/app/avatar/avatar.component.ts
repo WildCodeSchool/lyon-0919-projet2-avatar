@@ -192,6 +192,10 @@ export class AvatarComponent implements OnInit {
     this.router.navigate(['/cards']);
   }
 
+  onReturnClicked() {
+    this.router.navigate(['/home']);
+  }
+
   onSaveClicked(){ 
     html2canvas(document.querySelector("#capture"),{
       backgroundColor: null
