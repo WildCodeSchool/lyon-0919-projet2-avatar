@@ -371,8 +371,24 @@ input[type=submit]:active, input[type=submit]:focus {
     justify-content: space-between;
 }
 
-@media only screen and (max-height: 812px) {
+@media only screen and (max-width: 375px) {
     #content {
+        width: 93%;
+    }
+
+    input:not([type="submit"]), textarea {
         width: 100%;
     }
 }
+
+
+
+@media only screen and (max-height: 568px) and (max-width: 320px){
+    .smGlobalBtn[_ngcontent-ffc-c20] {
+        width: 35px;
+        height: 35px;
+    
+    }
+}
+
+

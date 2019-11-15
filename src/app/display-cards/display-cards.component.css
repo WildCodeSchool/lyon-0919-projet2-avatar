@@ -68,7 +68,7 @@
     }
 
     .avatar {
-        bottom: 99px;
+        bottom: 125px;
     }
   }
 
@@ -79,7 +79,34 @@
     }
 
     .avatar {
-        bottom: 99px;
+        bottom: 110px;
     }
 
   }
+
+@media only screen and (max-width: 390px) {
+    .avatar{
+        bottom: 126px;
+    }
+}
+
+
+
+@media only screen and (max-height: 568px) and (max-width: 320px){
+    .avatar{
+        bottom: 115px;
+    }
+}
+
+@media only screen and (max-height: 640px) and (max-width: 390px){
+    .avatar{
+        bottom: 142px;
+    }
+}
+
+@media only screen and (max-height: 667px) and (max-width: 375px){
+    .avatar{
+        bottom: 142px;
+    }
+}
+
