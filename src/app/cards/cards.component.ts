@@ -37,9 +37,14 @@ export class CardsComponent implements OnInit {
     this.displayCards.card = c;
   }
 
+  onValidClicked() {
+    this.router.navigate(['/contact']);
+  }
+
   onBubleSelect(buble: Buble){
     console.log(buble);
     this.displayCards.buble = buble;
+    
   }
 
   clickNext(){
@@ -80,5 +85,6 @@ export class CardsComponent implements OnInit {
       },'image/png');
     });
   }
+
   
 }

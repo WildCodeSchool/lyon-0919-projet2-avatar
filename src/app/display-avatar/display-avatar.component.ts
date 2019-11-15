@@ -49,14 +49,14 @@ export class DisplayAvatarComponent implements OnInit {
 
   glasses: Glasses[] = GLASSES;
 
-  hats: Hat[] = HAT
+  hats: Hat[] = HAT;
   hat: Hat;
 
   necklace: Necklace[] = NECKLACES;
 
   earringsList : Earrings[] = EARRINGS;
   earrings : Earrings;
-
+  
   constructor() { }
 
   ngOnInit() {
