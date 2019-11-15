@@ -13,6 +13,7 @@ export class PaymentComponent implements OnInit {
 
   isFormVisible: boolean = true;
   isModalVisible: boolean = false;
+
   constructor(private router: Router) { }
   
   ngOnInit() {

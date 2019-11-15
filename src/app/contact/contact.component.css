@@ -49,6 +49,10 @@ button{
     transition: all 500ms ease;
 }
 
+.top-nav-btn img {
+    width: 15px;
+}
+
 .btn-return {
     margin-left: 10px;
 }
