@@ -1,7 +1,8 @@
 h3 {
     text-align: center;
-    font-size: 24px;
+    font-size: 32px;
     margin-top: 40px;
+    font-family: 'Hammersmith One', sans-serif;
 }
 
 #creditCard{
@@ -33,12 +34,14 @@ form {
     color: red;
     font-size: 12px;
     margin-top: 5px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 .button {
     font-weight: bold;
     float: right;
     margin-top: 10px;
+    color: whitesmoke;
 }
 
 button img:hover {
@@ -75,10 +78,10 @@ input {
 
 h4 {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
     color: rgb(23, 36, 39);
     margin-bottom: 30px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Hammersmith One', sans-serif;
     text-align: center;
 }
 
@@ -87,15 +90,19 @@ h5 {
     margin-bottom: 15px;
     color: rgb(25, 38, 41);
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Hammersmith One', sans-serif;
 }
 
 h5 + p {
     font-weight: bold;
     text-align: center;
     font-size: 12px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Hammersmith One', sans-serif;
     color: #e9e5e5;
+}
+
+label {
+    font-family:'Alice', Verdana, serif;
 }
 
 .modal {
@@ -112,7 +119,16 @@ h5 + p {
     width: 80px;
     height: 40px;
     margin-top: 10px; 
+    font-family: 'Hammersmith One', sans-serif;
 }
+
+:-ms-input-placeholder {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+  }
+  
+::placeholder {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+  }
 
 section {
     overflow: hidden;
