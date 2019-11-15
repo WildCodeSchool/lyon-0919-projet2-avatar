@@ -1,4 +1,8 @@
-<div class = "buttonColor"></div>
+<div class = "buttonColor">
+        <button (click)="onColorClickedRed()" class="buttonColorRed"></button>
+        <button (click)="onColorClickedPurple()" class="buttonColorPurple"></button>
+        <button (click)="onColorClickedGreen()" class="buttonColorGreen"></button>
+</div>
 
 <div class="elements">
     <div *ngFor="let necklace of necklacesList" class="mini">

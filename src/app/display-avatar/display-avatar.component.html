@@ -1,5 +1,5 @@
  <div class= "allSelected">
-    <img src="/assets/Avatar/5-Noses/Face_Nose.png" alt="nose" class="nose" />
+    
 
     <div *ngIf="displayAvatar.tone">
         <img [src]="displayAvatar.tone.picture" alt="{{displayAvatar.tone.name}}"/>
@@ -44,6 +44,7 @@
     <div *ngIf="displayAvatar.hat">
         <img [src]="displayAvatar.hat.picture" alt="{{displayAvatar.hat.name}}"/>
     </div>
+    <img [src]="displayAvatar.nose.picture" alt="nose" class="nose" />
 </div>
 
 

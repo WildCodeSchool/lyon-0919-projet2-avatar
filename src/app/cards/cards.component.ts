@@ -29,8 +29,8 @@ export class CardsComponent implements OnInit {
     this.displayCards.card = c;
   }
 
-  onReturnClicked() {
-    this.router.navigate(['/avatar']);
+  onValidClicked() {
+    this.router.navigate(['/contact']);
   }
 
   onSaveClicked(){ 
@@ -50,5 +50,6 @@ export class CardsComponent implements OnInit {
       },'image/png');
     });
   }
+
   
 }

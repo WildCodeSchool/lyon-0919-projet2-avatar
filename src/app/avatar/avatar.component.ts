@@ -19,8 +19,8 @@ import { HAIR, HAIRGREY, HAIRGINGER, HAIRCHESTNUT, HAIRBLOND } from '../sha
 import { HAIRINESS, HAIRINESSBLOND, HAIRINESSCHESTNUT, HAIRINESSGINGER, HAIRINESSGREY } from '../shared/hairiness-mock';
 import { CLOTHES, CLOTHESGREEN, CLOTHESPINK, CLOTHESRED, CLOTHESYELLOW } from '../shared/clothes-mock';
 import { GLASSES } from '../shared/glasses-mock';
-import { EARRINGS } from '../shared/earrings-mock';
-import { NECKLACES } from '../shared/necklace-mock';
+import { EARRINGS, EARRINGSRED, EARRINGSGREEN } from '../shared/earrings-mock';
+import { NECKLACES, NECKLACESPURPLE, NECKLACESBLUE } from '../shared/necklace-mock';
 import { HAT } from '../shared/hat-mock';
 import { AvatarService } from '../avatar.service';
 import { Router } from '@angular/router';
@@ -68,7 +68,13 @@ export class AvatarComponent implements OnInit {
   hairArray = [this.hairList, this.hairListChestnut, this.hairListBlond, this.hairListGinger, this.hairListGrey];
   randomHairColor : Hair[];
   earringsList : Earrings[] = EARRINGS;
+  earringsListRed : Earrings[]= EARRINGSRED;
+  earringsListGreen : Earrings[]= EARRINGSGREEN;
+  earringsArray = [this.earringsList, this.earringsListGreen, this.earringsListRed];
   necklaceList :  Necklace[] = NECKLACES;
+  necklaceListPurple: Necklace[]= NECKLACESPURPLE;
+  necklaceListBlue: Necklace[]= NECKLACESBLUE;
+  necklaceArray = [this.necklaceList, this.necklaceListBlue, this.necklaceListPurple];
   hatList : Hat[] = HAT;
   clothesList : Clothes[] = CLOTHES;
   clothesListGrenn : Clothes[] = CLOTHESGREEN;
@@ -83,8 +89,9 @@ export class AvatarComponent implements OnInit {
 
   selectedIndex = 0;
   selectedValue = this.elementsAvatar[this.selectedIndex];
+  randomNecklaceColor: any;
+  randomearringsColor: Earrings[];
 
-  capturedImage;
 
   constructor(private avatarService : AvatarService, private router: Router) { }
 
@@ -157,14 +164,16 @@ export class AvatarComponent implements OnInit {
     this.randomHairColor = this.hairArray[Math.floor(Math.random() * (this.hairArray.length))];
     this.randomHairinessColor = this.hairinessArray[Math.floor(Math.random() * (this.hairinessArray.length))];
     this.randomClothesColor = this.clothesArray[Math.floor(Math.random() * (this.clothesArray.length))];
+    this.randomearringsColor = this.earringsArray[Math.floor(Math.random() * (this.clothesArray.length))];
+    this.randomNecklaceColor = this.necklaceArray[Math.floor(Math.random() * (this.necklaceArray.length))];
     this.avatarParent.tone = this.toneList[Math.floor(Math.random() * (this.toneList.length))];
     this.avatarParent.eyes = this.eyesList[Math.floor(Math.random() * (this.eyesList.length))];
     this.avatarParent.mouth = this.mouthList[Math.floor(Math.random() * (this.mouthList.length))]; 
     this.avatarParent.eyebrows = this.eyebrowList[Math.floor(Math.random() * (this.eyebrowList.length))]; 
     this.avatarParent.hairiness = this.randomHairinessColor[Math.floor(Math.random() * (this.hairinessList.length))]; 
     this.avatarParent.hair = this.randomHairColor[Math.floor(Math.random() * (this.hairList.length))]; 
-    this.avatarParent.earrings = this.earringsList[Math.floor(Math.random() * (this.earringsList.length))]; 
-    this.avatarParent.necklace = this.necklaceList[Math.floor(Math.random() * (this.necklaceList.length))]; 
+    this.avatarParent.earrings = this.randomearringsColor[Math.floor(Math.random() * (this.earringsList.length))]; 
+    this.avatarParent.necklace = this.randomNecklaceColor[Math.floor(Math.random() * (this.necklaceList.length))]; 
     this.avatarParent.hat = this.hatList[Math.floor(Math.random() * (this.hatList.length))]; 
     this.avatarParent.clothes = this.clothesList[Math.floor(Math.random() * (this.clothesList.length))]; 
     this.avatarParent.glasses = this.glassesList[Math.floor(Math.random() * (this.glassesList.length))]; 
@@ -185,7 +194,6 @@ export class AvatarComponent implements OnInit {
 
   onSaveClicked(){ 
     html2canvas(document.querySelector("#capture"),{
-      width: 300,
       backgroundColor: null
     }).then(canvas => {
       // Convert the canvas to blob
