@@ -1,8 +1,7 @@
-
 <section>
-     <div class="top-nav">
+     <!-- <div class="top-nav">
         <button class="top-nav-btn" (click)="onReturnClicked()"><img class="btn-return" src="/assets/images/arrow_back_ios-24px.svg" alt="return"></button>
-    </div>
+    </div> -->
     <form *ngIf=(isFormVisible) (submit)="paymentForm.valid && onSubmit(paymentForm)" #paymentForm="ngForm">
         <h3>Payment</h3>
         <img id="creditCard" src="/assets/images/creditCard.png" alt="Accepted Card" title="Accepted Card">
@@ -54,13 +53,14 @@
                 </div>
     
             <div id="send">
-                <button type="submit" class="button btn" style="background-color:rgb(121, 206, 255)">BUY 2.39$</button>
+                <button class="top-nav-btn" (click)="onReturnClicked()" ><img src="/assets/images/arrow_back_ios-24px.svg" alt="return"></button>
+                
+                <button type="submit" class="button btn">BUY 2.39$</button>
             </div>
         </div>
     </form>
-
 </section>
-<section>
+
 <div class="container" class="modal" *ngIf=(isModalVisible)>
         <h4>Your payment has been accepted</h4>
         <h5>Great !</h5>
@@ -103,7 +103,6 @@
             </div>
         </div>
     </div>
-</section>
 
 
     <!-- Modal -->
