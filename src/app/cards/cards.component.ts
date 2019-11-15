@@ -3,6 +3,7 @@ import { Cards } from '../shared/cards';
 import { Card } from '../shared/card';
 import { AvatarService } from '../avatar.service';
 import { Avatar } from '../shared/avatar';
+import { Buble } from '../shared/buble';
 import { Router } from '@angular/router';
 import html2canvas from 'html2canvas';
 
@@ -14,9 +15,16 @@ import html2canvas from 'html2canvas';
 })
 export class CardsComponent implements OnInit {
   
-  displayCards: Cards = new Cards;
+  displayCards: Cards = new Cards();
   card: Card;
+  buble: Buble;
   avatarToDisplay: Avatar;
+  displayMessageBuble: string;
+
+  elementsCard: string[] =["card", "buble"];
+
+  selectedIndex = 0;
+  selectedValue = this.elementsCard[this.selectedIndex];
 
   constructor(private avatarService : AvatarService, private router: Router) { }
 
@@ -33,10 +41,37 @@ export class CardsComponent implements OnInit {
     this.router.navigate(['/contact']);
   }
 
+  onBubleSelect(buble: Buble){
+    console.log(buble);
+    this.displayCards.buble = buble;
+    
+  }
+
+  clickNext(){
+    if(this.selectedIndex != this.elementsCard.length-1 ){
+      this.selectedIndex++;
+      this.selectedValue = this.elementsCard[this.selectedIndex];
+    }
+    // console.log (this.selectedValue)
+  }
+
+  clickPrevious(){
+    if(this.selectedIndex != 0){
+      this.selectedIndex--;
+      this.selectedValue = this.elementsCard[this.selectedIndex];
+    }
+  }
+
+  sendMessageBuble(messageBuble){
+    this.displayMessageBuble= messageBuble;
+  }
+
+  onReturnClicked() {
+    this.router.navigate(['/avatar']);
+  }
+
   onSaveClicked(){ 
     html2canvas(document.querySelector("#capture"),{
-      width: 300,
-      height: 180,
       backgroundColor: null
     }).then(canvas => {
       // Convert the canvas to blob

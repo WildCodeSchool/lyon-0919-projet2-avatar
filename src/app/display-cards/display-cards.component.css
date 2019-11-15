@@ -20,6 +20,27 @@
     position: absolute;
 }
 
+.buble {
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    height: 45%;
+    background-size: 95%;
+    width: 32%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    padding: 6% 5%;
+    line-height: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.buble p{
+    margin: 0;
+}
 
 @media only screen and (max-width: 460px) {
     .card {

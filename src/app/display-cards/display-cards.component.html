@@ -15,7 +15,14 @@
         <img [src]="avatarOnCard.glasses.picture" />
         <img [src]="avatarOnCard.hat.picture" />
     </div>
+
+    <div [style.backgroundImage]="'url('+ cardsToDisplay.buble.picture +')'" class="buble">
+        <div [ngStyle]="{'visibility':(cardsToDisplay.buble.name ==='Delete') ? 'hidden':'visible' }"><p>{{messageBuble}}</p></div>
+    </div>
+    
+
 </div>
+
 
 
 
