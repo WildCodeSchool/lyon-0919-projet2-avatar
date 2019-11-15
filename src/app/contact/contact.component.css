@@ -1,5 +1,14 @@
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+button:hover{
+    cursor: pointer;
+    transform: scale(1.10);
+}
 
+button{
+    border: none;
+    background-color: inherit;
+    outline: 0;
+}
 
 .top-nav {
     width: 302px;
@@ -14,7 +23,6 @@
     width: 40px;
     height: 40px;
     text-align: center;
-    background-color:#e3f2fd;
     border-radius: 15px;
     display: inline-flex;
     justify-content: center;
@@ -153,6 +161,9 @@ h1 {
 
 section {
     overflow: hidden;
+    display: flex;
+    align-content: center;
+    height: 100%;
 }
  #content {
     position:relative;
@@ -300,7 +311,6 @@ div {
 }
 /** Styling the send button **/
  input[type=submit] {
-    margin-left:235px;
     cursor:pointer;
     background:none;
     border:none;
@@ -349,4 +359,8 @@ input[type=submit]:active, input[type=submit]:focus {
     color: red;
     font-size: 12px;
     font-style: italic;
+}
+#send{
+    display:flex;
+    justify-content: space-between;
 }
