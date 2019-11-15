@@ -12,9 +12,8 @@
 
 
 
-<div id="capture">
-  <app-display-avatar [displayAvatar]="avatarParent"  ></app-display-avatar>
-</div>
+
+  <app-display-avatar [displayAvatar]="avatarParent" id="capture"  ></app-display-avatar>
 
 <div class = "navigationElements">
   <button [ngStyle]="{'visibility':(selectedValue == 'tone') ? 'hidden' : 'visible'}"><img src='assets/images/keyboard_arrow_left-24px.svg' (click)="clickPrevious()" class="arrows-left"></button>
