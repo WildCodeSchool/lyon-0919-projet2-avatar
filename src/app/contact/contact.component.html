@@ -1,8 +1,6 @@
 <section>
-    <div class="top-nav">
-        <button class="top-nav-btn" (click)="onReturnClicked()"><img class="btn-return" src="/assets/images/arrow_back_ios-24px.svg" alt="return"></button>
-    </div>
 <div id="content">
+
     <h1>Send to</h1>
 
     <form (submit)="contactForm.valid && onSubmit(contactForm)" #contactForm="ngForm" action=" " method="post" autocomplete="on">
@@ -39,6 +37,8 @@
                     <a class="linkedinBtn smGlobalBtn" href="https://www.linkedin.com/shareArticle?mini=true&url=http://192.168.146.19:4200/=Partage réseaux sociaux&summary=Partage réseaux sociaux&mini=true" target="_blank" ></a>
             </div>
             <div id="send">
+                <button class="top-nav-btn" (click)="onReturnClicked()" ><img src="/assets/images/arrow_back_gris.svg" alt="return"></button>
+
                 <input type="submit" value=" Send ! "/>
             </div>
         </div>
