@@ -1,5 +1,8 @@
 
 <section>
+     <div class="top-nav">
+        <button class="top-nav-btn" (click)="onReturnClicked()"><img class="btn-return" src="/assets/images/arrow_back_ios-24px.svg" alt="return"></button>
+    </div>
     <form *ngIf=(isFormVisible) (submit)="paymentForm.valid && onSubmit(paymentForm)" #paymentForm="ngForm">
         <h3>Payment</h3>
         <img id="creditCard" src="/assets/images/creditCard.png" alt="Accepted Card" title="Accepted Card">

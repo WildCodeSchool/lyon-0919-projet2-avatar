@@ -17,6 +17,10 @@ export class PaymentComponent implements OnInit {
   
   ngOnInit() {
   }
+
+  onReturnClicked() {
+    this.router.navigate(['/contact']);
+  }
   
   onSubmit() {
     console.log(this.model);

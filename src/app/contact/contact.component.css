@@ -1,5 +1,14 @@
 @import url('//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+button:hover{
+    cursor: pointer;
+    transform: scale(1.10);
+}
 
+button{
+    border: none;
+    background-color: inherit;
+    outline: 0;
+}
 
 .top-nav {
     width: 302px;
@@ -14,7 +23,6 @@
     width: 40px;
     height: 40px;
     text-align: center;
-    background-color:#e3f2fd;
     border-radius: 15px;
     display: inline-flex;
     justify-content: center;
@@ -151,29 +159,11 @@ h1 {
     color:#8C8C8C;
 }
 
- h1:after {
-    font-size:25px;
-    color:#D6CFCB;
-    content:'&';
-    text-align:center;
-    display:block;
-    width:100%;
-    font-family:'Alice', Verdana, serif;
-    text-shadow: 0px 1px 0px #fff;
-}
-
- h1:before {
-    position:absolute;
-    bottom:15px;
-    content:' ';
-    text-align:center;
-    display:block;
-    height:2px;
-    width:100%;
-    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(182, 180, 180, 0.7) 42%, rgba(180, 178, 178, 0) 43%, rgba(168, 166, 166, 0) 50%, rgba(180, 178, 178, 0) 57%, rgba(182, 180, 180, 0.7) 58%, rgba(238, 237, 237, 0.3) 90%, rgba(255, 255, 255, 0) 100%);
-}
 section {
     overflow: hidden;
+    display: flex;
+    align-content: center;
+    height: 100%;
 }
  #content {
     position:relative;
@@ -321,7 +311,6 @@ div {
 }
 /** Styling the send button **/
  input[type=submit] {
-    margin-left:235px;
     cursor:pointer;
     background:none;
     border:none;
@@ -370,4 +359,8 @@ input[type=submit]:active, input[type=submit]:focus {
     color: red;
     font-size: 12px;
     font-style: italic;
+}
+#send{
+    display:flex;
+    justify-content: space-between;
 }
