@@ -49,6 +49,10 @@ button{
     transition: all 500ms ease;
 }
 
+.top-nav-btn img {
+    width: 15px;
+}
+
 .btn-return {
     margin-left: 10px;
 }
@@ -159,12 +163,14 @@ h1 {
     color:#8C8C8C;
 }
 
-section {
+#payment {
     overflow: hidden;
     display: flex;
     align-content: center;
     height: 100%;
+    align-items: center;
 }
+
  #content {
     position:relative;
     margin:0px auto;
@@ -317,7 +323,7 @@ div {
     font-family:'Alice', serif;
     color:#767676;
     font-size:18px;
-    padding:10px 4px;
+    padding:4px;
     border:1px solid #E0E0E0;
     text-shadow: 0px 1px 1px #E8E8E8;
     background: rgb(247, 247, 247);
@@ -363,4 +369,10 @@ input[type=submit]:active, input[type=submit]:focus {
 #send{
     display:flex;
     justify-content: space-between;
+}
+
+@media only screen and (max-height: 812px) {
+    #content {
+        width: 100%;
+    }
 }
