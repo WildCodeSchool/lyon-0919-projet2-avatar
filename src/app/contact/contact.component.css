@@ -299,6 +299,7 @@ label:before {
     -moz-transition: color 1s ease;
     transition: color 1s ease;
 }
+
 label:hover:before {
     color:#969696;
     -webkit-transition: color 1s ease;

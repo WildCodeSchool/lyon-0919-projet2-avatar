@@ -8,9 +8,9 @@
 }
 
 .formElts{
-    position: fixed;
-    bottom: 55px;
-    width: 400px;
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
 }
 
 form {
