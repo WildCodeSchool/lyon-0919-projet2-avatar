@@ -158,9 +158,12 @@ h1 {
     text-align:center;
     font-size:40px;
     padding:0;
-    margin:0 0 20px 0;
     position:relative;
     color:#8C8C8C;
+}
+
+.forms{
+    margin-top: 20px;
 }
 
 #payment {
@@ -302,9 +305,7 @@ label:hover:before {
     -moz-transition: color 1s ease;
     transition: color 1s ease;
 }
-div {
-    margin-bottom:20px;
-}
+
 .indication {
     color:#878787;
     font-size:12px;
@@ -371,6 +372,7 @@ input[type=submit]:active, input[type=submit]:focus {
     justify-content: space-between;
 }
 
+
 @media only screen and (max-width: 375px) {
     #content {
         width: 93%;
@@ -379,16 +381,30 @@ input[type=submit]:active, input[type=submit]:focus {
     input:not([type="submit"]), textarea {
         width: 100%;
     }
-}
 
+    .forms{
+        margin-top: 10px;
+    }
+}
 
 
 @media only screen and (max-height: 568px) and (max-width: 320px){
-    .smGlobalBtn[_ngcontent-ffc-c20] {
+    .smGlobalBtn {
         width: 35px;
         height: 35px;
-    
+        font-size: 15px;
     }
-}
+
+    .forms{
+        margin-top: 10px;
+    }
+} 
+
+
+
+
+
+
+
 
 
