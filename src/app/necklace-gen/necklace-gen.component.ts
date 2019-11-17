@@ -19,7 +19,7 @@ export class NecklaceGenComponent implements OnInit {
   onNecklaceClicked(necklace: Necklace) {
     this.necklaceEvent.emit(necklace);
   }
-  OnColorClickedRed(){
+  onColorClickedRed(){
     this.necklacesList = NECKLACES;
   }
   onColorClickedBlue(){
