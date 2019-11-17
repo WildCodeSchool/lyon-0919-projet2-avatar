@@ -1,9 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Cards } from '../shared/cards';
 import { CARDS } from '../shared/cards-mock';
 import { Card } from '../shared/card';
 import { Avatar } from '../shared/avatar';
-import { Tone } from '../shared/tone';
 import { Buble } from '../shared/buble';
 import { BUBLES } from '../shared/bubles-mock';
 import { AvatarService } from '../avatar.service';
@@ -16,7 +14,7 @@ import { AvatarService } from '../avatar.service';
 export class DisplayCardsComponent implements OnInit {
   @Input() avatarToCard: Avatar;
   
-  @Input() cardsToDisplay: Cards;
+  @Input() cardsToDisplay: Card;
   card: Card[] = CARDS;
   buble: Buble[] = BUBLES;
 
@@ -28,7 +26,6 @@ export class DisplayCardsComponent implements OnInit {
   constructor(private avatarService : AvatarService) { }
 
   ngOnInit() {
-    console.log(this.avatarOnCard)
   }
  
  

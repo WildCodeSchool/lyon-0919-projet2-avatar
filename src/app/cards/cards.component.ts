@@ -30,7 +30,7 @@ export class CardsComponent implements OnInit {
 
   ngOnInit() {
     this.avatarToDisplay = this.avatarService.avatarCreated;
-    console.log(this.avatarToDisplay);
+    //console.log(this.avatarToDisplay);
   }
   
   onCardSelected(c: Card) {
@@ -42,7 +42,7 @@ export class CardsComponent implements OnInit {
   }
 
   onBubleSelect(buble: Buble){
-    console.log(buble);
+    //console.log(buble);
     this.displayCards.buble = buble;
     
   }
