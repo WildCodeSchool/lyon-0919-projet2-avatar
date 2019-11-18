@@ -23,7 +23,7 @@
 .buble {
     position: absolute;
     top: 5%;
-    left: 10%;
+    left: 13%;
     height: 45%;
     background-size: 95%;
     width: 32%;
@@ -43,70 +43,4 @@
     font-size: 13px;
 }
 
-@media only screen and (max-width: 460px) {
-    .card {
-        width: 400px;
-    }
-    .display {
-        width: 100%;
-        height: 229px;
-    }
-
-    .avatar {
-        bottom: 111px;
-    }
-
-  }
-
-  @media only screen and (max-width: 390px) {
-    .card {
-        width: 350px;
-    }
-    .display {
-        width: 100%;
-        height: 203 px;
-    }
-
-    .avatar {
-        bottom: 125px;
-    }
-  }
-
-  @media only screen and (max-width: 350px) {
-    .display {
-        width: 100%;
-        height: 202px;
-    }
-
-    .avatar {
-        bottom: 110px;
-    }
-
-  }
-
-@media only screen and (max-width: 390px) {
-    .avatar{
-        bottom: 126px;
-    }
-}
-
-
-
-@media only screen and (max-height: 568px) and (max-width: 320px){
-    .avatar{
-        bottom: 115px;
-    }
-}
-
-@media only screen and (max-height: 640px) and (max-width: 390px){
-    .avatar{
-        bottom: 142px;
-    }
-}
-
-@media only screen and (max-height: 667px) and (max-width: 375px){
-    .avatar{
-        bottom: 142px;
-    }
-}
 

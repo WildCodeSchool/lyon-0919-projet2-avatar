@@ -1,6 +1,6 @@
 #card img {
     height: 60px;
-    width: 100px;
+    width: 95px;
     margin: 2px;
     cursor: pointer;
     background-color:#e3f2fd;
@@ -11,18 +11,16 @@
     display: flex;
     flex-wrap: wrap;
     width: 312px;
-    height: 100px;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
 }
 
 #card img:hover {
-    transform: scale(1.04)
+    transform: scale(1.04);
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
 }
-
-@media only screen and (max-width: 460px) {
-    #card img {
-        width: 32%;
-    }
-  }
