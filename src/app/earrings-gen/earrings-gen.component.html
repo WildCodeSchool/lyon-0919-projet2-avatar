@@ -1,0 +1,13 @@
+
+<div class = "buttonColor">
+    <button (click)="onColorClickedPurple()" class="buttonColorPurple"></button>
+    <button (click)="onColorClickedGreen()" class="buttonColorGreen"></button>
+    <button (click)="onColorClickedRed()" class="buttonColorRed"></button>
+</div>
+
+<div class="elements">
+    <div *ngFor="let earrings of earringsList" class="mini">
+        <img [src]="earrings.picture" alt="{{ earrings.name }}" (click)="onEarringsClicked(earrings)"/>
+    </div>
+
+</div>

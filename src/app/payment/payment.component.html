@@ -1,0 +1,110 @@
+<section>
+     <!-- <div class="top-nav">
+        <button class="top-nav-btn" (click)="onReturnClicked()"><img class="btn-return" src="/assets/images/arrow_back_ios-24px.svg" alt="return"></button>
+    </div> -->
+    <form *ngIf=(isFormVisible) (submit)="paymentForm.valid && onSubmit(paymentForm)" #paymentForm="ngForm">
+        <h3>Payment</h3>
+        <img id="creditCard" src="/assets/images/creditCard.png" alt="Accepted Card" title="Accepted Card">
+        <div id="sendto">
+            <div class="forms">
+                <label for="cardNb">Card Number</label>
+                <input id="cardNb" name="cardNb" type="text" [(ngModel)]="model.cardNb" placeholder="1111-2222-3333-4444" #cardRef="ngModel" required minlength="16" maxlength="16">
+            </div>
+            <div *ngIf="paymentForm.submitted && cardRef.errors">
+                <span class="errorText" *ngIf="cardRef.errors.required">
+                    * Card number is required</span>
+                <span class="errorText" *ngIf="cardRef.errors.minlength">
+                    * it's not a card number</span>
+            </div>
+    
+            <div class="cvc-exp">
+                <div id="exp">
+                    <div class="forms">
+                        <label for="exp">Exp</label>
+                        <input id="exp" name="exp" type="text" [(ngModel)]="model.exp" placeholder="MM/YY" #expRef="ngModel" required minlength="5" maxlength="5">
+                    </div>
+                    <div *ngIf="paymentForm.submitted && expRef.errors">
+                        <span class="errorText" *ngIf="expRef.errors.required">
+                            * Expiration date is required</span>
+                        <span class="errorText" *ngIf="expRef.errors.minlength">
+                            * Date must be in MM / YY format</span>
+                    </div>
+                </div>
+
+                <div id="cvc">
+                    <div class="forms">
+                        <label for="cvc">CVC</label>
+                        <input id="cvc" name="cvc" title="CVC is the last 3 numbers of the code on the back of your card" 
+                        type="password" [(ngModel)]="model.cvc" placeholder="123" #cvcRef="ngModel" required minlength="3" maxlength="3"> 
+                    </div>
+                    <div *ngIf="paymentForm.submitted && cvcRef.errors">
+                        <span class="errorText" *ngIf="cvcRef.errors.required">* CVC code is required</span>
+                        <span class="errorText" *ngIf="cvcRef.errors.minlength">* it's not a CVC code</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forms">
+                    <label for="name">Lastname</label>
+                    <input id="name" name="name" type="name" [(ngModel)]="model.name" #nameRef="ngModel" required>
+                </div>
+                <div *ngIf="paymentForm.submitted && nameRef.errors">
+                    <span class="errorText" *ngIf="nameRef.errors.required">* Lastname is required</span>
+                </div>
+    
+            <div id="send">
+                <button class="top-nav-btn" (click)="onReturnClicked()" ><img src="/assets/images/arrow_back_ios-24px.svg" alt="return"></button>
+                
+                <button type="submit" class="button btn">BUY 2.39$</button>
+            </div>
+        </div>
+    </form>
+</section>
+
+<div class="container" class="modal" *ngIf=(isModalVisible)>
+        <h4>Your payment has been accepted</h4>
+        <h5>Great !</h5>
+        <p>Your recipient should receive your card in 3 days. <br />
+        Thanks for your confidence !</p>
+        <button type="button" class="hbutton btn btn-warning" style="background-color: #FDA263" (click)="closeModal()">HOME</button>
+        <div class="campfire-wrapper">
+            <div class="tree-container-back">
+                <div class="tree-8"></div>
+                <div class="tree-9"></div>
+                <div class="tree-10"></div>
+            </div>
+            <div class="rock-container">
+                <div class="rock-big"></div>
+                <div class="rock-small">
+                    <div class="rock-1"></div>
+                    <div class="rock-2"></div>
+                    <div class="rock-3"></div>
+                    <div class="rock-4"></div>
+                </div>
+            </div>
+            <div class="smoke-container">
+                <svg>
+                <path d="M 150 0 Q 200 100 100 250 C 0 450 120 400 50 600  " />
+                </svg>
+                <div class="fire-container">
+                    <div class="flame-1"></div>
+                    <div class="flame-2"></div>
+                    <div class="flame-3"></div>
+                </div>
+            </div>
+            <div class="tree-container-front">
+                <div class="tree-1"></div>
+                <div class="tree-2"></div>
+                <div class="tree-3"></div>
+                <div class="tree-4"></div>
+                <div class="tree-5"></div>
+                <div class="tree-6"></div>
+                <div class="tree-7"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    
+ 

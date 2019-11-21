@@ -1,1 +1,36 @@
-<p>cards works!</p>
+<div class="top-nav">
+    <div>
+        <button class="top-nav-btn" (click)="onReturnClicked()"><img class="btn-return" src="/assets/images/arrow_back_ios-24px.svg" alt="return"></button>
+    </div>
+
+    <div>
+        <button class="top-nav-btn" (click)="onSaveClicked()"><img src="/assets/Navicon/save.svg" alt="avatar save"></button>
+        <button class="top-nav-btn btn-right" (click)="onValidClicked()"><img src="/assets/Navicon/check.svg" alt="avatar valid"></button>
+    </div>
+</div>
+
+<div class="allElementsCard">
+    <div class="poster" >
+        <div id= "capture">
+        <app-display-cards [cardsToDisplay]="displayCards" [avatarToCard]="avatarToDisplay" [messageBuble]="displayMessageBuble" ></app-display-cards>
+        </div>
+    </div>
+
+
+
+    <div class = "navigationElements">
+        <button [ngStyle]="{'visibility':(selectedValue == 'card') ? 'hidden' : 'visible'}"><img src='assets/images/keyboard_arrow_left-24px.svg' (click)="clickPrevious()" class="arrows-left"></button>
+        <div [ngSwitch]="selectedValue">
+            <h2 *ngSwitchCase="'card'" (cardsEvent)="onCardSelect($event)">BACKGROUNDS</h2>
+            <h2 *ngSwitchCase="'buble'" (bublesEvent)="onBubleSelect($event)">BUBBLES TEXT</h2>
+        </div>
+        <button [ngStyle]="{'visibility':(selectedValue == 'buble') ? 'hidden' : 'visible'}"><img src='assets/images/keyboard_arrow_right-24px.svg' (click)="clickNext()" class="arrows-right"></button>
+    </div>
+
+
+    <div [ngSwitch]="selectedValue">
+        <app-cards-list *ngSwitchCase="'card'" (cardsEvent)="onCardSelected($event)"></app-cards-list>
+        <app-bubles *ngSwitchCase="'buble'" (bublesEvent)="onBubleSelect($event)" (messageBubleText)="sendMessageBuble($event)"></app-bubles>
+    </div>
+</div>
+

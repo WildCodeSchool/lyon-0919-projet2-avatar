@@ -1,1 +1,49 @@
-<p>contact works!</p>
+<section id="payment">
+    <div id="content">
+
+        <h1>Send to</h1>
+
+        <form (submit)="contactForm.valid && onSubmit(contactForm)" #contactForm="ngForm" action=" " method="post" autocomplete="on">
+            <div id="sendto">
+                <div class="forms">
+                    <label for="username" class="icon-user">Name</label>
+                    <input id="username" name="username" type="text" [(ngModel)]="model.name" #nameRef="ngModel" placeholder="Recipient's name" required>
+                </div>
+                <div *ngIf="contactForm.submitted && nameRef.errors">
+                    <span class="errorText" *ngIf="nameRef.errors.required">
+                        * Name is required</span>
+                </div>
+
+                <div class="forms">
+                    <label for="usermail" class="icon-envelope">Adress</label>
+                    <input id="usermail" name="usermail" type="text" [(ngModel)]="model.adress" placeholder="Recipient's adress" #adressRef="ngModel" required>
+                </div>
+                <div *ngIf="contactForm.submitted && adressRef.errors">
+                    <span class="errorText" *ngIf="adressRef.errors.required">
+                        * Recipient's address is required</span>
+                </div>
+            
+                <div class="forms">
+                    <label for="message" class="icon-comment">Message</label>
+                    <textarea id="message" name="message" type="msg" [(ngModel)]="model.msg" #msgRef="ngModel" placeholder="What would you like to talk about?" required></textarea>
+                </div>
+                <div *ngIf="contactForm.submitted && msgRef.errors">
+                    <span class="errorText" *ngIf="msgRef.errors.required">* Write your message</span>
+                </div>
+                <div id="social">
+                        <a class="facebookBtn smGlobalBtn" href="https://www.facebook.com/sharer/sharer.php?u=http://192.168.146.19:4200/" target="_blank" ></a>
+                        <a class="twitterBtn smGlobalBtn" href="https://twitter.com/share?url=http://192.168.146.19:4200/=Social Media" target="_blank"></a>
+                        <a class="googleplusBtn smGlobalBtn" href="https://plus.google.com/http://192.168.146.19:4200/" target="_blank"></a>
+                        <a class="linkedinBtn smGlobalBtn" href="https://www.linkedin.com/shareArticle?mini=true&url=http://192.168.146.19:4200/=Partage réseaux sociaux&summary=Partage réseaux sociaux&mini=true" target="_blank" ></a>
+                </div>
+                <div id="send">
+                    <button class="top-nav-btn" (click)="onReturnClicked()" ><img src="/assets/images/arrow_back_gris.svg" alt="return"></button>
+
+                    <input type="submit" value=" Send ! "/>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+<router-outlet></router-outlet>

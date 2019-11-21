@@ -1,0 +1,46 @@
+.display {
+    width: 302px;
+    position: relative;
+}
+
+.card {
+    width: 100%;
+    border: rgb(224, 224, 224) solid 5px;
+}
+
+.avatar {
+    width: 25%;
+    position: absolute;
+    bottom: 85px;
+    left: 50px;
+}
+
+.avatar img{
+    width: 100%;
+    position: absolute;
+}
+
+.buble {
+    position: absolute;
+    top: 5%;
+    left: 13%;
+    height: 45%;
+    background-size: 95%;
+    width: 32%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    padding: 6% 5%;
+    line-height: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.buble p{
+    margin: 0;
+    font-size: 13px;
+}
+
+

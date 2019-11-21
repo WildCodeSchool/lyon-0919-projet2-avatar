@@ -1,0 +1,8 @@
+<div class = "buttonColor"></div>
+
+<div class="elements">
+    <div *ngFor="let tone of tonesList" class="mini">
+        <img [src]="tone.picture" alt="{{ tone.name }}" (click)="onSkinClicked(tone)" />
+    </div>  
+</div>
+
